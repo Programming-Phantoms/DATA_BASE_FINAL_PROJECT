@@ -1,0 +1,11 @@
+App.xbf
+MainWindow.xbf
+Styles\FontSizes.xbf
+Styles\TextBlock.xbf
+Styles\Thickness.xbf
+Views\ADMINISTRATORPage.xbf
+Views\LOGINPage.xbf
+Views\SettingsPage.xbf
+Views\ShellPage.xbf
+Views\STUDENTPage.xbf
+Views\TEACHERPage.xbf
