@@ -7,7 +7,14 @@
     mc:Ignorable="d">
 
     <Grid x:ConnectionId='2' x:Name="ContentArea">
-        
+        <StackPanel>
+            <TextBlock Text="Login into your account!" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="12" />
+            <TextBox Width="300" Header="Enter your User ID " PlaceholderText="User ID"  HorizontalAlignment="Center" Margin="5"/>
+            <PasswordBox Width="300" Header="Password" PlaceholderText="Enter your password" PasswordChar="*" HorizontalAlignment="Center" Margin="5" />
+            <Button Width="100" Content="Login" HorizontalAlignment="Center" Style="{StaticResource AccentButtonStyle}"  Margin="13" />
+        </StackPanel>
+
     </Grid>
+     
 </Page>
 
