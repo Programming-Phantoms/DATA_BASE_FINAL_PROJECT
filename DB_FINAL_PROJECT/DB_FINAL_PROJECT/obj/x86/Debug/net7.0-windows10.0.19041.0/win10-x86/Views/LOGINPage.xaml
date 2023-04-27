@@ -7,11 +7,11 @@
     mc:Ignorable="d">
 
     <Grid x:ConnectionId='2' x:Name="ContentArea">
-        <StackPanel>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock x:ConnectionId='3' x:Name="mainText" Text="Login into your account!" FontSize="40" FontWeight= "Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="12 12 12 40" />
             <TextBox x:ConnectionId='4' x:Name="userText" Width="300" Header="🙂 Username" PlaceholderText="Enter your username" FontSize="15" HorizontalAlignment="Center" Margin="5 5 5 20"/>
             <PasswordBox x:ConnectionId='5' x:Name="passText" Width="300" Header="🔑 Password" PlaceholderText="Enter your password" FontSize="15" HorizontalAlignment="Center" Margin="5 5 5 40" />
-            <Button x:ConnectionId='6' Width="100" Content="Login" HorizontalAlignment="Center" Style="{StaticResource AccentButtonStyle}"  Margin="13"                          />
+            <Button x:ConnectionId='6' Width="100" Content="Login" HorizontalAlignment="Center" Style="{StaticResource AccentButtonStyle}"  Margin="0 0 0 50"                          />
         </StackPanel>
 
     </Grid>

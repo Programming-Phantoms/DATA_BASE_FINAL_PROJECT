@@ -7,8 +7,8 @@
     mc:Ignorable="d">
 
     <Grid x:Name="ContentArea">
-        <StackPanel>
-            <TextBlock x:Name="OutputTextBlock" Text="Login into your account!" FontSize="40" FontWeight= "Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="12 12 12 40" />
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock x:Name="OutputTextBlock" Text="Login into your account!" FontSize="40" FontWeight= "Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </StackPanel>
     </Grid>
 </Page>

@@ -117,4 +117,22 @@
   <data name="SettingsPage_PrivacyTermsLink.NavigateUri" xml:space="preserve">
     <value>https://YourPrivacyUrlGoesHere/</value>
   </data>
+  <data name="Shell_ADD_TEACHER.Content" xml:space="preserve">
+    <value>ADD_TEACHER</value>
+  </data>
+  <data name="Shell_ADD_STUDENT.Content" xml:space="preserve">
+    <value>ADD_STUDENT</value>
+  </data>
+  <data name="Shell_ADD_CLASS.Content" xml:space="preserve">
+    <value>ADD_CLASS</value>
+  </data>
+  <data name="Shell_ADD_CLASS_SCHEDULE.Content" xml:space="preserve">
+    <value>ADD_CLASS_SCHEDULE</value>
+  </data>
+  <data name="Shell_EDIT_TEACHER.Content" xml:space="preserve">
+    <value>EDIT_TEACHER</value>
+  </data>
+  <data name="Shell_EDIT_STUDENT.Content" xml:space="preserve">
+    <value>EDIT_STUDENT</value>
+  </data>
 </root>

@@ -23,7 +23,7 @@ public sealed partial class LOGINPage : Page
         if (userText.Text == "bilal" && passText.Password == "1234")
         {
             mainText.Text = """Loged in successfully! 🎉""";
-            Frame.Navigate(typeof(ADMINISTRATORPage), "Welcome " + userText.Text);
+            Frame.Navigate(typeof(ADMINISTRATORPage), """Welcome to administrator portal 🎉""");
         }
         else
         {

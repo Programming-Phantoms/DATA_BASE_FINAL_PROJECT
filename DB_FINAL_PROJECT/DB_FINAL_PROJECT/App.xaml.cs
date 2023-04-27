@@ -70,6 +70,18 @@ public partial class App : Application
             services.AddSingleton<IFileService, FileService>();
 
             // Views and ViewModels
+            services.AddTransient<EDIT_STUDENTViewModel>();
+            services.AddTransient<EDIT_STUDENTPage>();
+            services.AddTransient<EDIT_TEACHERViewModel>();
+            services.AddTransient<EDIT_TEACHERPage>();
+            services.AddTransient<ADD_CLASS_SCHEDULEViewModel>();
+            services.AddTransient<ADD_CLASS_SCHEDULEPage>();
+            services.AddTransient<ADD_CLASSViewModel>();
+            services.AddTransient<ADD_CLASSPage>();
+            services.AddTransient<ADD_STUDENTViewModel>();
+            services.AddTransient<ADD_STUDENTPage>();
+            services.AddTransient<ADD_TEACHERViewModel>();
+            services.AddTransient<ADD_TEACHERPage>();
             services.AddTransient<SettingsViewModel>();
             services.AddTransient<SettingsPage>();
             services.AddTransient<STUDENTViewModel>();

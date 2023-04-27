@@ -19,6 +19,12 @@ public class PageService : IPageService
         Configure<TEACHERViewModel, TEACHERPage>();
         Configure<STUDENTViewModel, STUDENTPage>();
         Configure<SettingsViewModel, SettingsPage>();
+        Configure<ADD_TEACHERViewModel, ADD_TEACHERPage>();
+        Configure<ADD_STUDENTViewModel, ADD_STUDENTPage>();
+        Configure<ADD_CLASSViewModel, ADD_CLASSPage>();
+        Configure<ADD_CLASS_SCHEDULEViewModel, ADD_CLASS_SCHEDULEPage>();
+        Configure<EDIT_TEACHERViewModel, EDIT_TEACHERPage>();
+        Configure<EDIT_STUDENTViewModel, EDIT_STUDENTPage>();
     }
 
     public Type GetPageType(string key)

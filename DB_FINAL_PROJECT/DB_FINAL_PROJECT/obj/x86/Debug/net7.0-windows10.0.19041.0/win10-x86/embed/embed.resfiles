@@ -3,7 +3,13 @@ MainWindow.xbf
 Styles\FontSizes.xbf
 Styles\TextBlock.xbf
 Styles\Thickness.xbf
+Views\ADD_CLASS_SCHEDULEPage.xbf
+Views\ADD_CLASSPage.xbf
+Views\ADD_STUDENTPage.xbf
+Views\ADD_TEACHERPage.xbf
 Views\ADMINISTRATORPage.xbf
+Views\EDIT_STUDENTPage.xbf
+Views\EDIT_TEACHERPage.xbf
 Views\LOGINPage.xbf
 Views\SettingsPage.xbf
 Views\ShellPage.xbf

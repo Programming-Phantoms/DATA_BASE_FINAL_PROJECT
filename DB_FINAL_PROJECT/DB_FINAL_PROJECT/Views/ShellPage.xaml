@@ -52,6 +52,45 @@
                     <NavigationViewItem.Icon>
                         <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xEF58;"/>
                     </NavigationViewItem.Icon>
+                    <NavigationViewItem.MenuItems>
+
+                        <NavigationViewItem x:Uid="Shell_ADD_TEACHER" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.ADD_TEACHERViewModel">
+                            <NavigationViewItem.Icon>
+                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8FA;"/>
+                            </NavigationViewItem.Icon>
+                        </NavigationViewItem>
+
+                        <NavigationViewItem x:Uid="Shell_ADD_STUDENT" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.ADD_STUDENTViewModel">
+                            <NavigationViewItem.Icon>
+                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8FA;"/>
+                            </NavigationViewItem.Icon>
+                        </NavigationViewItem>
+
+                        <NavigationViewItem x:Uid="Shell_ADD_CLASS" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.ADD_CLASSViewModel">
+                            <NavigationViewItem.Icon>
+                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xED0E;"/>
+                            </NavigationViewItem.Icon>
+                        </NavigationViewItem>
+
+                        <NavigationViewItem x:Uid="Shell_ADD_CLASS_SCHEDULE" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.ADD_CLASS_SCHEDULEViewModel">
+                            <NavigationViewItem.Icon>
+                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xED0E;"/>
+                            </NavigationViewItem.Icon>
+                        </NavigationViewItem>
+
+                        <NavigationViewItem x:Uid="Shell_EDIT_TEACHER" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.EDIT_TEACHERViewModel">
+                            <NavigationViewItem.Icon>
+                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE70F;"/>
+                            </NavigationViewItem.Icon>
+                        </NavigationViewItem>
+
+                        <NavigationViewItem x:Uid="Shell_EDIT_STUDENT" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.EDIT_STUDENTViewModel">
+                            <NavigationViewItem.Icon>
+                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE70F;"/>
+                            </NavigationViewItem.Icon>
+                        </NavigationViewItem>
+
+                    </NavigationViewItem.MenuItems>
                 </NavigationViewItem>
                 <NavigationViewItem x:Uid="Shell_TEACHER" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.TEACHERViewModel">
                     <NavigationViewItem.Icon>
