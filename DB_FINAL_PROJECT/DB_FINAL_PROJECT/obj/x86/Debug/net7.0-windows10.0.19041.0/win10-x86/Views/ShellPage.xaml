@@ -32,7 +32,7 @@
                                                                          
                                                                    
             IsSettingsVisible="True"
-            ExpandedModeThresholdWidth="1280"
+            ExpandedModeThresholdWidth="1080"
                                                                          
                                                                                        >
             <NavigationView.MenuItems>
@@ -45,22 +45,22 @@
                 -->
                 <NavigationViewItem x:Uid="Shell_LOGIN" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.LOGINViewModel">
                     <NavigationViewItem.Icon>
-                        <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}" Glyph="&#xe7c3;"/>
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE72E;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
                 <NavigationViewItem x:Uid="Shell_ADMINISTRATOR" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.ADMINISTRATORViewModel">
                     <NavigationViewItem.Icon>
-                        <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}" Glyph="&#xe7c3;"/>
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xEF58;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
                 <NavigationViewItem x:Uid="Shell_TEACHER" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.TEACHERViewModel">
                     <NavigationViewItem.Icon>
-                        <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}" Glyph="&#xe7c3;"/>
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE7EE;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
                 <NavigationViewItem x:Uid="Shell_STUDENT" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.STUDENTViewModel">
                     <NavigationViewItem.Icon>
-                        <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}" Glyph="&#xe7c3;"/>
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE7BE;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
             </NavigationView.MenuItems>

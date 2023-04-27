@@ -7,7 +7,9 @@
     mc:Ignorable="d">
 
     <Grid x:ConnectionId='2' x:Name="ContentArea">
-        
+        <StackPanel>
+            <TextBlock x:ConnectionId='3' x:Name="OutputTextBlock" Text="Login into your account!" FontSize="40" FontWeight= "Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="12 12 12 40" />
+        </StackPanel>
     </Grid>
 </Page>
 
