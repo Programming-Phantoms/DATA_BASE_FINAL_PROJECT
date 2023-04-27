@@ -1,5 +1,5 @@
 ﻿using DB_FINAL_PROJECT.ViewModels;
-
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 
 namespace DB_FINAL_PROJECT.Views;
@@ -15,5 +15,13 @@ public sealed partial class LOGINPage : Page
     {
         ViewModel = App.GetService<LOGINViewModel>();
         InitializeComponent();
+    }
+
+    private void LoginButton_Click(object sender, RoutedEventArgs e)
+    {
+        if (userText.Text == "bilal" && passText.Password == "1234")
+            mainText.Text = """Loged in successfully! 🎉""";
+        else
+            mainText.Text = "Login into your account!";
     }
 }
