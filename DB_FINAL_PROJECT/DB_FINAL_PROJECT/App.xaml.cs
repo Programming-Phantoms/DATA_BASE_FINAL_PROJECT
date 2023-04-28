@@ -70,14 +70,34 @@ public partial class App : Application
             services.AddSingleton<IFileService, FileService>();
 
             // Views and ViewModels
+            services.AddTransient<VIEW_STUDENTS_IN_CLASSViewModel>();
+            services.AddTransient<VIEW_STUDENTS_IN_CLASSPage>();
+            services.AddTransient<VIEW_CLASSESViewModel>();
+            services.AddTransient<VIEW_CLASSESPage>();
+            services.AddTransient<ADD_STUDENT_TO_CLASSViewModel>();
+            services.AddTransient<ADD_STUDENT_TO_CLASSPage>();
+            services.AddTransient<ADD_CLASS_SCHEDULEViewModel>();
+            services.AddTransient<ADD_CLASS_SCHEDULEPage>();
+            services.AddTransient<ADD_CLASSViewModel>();
+            services.AddTransient<ADD_CLASSPage>();
+            services.AddTransient<CLASS_MODULEViewModel>();
+            services.AddTransient<CLASS_MODULEPage>();
+            services.AddTransient<MY_SCHEDULEViewModel>();
+            services.AddTransient<MY_SCHEDULEPage>();
+            services.AddTransient<MY_ATTENDANCEViewModel>();
+            services.AddTransient<MY_ATTENDANCEPage>();
+            services.AddTransient<VIEW_CLASSViewModel>();
+            services.AddTransient<VIEW_CLASSPage>();
+            services.AddTransient<VIEW_ATTENDANCEViewModel>();
+            services.AddTransient<VIEW_ATTENDANCEPage>();
+            services.AddTransient<ADD_ATTENDANCEViewModel>();
+            services.AddTransient<ADD_ATTENDANCEPage>();
             services.AddTransient<EDIT_STUDENTViewModel>();
             services.AddTransient<EDIT_STUDENTPage>();
             services.AddTransient<EDIT_TEACHERViewModel>();
             services.AddTransient<EDIT_TEACHERPage>();
             services.AddTransient<ADD_CLASS_SCHEDULEViewModel>();
-            services.AddTransient<ADD_CLASS_SCHEDULEPage>();
             services.AddTransient<ADD_CLASSViewModel>();
-            services.AddTransient<ADD_CLASSPage>();
             services.AddTransient<ADD_STUDENTViewModel>();
             services.AddTransient<ADD_STUDENTPage>();
             services.AddTransient<ADD_TEACHERViewModel>();

@@ -135,4 +135,31 @@
   <data name="Shell_EDIT_STUDENT.Content" xml:space="preserve">
     <value>EDIT_STUDENT</value>
   </data>
+  <data name="Shell_ADD_ATTENDANCE.Content" xml:space="preserve">
+    <value>ADD_ATTENDANCE</value>
+  </data>
+  <data name="Shell_VIEW_ATTENDANCE.Content" xml:space="preserve">
+    <value>VIEW_ATTENDANCE</value>
+  </data>
+  <data name="Shell_VIEW_CLASS.Content" xml:space="preserve">
+    <value>VIEW_CLASS</value>
+  </data>
+  <data name="Shell_MY_ATTENDANCE.Content" xml:space="preserve">
+    <value>MY_ATTENDANCE</value>
+  </data>
+  <data name="Shell_MY_SCHEDULE.Content" xml:space="preserve">
+    <value>MY_SCHEDULE</value>
+  </data>
+  <data name="Shell_CLASS_MODULE.Content" xml:space="preserve">
+    <value>CLASS_MODULE</value>
+  </data>
+  <data name="Shell_ADD_STUDENT_TO_CLASS.Content" xml:space="preserve">
+    <value>ADD_STUDENT_TO_CLASS</value>
+  </data>
+  <data name="Shell_VIEW_CLASSES.Content" xml:space="preserve">
+    <value>VIEW_CLASSES</value>
+  </data>
+  <data name="Shell_VIEW_STUDENTS_IN_CLASS.Content" xml:space="preserve">
+    <value>VIEW_STUDENTS_IN_CLASS</value>
+  </data>
 </root>

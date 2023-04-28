@@ -21,10 +21,19 @@ public class PageService : IPageService
         Configure<SettingsViewModel, SettingsPage>();
         Configure<ADD_TEACHERViewModel, ADD_TEACHERPage>();
         Configure<ADD_STUDENTViewModel, ADD_STUDENTPage>();
-        Configure<ADD_CLASSViewModel, ADD_CLASSPage>();
-        Configure<ADD_CLASS_SCHEDULEViewModel, ADD_CLASS_SCHEDULEPage>();
         Configure<EDIT_TEACHERViewModel, EDIT_TEACHERPage>();
         Configure<EDIT_STUDENTViewModel, EDIT_STUDENTPage>();
+        Configure<ADD_ATTENDANCEViewModel, ADD_ATTENDANCEPage>();
+        Configure<VIEW_ATTENDANCEViewModel, VIEW_ATTENDANCEPage>();
+        Configure<VIEW_CLASSViewModel, VIEW_CLASSPage>();
+        Configure<MY_ATTENDANCEViewModel, MY_ATTENDANCEPage>();
+        Configure<MY_SCHEDULEViewModel, MY_SCHEDULEPage>();
+        Configure<CLASS_MODULEViewModel, CLASS_MODULEPage>();
+        Configure<ADD_CLASSViewModel, ADD_CLASSPage>();
+        Configure<ADD_CLASS_SCHEDULEViewModel, ADD_CLASS_SCHEDULEPage>();
+        Configure<ADD_STUDENT_TO_CLASSViewModel, ADD_STUDENT_TO_CLASSPage>();
+        Configure<VIEW_CLASSESViewModel, VIEW_CLASSESPage>();
+        Configure<VIEW_STUDENTS_IN_CLASSViewModel, VIEW_STUDENTS_IN_CLASSPage>();
     }
 
     public Type GetPageType(string key)
