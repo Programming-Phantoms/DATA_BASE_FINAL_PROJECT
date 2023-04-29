@@ -1,7 +1,9 @@
-﻿using DB_FINAL_PROJECT.ViewModels;
-
+﻿using System.Security.Cryptography.X509Certificates;
+using DB_FINAL_PROJECT.ViewModels;
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
+using static DB_FINAL_PROJECT.App;
 
 namespace DB_FINAL_PROJECT.Views;
 
@@ -16,15 +18,21 @@ public sealed partial class ADMINISTRATORPage : Page
     {
         ViewModel = App.GetService<ADMINISTRATORViewModel>();
         InitializeComponent();
+        LoadOnPage();
     }
 
-    protected override void OnNavigatedTo(NavigationEventArgs e)
+    private void LoadOnPage()
     {
-        base.OnNavigatedTo(e);
-
-        if (e.Parameter != null)
+        if (LoginPortal.LoginAdd)
         {
-            OutputTextBlock.Text = e.Parameter.ToString();
+            LoginMsgText.Text = """Welcome to administrator portal 🎉""";
+            LogoutButton.Visibility = Visibility.Visible;
         }
+    }
+
+    private void LogoutButton_Click(object sender, RoutedEventArgs e)
+    {
+        LoginPortal.LoginAdd = false;
+        LoginMsgText.Text = "Login to your account!";
     }
 }

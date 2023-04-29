@@ -139,4 +139,11 @@ public partial class App : Application
 
         await App.GetService<IActivationService>().ActivateAsync(args);
     }
+
+    public static class LoginPortal
+    {
+        public static bool LoginAdd = false;
+        public static bool LoginStd = false;
+        public static bool LoginTea = false;
+    }
 }

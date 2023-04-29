@@ -8,7 +8,8 @@
 
     <Grid x:ConnectionId='2' x:Name="ContentArea">
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock x:ConnectionId='3' x:Name="OutputTextBlock" Text="Login into your account!" FontSize="40" FontWeight= "Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock x:ConnectionId='3' x:Name="LoginMsgText" Text="Login to your account!" FontSize="40" Margin="0 0 0 50" FontWeight= "Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button x:ConnectionId='4' x:Name="LogoutButton" Width="100" Content="Logout" HorizontalAlignment="Center" Style="{StaticResource AccentButtonStyle}"                            Visibility="Collapsed"/>
         </StackPanel>
     </Grid>
 </Page>
