@@ -25,16 +25,19 @@ public sealed partial class LOGINPage : Page
         {
             mainText.Text = """Loged in successfully! 🎉""";
             LoginPortal.LoginAdd = true;
+            LoginPortal.LoginStd = LoginPortal.LoginTea = false;
         }
         else if (userText.Text == "S" && passText.Password == "1234")
         {
             mainText.Text = """Loged in successfully! 🎉""";
             LoginPortal.LoginStd = true;
+            LoginPortal.LoginAdd = LoginPortal.LoginTea = false;
         }
         else if (userText.Text == "T" && passText.Password == "1234")
         {
             mainText.Text = """Loged in successfully! 🎉""";
             LoginPortal.LoginTea = true;
+            LoginPortal.LoginStd = LoginPortal.LoginAdd = false;
         }
     }
 }
