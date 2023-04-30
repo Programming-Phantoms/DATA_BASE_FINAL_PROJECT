@@ -6,9 +6,11 @@ using Microsoft.UI.Xaml.Controls;
 namespace DB_FINAL_PROJECT.Views;
 
 using Oracle.ManagedDataAccess.Client;
+using static DB_FINAL_PROJECT.App;
+
 public sealed partial class ADD_STUDENTPage : Page
 {
-    OracleConnection con;
+    //OracleConnection con;
     public ADD_STUDENTViewModel ViewModel
     {
         get;
@@ -18,21 +20,30 @@ public sealed partial class ADD_STUDENTPage : Page
     {
         ViewModel = App.GetService<ADD_STUDENTViewModel>();
         InitializeComponent();
+        LoadOnPage();
 
-        string conStr = @"DATA SOURCE = localhost:1521/XE; USER ID = F21_9243; PASSWORD = 1234";
-        con = new OracleConnection(conStr);
+        //string conStr = @"DATA SOURCE = localhost:1521/XE; USER ID = F21_9243; PASSWORD = 1234";
+        //con = new OracleConnection(conStr);
+    }
+
+    private void LoadOnPage()
+    {
+        if (LoginPortal.LoginAdd)
+        {
+            Visible1.Visibility = Visible2.Visibility = Visible3.Visibility = Visibility.Visible;
+        }
     }
 
     private void InsertButton_Click(object sender, RoutedEventArgs e)
     {
-        con.Open();
-        OracleCommand insertEmp = con.CreateCommand();
-        insertEmp.CommandText = "INSERT INTO STD VALUES('" +
-        fnameText.Text.ToString() + "\',\'" +
-        rollText.Text.ToString() + "\')";
-        insertEmp.CommandType = CommandType.Text;
-        insertEmp.ExecuteNonQuery();
-        con.Close();
+        //con.Open();
+        //OracleCommand insertEmp = con.CreateCommand();
+        //insertEmp.CommandText = "INSERT INTO STD VALUES('" +
+        //fnameText.Text.ToString() + "\',\'" +
+        //rollText.Text.ToString() + "\')";
+        //insertEmp.CommandType = CommandType.Text;
+        //insertEmp.ExecuteNonQuery();
+        //con.Close();
     }
 
     private void GenderMale_Click(object sender, RoutedEventArgs e)

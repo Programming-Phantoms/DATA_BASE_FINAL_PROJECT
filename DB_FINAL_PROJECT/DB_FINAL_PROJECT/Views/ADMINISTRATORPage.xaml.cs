@@ -3,6 +3,7 @@ using DB_FINAL_PROJECT.ViewModels;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
+using Windows.Devices.Enumeration;
 using static DB_FINAL_PROJECT.App;
 
 namespace DB_FINAL_PROJECT.Views;
@@ -35,5 +36,6 @@ public sealed partial class ADMINISTRATORPage : Page
         LoginPortal.LoginAdd = false;
         LoginMsgText.Text = "Login to your account!";
         LogoutButton.Visibility = Visibility.Collapsed;
+        Frame.Navigate(typeof(LOGINPage));
     }
 }

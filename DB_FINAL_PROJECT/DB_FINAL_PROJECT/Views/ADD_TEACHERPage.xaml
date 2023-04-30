@@ -7,7 +7,7 @@
     mc:Ignorable="d">
 
     <Grid x:Name="ContentArea">
-        <StackPanel HorizontalAlignment="Left">
+        <StackPanel x:Name="Visible1" HorizontalAlignment="Left" Visibility="Collapsed">
             <TextBox x:Name="idText" Width="300" Header="Teacher id" PlaceholderText="Enter teacher id" FontSize="15" Margin="0 20 0 20"/>
             <TextBox x:Name="fnameText" Width="300" Header="First name" PlaceholderText="Enter first name" FontSize="15" Margin="0 0 0 20"/>
             <TextBox x:Name="lnameText" Width="300" Header="Last name" PlaceholderText="Enter last name" FontSize="15" Margin="0 0 0 20"/>
@@ -15,7 +15,7 @@
             <TextBox x:Name="emailText" Width="300" Header="Email" PlaceholderText="Enter email" FontSize="15" Margin="0 0 0 20"/>
             <TextBox x:Name="contactText" Width="300" Header="Contact No" PlaceholderText="Enter contact no." FontSize="15" Margin="0 0 0 20"/>
         </StackPanel>
-        <StackPanel HorizontalAlignment="Center">
+        <StackPanel x:Name="Visible2" HorizontalAlignment="Center" Visibility="Collapsed">
             <TextBox x:Name="addText" Width="300" Header="Address" PlaceholderText="Enter address" FontSize="15" Margin="40 20 0 20"/>
             <PasswordBox x:Name="passText" Width="300" Header="Password" PlaceholderText="Enter password" FontSize="15" Margin="40 0 0 20"/>
             <DatePicker x:Name="regText" Header="Registration date" Margin="40 0 0 20"/>
@@ -51,7 +51,7 @@
                 </DropDownButton.Flyout>
             </DropDownButton>
         </StackPanel>
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
+        <StackPanel x:Name="Visible3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Visibility="Collapsed">
             <Button Width="150" Content="Insert" HorizontalAlignment="Center" VerticalAlignment="Bottom" Style="{StaticResource AccentButtonStyle}"  Margin="0 0 0 50" Click="InsertButton_Click"/>
         </StackPanel>
     </Grid>
