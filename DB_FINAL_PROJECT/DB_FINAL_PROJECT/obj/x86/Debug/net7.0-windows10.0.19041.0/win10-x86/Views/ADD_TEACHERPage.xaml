@@ -7,7 +7,53 @@
     mc:Ignorable="d">
 
     <Grid x:ConnectionId='2' x:Name="ContentArea">
-        
+        <StackPanel HorizontalAlignment="Left">
+            <TextBox x:ConnectionId='23' x:Name="idText" Width="300" Header="Teacher id" PlaceholderText="Enter teacher id" FontSize="15" Margin="0 20 0 20"/>
+            <TextBox x:ConnectionId='24' x:Name="fnameText" Width="300" Header="First name" PlaceholderText="Enter first name" FontSize="15" Margin="0 0 0 20"/>
+            <TextBox x:ConnectionId='25' x:Name="lnameText" Width="300" Header="Last name" PlaceholderText="Enter last name" FontSize="15" Margin="0 0 0 20"/>
+            <TextBox x:ConnectionId='26' x:Name="userText" Width="300" Header="Username" PlaceholderText="Enter username" FontSize="15" Margin="0 0 0 20"/>
+            <TextBox x:ConnectionId='27' x:Name="emailText" Width="300" Header="Email" PlaceholderText="Enter email" FontSize="15" Margin="0 0 0 20"/>
+            <TextBox x:ConnectionId='28' x:Name="contactText" Width="300" Header="Contact No" PlaceholderText="Enter contact no." FontSize="15" Margin="0 0 0 20"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center">
+            <TextBox x:ConnectionId='4' x:Name="addText" Width="300" Header="Address" PlaceholderText="Enter address" FontSize="15" Margin="40 20 0 20"/>
+            <PasswordBox x:ConnectionId='5' x:Name="passText" Width="300" Header="Password" PlaceholderText="Enter password" FontSize="15" Margin="40 0 0 20"/>
+            <DatePicker x:ConnectionId='6' x:Name="regText" Header="Registration date" Margin="40 0 0 20"/>
+            <DropDownButton x:ConnectionId='7' x:Name="bgText" Content="Blood Group" Width="300" Margin="40 0 0 20">
+                <DropDownButton.Flyout>
+                    <MenuFlyout Placement="Bottom">
+                        <MenuFlyoutItem x:ConnectionId='15' Text="A+" Width="300"                          />
+                        <MenuFlyoutItem x:ConnectionId='16' Text="A-" Width="300"                          />
+                        <MenuFlyoutItem x:ConnectionId='17' Text="B+" Width="300"                          />
+                        <MenuFlyoutItem x:ConnectionId='18' Text="B-" Width="300"                          />
+                        <MenuFlyoutItem x:ConnectionId='19' Text="AB+" Width="300"                           />
+                        <MenuFlyoutItem x:ConnectionId='20' Text="AB-" Width="300"                           />
+                        <MenuFlyoutItem x:ConnectionId='21' Text="O+" Width="300"                           />
+                        <MenuFlyoutItem x:ConnectionId='22' Text="O-" Width="300"                           />
+                    </MenuFlyout>
+                </DropDownButton.Flyout>
+            </DropDownButton>
+            <DropDownButton x:ConnectionId='8' x:Name="genText" Content="Gender" Width="300" Margin="40 0 0 20">
+                <DropDownButton.Flyout>
+                    <MenuFlyout Placement="Bottom">
+                        <MenuFlyoutItem x:ConnectionId='12' Text="Male" Width="300"                         />
+                        <MenuFlyoutItem x:ConnectionId='13' Text="Female" Width="300"                           />
+                        <MenuFlyoutItem x:ConnectionId='14' Text="Other" Width="300"                          />
+                    </MenuFlyout>
+                </DropDownButton.Flyout>
+            </DropDownButton>
+            <DropDownButton x:ConnectionId='9' x:Name="feeText" Content="Fee status" Width="300" Margin="40 0 0 20">
+                <DropDownButton.Flyout>
+                    <MenuFlyout Placement="Bottom">
+                        <MenuFlyoutItem x:ConnectionId='10' Text="Paid" Width="300"                      />
+                        <MenuFlyoutItem x:ConnectionId='11' Text="Unpaid" Width="300"                        />
+                    </MenuFlyout>
+                </DropDownButton.Flyout>
+            </DropDownButton>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <Button x:ConnectionId='3' Width="150" Content="Insert" HorizontalAlignment="Center" VerticalAlignment="Bottom" Style="{StaticResource AccentButtonStyle}"  Margin="0 0 0 50"                           />
+        </StackPanel>
     </Grid>
 </Page>
 

@@ -224,7 +224,7 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[98];
+            _typeNameTable = new string[100];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -256,75 +256,77 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
             _typeNameTable[28] = "DB_FINAL_PROJECT.ViewModels.ADD_CLASSViewModel";
             _typeNameTable[29] = "DB_FINAL_PROJECT.Views.ADD_CLASS_SCHEDULEPage";
             _typeNameTable[30] = "DB_FINAL_PROJECT.ViewModels.ADD_CLASS_SCHEDULEViewModel";
-            _typeNameTable[31] = "DB_FINAL_PROJECT.Views.ADD_STUDENTPage";
-            _typeNameTable[32] = "DB_FINAL_PROJECT.ViewModels.ADD_STUDENTViewModel";
-            _typeNameTable[33] = "DB_FINAL_PROJECT.Views.ADD_STUDENT_TO_CLASSPage";
-            _typeNameTable[34] = "DB_FINAL_PROJECT.ViewModels.ADD_STUDENT_TO_CLASSViewModel";
-            _typeNameTable[35] = "DB_FINAL_PROJECT.Views.ADD_TEACHERPage";
-            _typeNameTable[36] = "DB_FINAL_PROJECT.ViewModels.ADD_TEACHERViewModel";
-            _typeNameTable[37] = "DB_FINAL_PROJECT.Views.ADMINISTRATORPage";
-            _typeNameTable[38] = "DB_FINAL_PROJECT.ViewModels.ADMINISTRATORViewModel";
-            _typeNameTable[39] = "DB_FINAL_PROJECT.Views.CLASS_MODULEPage";
-            _typeNameTable[40] = "DB_FINAL_PROJECT.ViewModels.CLASS_MODULEViewModel";
-            _typeNameTable[41] = "DB_FINAL_PROJECT.Views.EDIT_STUDENTPage";
-            _typeNameTable[42] = "DB_FINAL_PROJECT.ViewModels.EDIT_STUDENTViewModel";
-            _typeNameTable[43] = "DB_FINAL_PROJECT.Views.EDIT_TEACHERPage";
-            _typeNameTable[44] = "DB_FINAL_PROJECT.ViewModels.EDIT_TEACHERViewModel";
-            _typeNameTable[45] = "DB_FINAL_PROJECT.Views.LOGINPage";
-            _typeNameTable[46] = "DB_FINAL_PROJECT.ViewModels.LOGINViewModel";
-            _typeNameTable[47] = "DB_FINAL_PROJECT.Views.MY_ATTENDANCEPage";
-            _typeNameTable[48] = "DB_FINAL_PROJECT.ViewModels.MY_ATTENDANCEViewModel";
-            _typeNameTable[49] = "DB_FINAL_PROJECT.Views.MY_SCHEDULEPage";
-            _typeNameTable[50] = "DB_FINAL_PROJECT.ViewModels.MY_SCHEDULEViewModel";
-            _typeNameTable[51] = "DB_FINAL_PROJECT.Helpers.EnumToBooleanConverter";
-            _typeNameTable[52] = "DB_FINAL_PROJECT.Views.SettingsPage";
-            _typeNameTable[53] = "DB_FINAL_PROJECT.ViewModels.SettingsViewModel";
-            _typeNameTable[54] = "Microsoft.UI.Xaml.Controls.NavigationView";
-            _typeNameTable[55] = "Microsoft.UI.Xaml.Controls.ContentControl";
-            _typeNameTable[56] = "Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible";
-            _typeNameTable[57] = "System.Collections.Generic.IList`1<Object>";
-            _typeNameTable[58] = "Microsoft.UI.Xaml.DataTemplate";
-            _typeNameTable[59] = "Microsoft.UI.Xaml.Controls.AutoSuggestBox";
-            _typeNameTable[60] = "Microsoft.UI.Xaml.UIElement";
-            _typeNameTable[61] = "Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode";
-            _typeNameTable[62] = "Microsoft.UI.Xaml.Style";
-            _typeNameTable[63] = "Microsoft.UI.Xaml.Controls.StyleSelector";
-            _typeNameTable[64] = "Microsoft.UI.Xaml.Controls.DataTemplateSelector";
-            _typeNameTable[65] = "Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode";
-            _typeNameTable[66] = "Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode";
-            _typeNameTable[67] = "Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus";
-            _typeNameTable[68] = "Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled";
-            _typeNameTable[69] = "Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings";
-            _typeNameTable[70] = "Microsoft.UI.Xaml.DependencyObject";
-            _typeNameTable[71] = "Microsoft.Xaml.Interactivity.Interaction";
-            _typeNameTable[72] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
-            _typeNameTable[73] = "Microsoft.UI.Xaml.DependencyObjectCollection";
-            _typeNameTable[74] = "Microsoft.UI.Xaml.Controls.NavigationViewItem";
-            _typeNameTable[75] = "Microsoft.UI.Xaml.Controls.NavigationViewItemBase";
-            _typeNameTable[76] = "Microsoft.UI.Xaml.Controls.IconElement";
-            _typeNameTable[77] = "Microsoft.UI.Xaml.Controls.InfoBadge";
-            _typeNameTable[78] = "Microsoft.UI.Xaml.Controls.Control";
-            _typeNameTable[79] = "DB_FINAL_PROJECT.Helpers.NavigationHelper";
-            _typeNameTable[80] = "DB_FINAL_PROJECT.Behaviors.NavigationViewHeaderBehavior";
-            _typeNameTable[81] = "Microsoft.Xaml.Interactivity.Behavior`1<Microsoft.UI.Xaml.Controls.NavigationView>";
-            _typeNameTable[82] = "Microsoft.Xaml.Interactivity.Behavior";
-            _typeNameTable[83] = "DB_FINAL_PROJECT.Behaviors.NavigationViewHeaderMode";
-            _typeNameTable[84] = "DB_FINAL_PROJECT.Views.ShellPage";
-            _typeNameTable[85] = "DB_FINAL_PROJECT.ViewModels.ShellViewModel";
-            _typeNameTable[86] = "DB_FINAL_PROJECT.Views.STUDENTPage";
-            _typeNameTable[87] = "DB_FINAL_PROJECT.ViewModels.STUDENTViewModel";
-            _typeNameTable[88] = "DB_FINAL_PROJECT.Views.TEACHERPage";
-            _typeNameTable[89] = "DB_FINAL_PROJECT.ViewModels.TEACHERViewModel";
-            _typeNameTable[90] = "DB_FINAL_PROJECT.Views.VIEW_ATTENDANCEPage";
-            _typeNameTable[91] = "DB_FINAL_PROJECT.ViewModels.VIEW_ATTENDANCEViewModel";
-            _typeNameTable[92] = "DB_FINAL_PROJECT.Views.VIEW_CLASSESPage";
-            _typeNameTable[93] = "DB_FINAL_PROJECT.ViewModels.VIEW_CLASSESViewModel";
-            _typeNameTable[94] = "DB_FINAL_PROJECT.Views.VIEW_CLASSPage";
-            _typeNameTable[95] = "DB_FINAL_PROJECT.ViewModels.VIEW_CLASSViewModel";
-            _typeNameTable[96] = "DB_FINAL_PROJECT.Views.VIEW_STUDENTS_IN_CLASSPage";
-            _typeNameTable[97] = "DB_FINAL_PROJECT.ViewModels.VIEW_STUDENTS_IN_CLASSViewModel";
+            _typeNameTable[31] = "Microsoft.UI.Xaml.Controls.DropDownButton";
+            _typeNameTable[32] = "Microsoft.UI.Xaml.Controls.Button";
+            _typeNameTable[33] = "Microsoft.UI.Xaml.Controls.ContentControl";
+            _typeNameTable[34] = "DB_FINAL_PROJECT.Views.ADD_STUDENTPage";
+            _typeNameTable[35] = "DB_FINAL_PROJECT.ViewModels.ADD_STUDENTViewModel";
+            _typeNameTable[36] = "DB_FINAL_PROJECT.Views.ADD_STUDENT_TO_CLASSPage";
+            _typeNameTable[37] = "DB_FINAL_PROJECT.ViewModels.ADD_STUDENT_TO_CLASSViewModel";
+            _typeNameTable[38] = "DB_FINAL_PROJECT.Views.ADD_TEACHERPage";
+            _typeNameTable[39] = "DB_FINAL_PROJECT.ViewModels.ADD_TEACHERViewModel";
+            _typeNameTable[40] = "DB_FINAL_PROJECT.Views.ADMINISTRATORPage";
+            _typeNameTable[41] = "DB_FINAL_PROJECT.ViewModels.ADMINISTRATORViewModel";
+            _typeNameTable[42] = "DB_FINAL_PROJECT.Views.CLASS_MODULEPage";
+            _typeNameTable[43] = "DB_FINAL_PROJECT.ViewModels.CLASS_MODULEViewModel";
+            _typeNameTable[44] = "DB_FINAL_PROJECT.Views.EDIT_STUDENTPage";
+            _typeNameTable[45] = "DB_FINAL_PROJECT.ViewModels.EDIT_STUDENTViewModel";
+            _typeNameTable[46] = "DB_FINAL_PROJECT.Views.EDIT_TEACHERPage";
+            _typeNameTable[47] = "DB_FINAL_PROJECT.ViewModels.EDIT_TEACHERViewModel";
+            _typeNameTable[48] = "DB_FINAL_PROJECT.Views.LOGINPage";
+            _typeNameTable[49] = "DB_FINAL_PROJECT.ViewModels.LOGINViewModel";
+            _typeNameTable[50] = "DB_FINAL_PROJECT.Views.MY_ATTENDANCEPage";
+            _typeNameTable[51] = "DB_FINAL_PROJECT.ViewModels.MY_ATTENDANCEViewModel";
+            _typeNameTable[52] = "DB_FINAL_PROJECT.Views.MY_SCHEDULEPage";
+            _typeNameTable[53] = "DB_FINAL_PROJECT.ViewModels.MY_SCHEDULEViewModel";
+            _typeNameTable[54] = "DB_FINAL_PROJECT.Helpers.EnumToBooleanConverter";
+            _typeNameTable[55] = "DB_FINAL_PROJECT.Views.SettingsPage";
+            _typeNameTable[56] = "DB_FINAL_PROJECT.ViewModels.SettingsViewModel";
+            _typeNameTable[57] = "Microsoft.UI.Xaml.Controls.NavigationView";
+            _typeNameTable[58] = "Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible";
+            _typeNameTable[59] = "System.Collections.Generic.IList`1<Object>";
+            _typeNameTable[60] = "Microsoft.UI.Xaml.DataTemplate";
+            _typeNameTable[61] = "Microsoft.UI.Xaml.Controls.AutoSuggestBox";
+            _typeNameTable[62] = "Microsoft.UI.Xaml.UIElement";
+            _typeNameTable[63] = "Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode";
+            _typeNameTable[64] = "Microsoft.UI.Xaml.Style";
+            _typeNameTable[65] = "Microsoft.UI.Xaml.Controls.StyleSelector";
+            _typeNameTable[66] = "Microsoft.UI.Xaml.Controls.DataTemplateSelector";
+            _typeNameTable[67] = "Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode";
+            _typeNameTable[68] = "Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode";
+            _typeNameTable[69] = "Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus";
+            _typeNameTable[70] = "Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled";
+            _typeNameTable[71] = "Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings";
+            _typeNameTable[72] = "Microsoft.UI.Xaml.DependencyObject";
+            _typeNameTable[73] = "Microsoft.Xaml.Interactivity.Interaction";
+            _typeNameTable[74] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
+            _typeNameTable[75] = "Microsoft.UI.Xaml.DependencyObjectCollection";
+            _typeNameTable[76] = "Microsoft.UI.Xaml.Controls.NavigationViewItem";
+            _typeNameTable[77] = "Microsoft.UI.Xaml.Controls.NavigationViewItemBase";
+            _typeNameTable[78] = "Microsoft.UI.Xaml.Controls.IconElement";
+            _typeNameTable[79] = "Microsoft.UI.Xaml.Controls.InfoBadge";
+            _typeNameTable[80] = "Microsoft.UI.Xaml.Controls.Control";
+            _typeNameTable[81] = "DB_FINAL_PROJECT.Helpers.NavigationHelper";
+            _typeNameTable[82] = "DB_FINAL_PROJECT.Behaviors.NavigationViewHeaderBehavior";
+            _typeNameTable[83] = "Microsoft.Xaml.Interactivity.Behavior`1<Microsoft.UI.Xaml.Controls.NavigationView>";
+            _typeNameTable[84] = "Microsoft.Xaml.Interactivity.Behavior";
+            _typeNameTable[85] = "DB_FINAL_PROJECT.Behaviors.NavigationViewHeaderMode";
+            _typeNameTable[86] = "DB_FINAL_PROJECT.Views.ShellPage";
+            _typeNameTable[87] = "DB_FINAL_PROJECT.ViewModels.ShellViewModel";
+            _typeNameTable[88] = "DB_FINAL_PROJECT.Views.STUDENTPage";
+            _typeNameTable[89] = "DB_FINAL_PROJECT.ViewModels.STUDENTViewModel";
+            _typeNameTable[90] = "DB_FINAL_PROJECT.Views.TEACHERPage";
+            _typeNameTable[91] = "DB_FINAL_PROJECT.ViewModels.TEACHERViewModel";
+            _typeNameTable[92] = "DB_FINAL_PROJECT.Views.VIEW_ATTENDANCEPage";
+            _typeNameTable[93] = "DB_FINAL_PROJECT.ViewModels.VIEW_ATTENDANCEViewModel";
+            _typeNameTable[94] = "DB_FINAL_PROJECT.Views.VIEW_CLASSESPage";
+            _typeNameTable[95] = "DB_FINAL_PROJECT.ViewModels.VIEW_CLASSESViewModel";
+            _typeNameTable[96] = "DB_FINAL_PROJECT.Views.VIEW_CLASSPage";
+            _typeNameTable[97] = "DB_FINAL_PROJECT.ViewModels.VIEW_CLASSViewModel";
+            _typeNameTable[98] = "DB_FINAL_PROJECT.Views.VIEW_STUDENTS_IN_CLASSPage";
+            _typeNameTable[99] = "DB_FINAL_PROJECT.ViewModels.VIEW_STUDENTS_IN_CLASSViewModel";
 
-            _typeTable = new global::System.Type[98];
+            _typeTable = new global::System.Type[100];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -356,73 +358,75 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
             _typeTable[28] = typeof(global::DB_FINAL_PROJECT.ViewModels.ADD_CLASSViewModel);
             _typeTable[29] = typeof(global::DB_FINAL_PROJECT.Views.ADD_CLASS_SCHEDULEPage);
             _typeTable[30] = typeof(global::DB_FINAL_PROJECT.ViewModels.ADD_CLASS_SCHEDULEViewModel);
-            _typeTable[31] = typeof(global::DB_FINAL_PROJECT.Views.ADD_STUDENTPage);
-            _typeTable[32] = typeof(global::DB_FINAL_PROJECT.ViewModels.ADD_STUDENTViewModel);
-            _typeTable[33] = typeof(global::DB_FINAL_PROJECT.Views.ADD_STUDENT_TO_CLASSPage);
-            _typeTable[34] = typeof(global::DB_FINAL_PROJECT.ViewModels.ADD_STUDENT_TO_CLASSViewModel);
-            _typeTable[35] = typeof(global::DB_FINAL_PROJECT.Views.ADD_TEACHERPage);
-            _typeTable[36] = typeof(global::DB_FINAL_PROJECT.ViewModels.ADD_TEACHERViewModel);
-            _typeTable[37] = typeof(global::DB_FINAL_PROJECT.Views.ADMINISTRATORPage);
-            _typeTable[38] = typeof(global::DB_FINAL_PROJECT.ViewModels.ADMINISTRATORViewModel);
-            _typeTable[39] = typeof(global::DB_FINAL_PROJECT.Views.CLASS_MODULEPage);
-            _typeTable[40] = typeof(global::DB_FINAL_PROJECT.ViewModels.CLASS_MODULEViewModel);
-            _typeTable[41] = typeof(global::DB_FINAL_PROJECT.Views.EDIT_STUDENTPage);
-            _typeTable[42] = typeof(global::DB_FINAL_PROJECT.ViewModels.EDIT_STUDENTViewModel);
-            _typeTable[43] = typeof(global::DB_FINAL_PROJECT.Views.EDIT_TEACHERPage);
-            _typeTable[44] = typeof(global::DB_FINAL_PROJECT.ViewModels.EDIT_TEACHERViewModel);
-            _typeTable[45] = typeof(global::DB_FINAL_PROJECT.Views.LOGINPage);
-            _typeTable[46] = typeof(global::DB_FINAL_PROJECT.ViewModels.LOGINViewModel);
-            _typeTable[47] = typeof(global::DB_FINAL_PROJECT.Views.MY_ATTENDANCEPage);
-            _typeTable[48] = typeof(global::DB_FINAL_PROJECT.ViewModels.MY_ATTENDANCEViewModel);
-            _typeTable[49] = typeof(global::DB_FINAL_PROJECT.Views.MY_SCHEDULEPage);
-            _typeTable[50] = typeof(global::DB_FINAL_PROJECT.ViewModels.MY_SCHEDULEViewModel);
-            _typeTable[51] = typeof(global::DB_FINAL_PROJECT.Helpers.EnumToBooleanConverter);
-            _typeTable[52] = typeof(global::DB_FINAL_PROJECT.Views.SettingsPage);
-            _typeTable[53] = typeof(global::DB_FINAL_PROJECT.ViewModels.SettingsViewModel);
-            _typeTable[54] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationView);
-            _typeTable[55] = typeof(global::Microsoft.UI.Xaml.Controls.ContentControl);
-            _typeTable[56] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible);
-            _typeTable[57] = typeof(global::System.Collections.Generic.IList<global::System.Object>);
-            _typeTable[58] = typeof(global::Microsoft.UI.Xaml.DataTemplate);
-            _typeTable[59] = typeof(global::Microsoft.UI.Xaml.Controls.AutoSuggestBox);
-            _typeTable[60] = typeof(global::Microsoft.UI.Xaml.UIElement);
-            _typeTable[61] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode);
-            _typeTable[62] = typeof(global::Microsoft.UI.Xaml.Style);
-            _typeTable[63] = typeof(global::Microsoft.UI.Xaml.Controls.StyleSelector);
-            _typeTable[64] = typeof(global::Microsoft.UI.Xaml.Controls.DataTemplateSelector);
-            _typeTable[65] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode);
-            _typeTable[66] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode);
-            _typeTable[67] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus);
-            _typeTable[68] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled);
-            _typeTable[69] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings);
-            _typeTable[70] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
-            _typeTable[71] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
-            _typeTable[72] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
-            _typeTable[73] = typeof(global::Microsoft.UI.Xaml.DependencyObjectCollection);
-            _typeTable[74] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItem);
-            _typeTable[75] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase);
-            _typeTable[76] = typeof(global::Microsoft.UI.Xaml.Controls.IconElement);
-            _typeTable[77] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBadge);
-            _typeTable[78] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
-            _typeTable[79] = typeof(global::DB_FINAL_PROJECT.Helpers.NavigationHelper);
-            _typeTable[80] = typeof(global::DB_FINAL_PROJECT.Behaviors.NavigationViewHeaderBehavior);
-            _typeTable[81] = typeof(global::Microsoft.Xaml.Interactivity.Behavior<global::Microsoft.UI.Xaml.Controls.NavigationView>);
-            _typeTable[82] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
-            _typeTable[83] = typeof(global::DB_FINAL_PROJECT.Behaviors.NavigationViewHeaderMode);
-            _typeTable[84] = typeof(global::DB_FINAL_PROJECT.Views.ShellPage);
-            _typeTable[85] = typeof(global::DB_FINAL_PROJECT.ViewModels.ShellViewModel);
-            _typeTable[86] = typeof(global::DB_FINAL_PROJECT.Views.STUDENTPage);
-            _typeTable[87] = typeof(global::DB_FINAL_PROJECT.ViewModels.STUDENTViewModel);
-            _typeTable[88] = typeof(global::DB_FINAL_PROJECT.Views.TEACHERPage);
-            _typeTable[89] = typeof(global::DB_FINAL_PROJECT.ViewModels.TEACHERViewModel);
-            _typeTable[90] = typeof(global::DB_FINAL_PROJECT.Views.VIEW_ATTENDANCEPage);
-            _typeTable[91] = typeof(global::DB_FINAL_PROJECT.ViewModels.VIEW_ATTENDANCEViewModel);
-            _typeTable[92] = typeof(global::DB_FINAL_PROJECT.Views.VIEW_CLASSESPage);
-            _typeTable[93] = typeof(global::DB_FINAL_PROJECT.ViewModels.VIEW_CLASSESViewModel);
-            _typeTable[94] = typeof(global::DB_FINAL_PROJECT.Views.VIEW_CLASSPage);
-            _typeTable[95] = typeof(global::DB_FINAL_PROJECT.ViewModels.VIEW_CLASSViewModel);
-            _typeTable[96] = typeof(global::DB_FINAL_PROJECT.Views.VIEW_STUDENTS_IN_CLASSPage);
-            _typeTable[97] = typeof(global::DB_FINAL_PROJECT.ViewModels.VIEW_STUDENTS_IN_CLASSViewModel);
+            _typeTable[31] = typeof(global::Microsoft.UI.Xaml.Controls.DropDownButton);
+            _typeTable[32] = typeof(global::Microsoft.UI.Xaml.Controls.Button);
+            _typeTable[33] = typeof(global::Microsoft.UI.Xaml.Controls.ContentControl);
+            _typeTable[34] = typeof(global::DB_FINAL_PROJECT.Views.ADD_STUDENTPage);
+            _typeTable[35] = typeof(global::DB_FINAL_PROJECT.ViewModels.ADD_STUDENTViewModel);
+            _typeTable[36] = typeof(global::DB_FINAL_PROJECT.Views.ADD_STUDENT_TO_CLASSPage);
+            _typeTable[37] = typeof(global::DB_FINAL_PROJECT.ViewModels.ADD_STUDENT_TO_CLASSViewModel);
+            _typeTable[38] = typeof(global::DB_FINAL_PROJECT.Views.ADD_TEACHERPage);
+            _typeTable[39] = typeof(global::DB_FINAL_PROJECT.ViewModels.ADD_TEACHERViewModel);
+            _typeTable[40] = typeof(global::DB_FINAL_PROJECT.Views.ADMINISTRATORPage);
+            _typeTable[41] = typeof(global::DB_FINAL_PROJECT.ViewModels.ADMINISTRATORViewModel);
+            _typeTable[42] = typeof(global::DB_FINAL_PROJECT.Views.CLASS_MODULEPage);
+            _typeTable[43] = typeof(global::DB_FINAL_PROJECT.ViewModels.CLASS_MODULEViewModel);
+            _typeTable[44] = typeof(global::DB_FINAL_PROJECT.Views.EDIT_STUDENTPage);
+            _typeTable[45] = typeof(global::DB_FINAL_PROJECT.ViewModels.EDIT_STUDENTViewModel);
+            _typeTable[46] = typeof(global::DB_FINAL_PROJECT.Views.EDIT_TEACHERPage);
+            _typeTable[47] = typeof(global::DB_FINAL_PROJECT.ViewModels.EDIT_TEACHERViewModel);
+            _typeTable[48] = typeof(global::DB_FINAL_PROJECT.Views.LOGINPage);
+            _typeTable[49] = typeof(global::DB_FINAL_PROJECT.ViewModels.LOGINViewModel);
+            _typeTable[50] = typeof(global::DB_FINAL_PROJECT.Views.MY_ATTENDANCEPage);
+            _typeTable[51] = typeof(global::DB_FINAL_PROJECT.ViewModels.MY_ATTENDANCEViewModel);
+            _typeTable[52] = typeof(global::DB_FINAL_PROJECT.Views.MY_SCHEDULEPage);
+            _typeTable[53] = typeof(global::DB_FINAL_PROJECT.ViewModels.MY_SCHEDULEViewModel);
+            _typeTable[54] = typeof(global::DB_FINAL_PROJECT.Helpers.EnumToBooleanConverter);
+            _typeTable[55] = typeof(global::DB_FINAL_PROJECT.Views.SettingsPage);
+            _typeTable[56] = typeof(global::DB_FINAL_PROJECT.ViewModels.SettingsViewModel);
+            _typeTable[57] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationView);
+            _typeTable[58] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible);
+            _typeTable[59] = typeof(global::System.Collections.Generic.IList<global::System.Object>);
+            _typeTable[60] = typeof(global::Microsoft.UI.Xaml.DataTemplate);
+            _typeTable[61] = typeof(global::Microsoft.UI.Xaml.Controls.AutoSuggestBox);
+            _typeTable[62] = typeof(global::Microsoft.UI.Xaml.UIElement);
+            _typeTable[63] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode);
+            _typeTable[64] = typeof(global::Microsoft.UI.Xaml.Style);
+            _typeTable[65] = typeof(global::Microsoft.UI.Xaml.Controls.StyleSelector);
+            _typeTable[66] = typeof(global::Microsoft.UI.Xaml.Controls.DataTemplateSelector);
+            _typeTable[67] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode);
+            _typeTable[68] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode);
+            _typeTable[69] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus);
+            _typeTable[70] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled);
+            _typeTable[71] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings);
+            _typeTable[72] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
+            _typeTable[73] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
+            _typeTable[74] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
+            _typeTable[75] = typeof(global::Microsoft.UI.Xaml.DependencyObjectCollection);
+            _typeTable[76] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItem);
+            _typeTable[77] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase);
+            _typeTable[78] = typeof(global::Microsoft.UI.Xaml.Controls.IconElement);
+            _typeTable[79] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBadge);
+            _typeTable[80] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
+            _typeTable[81] = typeof(global::DB_FINAL_PROJECT.Helpers.NavigationHelper);
+            _typeTable[82] = typeof(global::DB_FINAL_PROJECT.Behaviors.NavigationViewHeaderBehavior);
+            _typeTable[83] = typeof(global::Microsoft.Xaml.Interactivity.Behavior<global::Microsoft.UI.Xaml.Controls.NavigationView>);
+            _typeTable[84] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
+            _typeTable[85] = typeof(global::DB_FINAL_PROJECT.Behaviors.NavigationViewHeaderMode);
+            _typeTable[86] = typeof(global::DB_FINAL_PROJECT.Views.ShellPage);
+            _typeTable[87] = typeof(global::DB_FINAL_PROJECT.ViewModels.ShellViewModel);
+            _typeTable[88] = typeof(global::DB_FINAL_PROJECT.Views.STUDENTPage);
+            _typeTable[89] = typeof(global::DB_FINAL_PROJECT.ViewModels.STUDENTViewModel);
+            _typeTable[90] = typeof(global::DB_FINAL_PROJECT.Views.TEACHERPage);
+            _typeTable[91] = typeof(global::DB_FINAL_PROJECT.ViewModels.TEACHERViewModel);
+            _typeTable[92] = typeof(global::DB_FINAL_PROJECT.Views.VIEW_ATTENDANCEPage);
+            _typeTable[93] = typeof(global::DB_FINAL_PROJECT.ViewModels.VIEW_ATTENDANCEViewModel);
+            _typeTable[94] = typeof(global::DB_FINAL_PROJECT.Views.VIEW_CLASSESPage);
+            _typeTable[95] = typeof(global::DB_FINAL_PROJECT.ViewModels.VIEW_CLASSESViewModel);
+            _typeTable[96] = typeof(global::DB_FINAL_PROJECT.Views.VIEW_CLASSPage);
+            _typeTable[97] = typeof(global::DB_FINAL_PROJECT.ViewModels.VIEW_CLASSViewModel);
+            _typeTable[98] = typeof(global::DB_FINAL_PROJECT.Views.VIEW_STUDENTS_IN_CLASSPage);
+            _typeTable[99] = typeof(global::DB_FINAL_PROJECT.ViewModels.VIEW_STUDENTS_IN_CLASSViewModel);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -467,47 +471,48 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
         private object Activate_28_ADD_CLASSViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.ADD_CLASSViewModel(); }
         private object Activate_29_ADD_CLASS_SCHEDULEPage() { return new global::DB_FINAL_PROJECT.Views.ADD_CLASS_SCHEDULEPage(); }
         private object Activate_30_ADD_CLASS_SCHEDULEViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.ADD_CLASS_SCHEDULEViewModel(); }
-        private object Activate_31_ADD_STUDENTPage() { return new global::DB_FINAL_PROJECT.Views.ADD_STUDENTPage(); }
-        private object Activate_32_ADD_STUDENTViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.ADD_STUDENTViewModel(); }
-        private object Activate_33_ADD_STUDENT_TO_CLASSPage() { return new global::DB_FINAL_PROJECT.Views.ADD_STUDENT_TO_CLASSPage(); }
-        private object Activate_34_ADD_STUDENT_TO_CLASSViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.ADD_STUDENT_TO_CLASSViewModel(); }
-        private object Activate_35_ADD_TEACHERPage() { return new global::DB_FINAL_PROJECT.Views.ADD_TEACHERPage(); }
-        private object Activate_36_ADD_TEACHERViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.ADD_TEACHERViewModel(); }
-        private object Activate_37_ADMINISTRATORPage() { return new global::DB_FINAL_PROJECT.Views.ADMINISTRATORPage(); }
-        private object Activate_38_ADMINISTRATORViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.ADMINISTRATORViewModel(); }
-        private object Activate_39_CLASS_MODULEPage() { return new global::DB_FINAL_PROJECT.Views.CLASS_MODULEPage(); }
-        private object Activate_40_CLASS_MODULEViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.CLASS_MODULEViewModel(); }
-        private object Activate_41_EDIT_STUDENTPage() { return new global::DB_FINAL_PROJECT.Views.EDIT_STUDENTPage(); }
-        private object Activate_42_EDIT_STUDENTViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.EDIT_STUDENTViewModel(); }
-        private object Activate_43_EDIT_TEACHERPage() { return new global::DB_FINAL_PROJECT.Views.EDIT_TEACHERPage(); }
-        private object Activate_44_EDIT_TEACHERViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.EDIT_TEACHERViewModel(); }
-        private object Activate_45_LOGINPage() { return new global::DB_FINAL_PROJECT.Views.LOGINPage(); }
-        private object Activate_46_LOGINViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.LOGINViewModel(); }
-        private object Activate_47_MY_ATTENDANCEPage() { return new global::DB_FINAL_PROJECT.Views.MY_ATTENDANCEPage(); }
-        private object Activate_48_MY_ATTENDANCEViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.MY_ATTENDANCEViewModel(); }
-        private object Activate_49_MY_SCHEDULEPage() { return new global::DB_FINAL_PROJECT.Views.MY_SCHEDULEPage(); }
-        private object Activate_50_MY_SCHEDULEViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.MY_SCHEDULEViewModel(); }
-        private object Activate_51_EnumToBooleanConverter() { return new global::DB_FINAL_PROJECT.Helpers.EnumToBooleanConverter(); }
-        private object Activate_52_SettingsPage() { return new global::DB_FINAL_PROJECT.Views.SettingsPage(); }
-        private object Activate_54_NavigationView() { return new global::Microsoft.UI.Xaml.Controls.NavigationView(); }
-        private object Activate_69_NavigationViewTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings(); }
-        private object Activate_72_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
-        private object Activate_74_NavigationViewItem() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewItem(); }
-        private object Activate_77_InfoBadge() { return new global::Microsoft.UI.Xaml.Controls.InfoBadge(); }
-        private object Activate_79_NavigationHelper() { return new global::DB_FINAL_PROJECT.Helpers.NavigationHelper(); }
-        private object Activate_80_NavigationViewHeaderBehavior() { return new global::DB_FINAL_PROJECT.Behaviors.NavigationViewHeaderBehavior(); }
-        private object Activate_86_STUDENTPage() { return new global::DB_FINAL_PROJECT.Views.STUDENTPage(); }
-        private object Activate_87_STUDENTViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.STUDENTViewModel(); }
-        private object Activate_88_TEACHERPage() { return new global::DB_FINAL_PROJECT.Views.TEACHERPage(); }
-        private object Activate_89_TEACHERViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.TEACHERViewModel(); }
-        private object Activate_90_VIEW_ATTENDANCEPage() { return new global::DB_FINAL_PROJECT.Views.VIEW_ATTENDANCEPage(); }
-        private object Activate_91_VIEW_ATTENDANCEViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.VIEW_ATTENDANCEViewModel(); }
-        private object Activate_92_VIEW_CLASSESPage() { return new global::DB_FINAL_PROJECT.Views.VIEW_CLASSESPage(); }
-        private object Activate_93_VIEW_CLASSESViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.VIEW_CLASSESViewModel(); }
-        private object Activate_94_VIEW_CLASSPage() { return new global::DB_FINAL_PROJECT.Views.VIEW_CLASSPage(); }
-        private object Activate_95_VIEW_CLASSViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.VIEW_CLASSViewModel(); }
-        private object Activate_96_VIEW_STUDENTS_IN_CLASSPage() { return new global::DB_FINAL_PROJECT.Views.VIEW_STUDENTS_IN_CLASSPage(); }
-        private object Activate_97_VIEW_STUDENTS_IN_CLASSViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.VIEW_STUDENTS_IN_CLASSViewModel(); }
+        private object Activate_31_DropDownButton() { return new global::Microsoft.UI.Xaml.Controls.DropDownButton(); }
+        private object Activate_34_ADD_STUDENTPage() { return new global::DB_FINAL_PROJECT.Views.ADD_STUDENTPage(); }
+        private object Activate_35_ADD_STUDENTViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.ADD_STUDENTViewModel(); }
+        private object Activate_36_ADD_STUDENT_TO_CLASSPage() { return new global::DB_FINAL_PROJECT.Views.ADD_STUDENT_TO_CLASSPage(); }
+        private object Activate_37_ADD_STUDENT_TO_CLASSViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.ADD_STUDENT_TO_CLASSViewModel(); }
+        private object Activate_38_ADD_TEACHERPage() { return new global::DB_FINAL_PROJECT.Views.ADD_TEACHERPage(); }
+        private object Activate_39_ADD_TEACHERViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.ADD_TEACHERViewModel(); }
+        private object Activate_40_ADMINISTRATORPage() { return new global::DB_FINAL_PROJECT.Views.ADMINISTRATORPage(); }
+        private object Activate_41_ADMINISTRATORViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.ADMINISTRATORViewModel(); }
+        private object Activate_42_CLASS_MODULEPage() { return new global::DB_FINAL_PROJECT.Views.CLASS_MODULEPage(); }
+        private object Activate_43_CLASS_MODULEViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.CLASS_MODULEViewModel(); }
+        private object Activate_44_EDIT_STUDENTPage() { return new global::DB_FINAL_PROJECT.Views.EDIT_STUDENTPage(); }
+        private object Activate_45_EDIT_STUDENTViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.EDIT_STUDENTViewModel(); }
+        private object Activate_46_EDIT_TEACHERPage() { return new global::DB_FINAL_PROJECT.Views.EDIT_TEACHERPage(); }
+        private object Activate_47_EDIT_TEACHERViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.EDIT_TEACHERViewModel(); }
+        private object Activate_48_LOGINPage() { return new global::DB_FINAL_PROJECT.Views.LOGINPage(); }
+        private object Activate_49_LOGINViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.LOGINViewModel(); }
+        private object Activate_50_MY_ATTENDANCEPage() { return new global::DB_FINAL_PROJECT.Views.MY_ATTENDANCEPage(); }
+        private object Activate_51_MY_ATTENDANCEViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.MY_ATTENDANCEViewModel(); }
+        private object Activate_52_MY_SCHEDULEPage() { return new global::DB_FINAL_PROJECT.Views.MY_SCHEDULEPage(); }
+        private object Activate_53_MY_SCHEDULEViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.MY_SCHEDULEViewModel(); }
+        private object Activate_54_EnumToBooleanConverter() { return new global::DB_FINAL_PROJECT.Helpers.EnumToBooleanConverter(); }
+        private object Activate_55_SettingsPage() { return new global::DB_FINAL_PROJECT.Views.SettingsPage(); }
+        private object Activate_57_NavigationView() { return new global::Microsoft.UI.Xaml.Controls.NavigationView(); }
+        private object Activate_71_NavigationViewTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings(); }
+        private object Activate_74_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
+        private object Activate_76_NavigationViewItem() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewItem(); }
+        private object Activate_79_InfoBadge() { return new global::Microsoft.UI.Xaml.Controls.InfoBadge(); }
+        private object Activate_81_NavigationHelper() { return new global::DB_FINAL_PROJECT.Helpers.NavigationHelper(); }
+        private object Activate_82_NavigationViewHeaderBehavior() { return new global::DB_FINAL_PROJECT.Behaviors.NavigationViewHeaderBehavior(); }
+        private object Activate_88_STUDENTPage() { return new global::DB_FINAL_PROJECT.Views.STUDENTPage(); }
+        private object Activate_89_STUDENTViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.STUDENTViewModel(); }
+        private object Activate_90_TEACHERPage() { return new global::DB_FINAL_PROJECT.Views.TEACHERPage(); }
+        private object Activate_91_TEACHERViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.TEACHERViewModel(); }
+        private object Activate_92_VIEW_ATTENDANCEPage() { return new global::DB_FINAL_PROJECT.Views.VIEW_ATTENDANCEPage(); }
+        private object Activate_93_VIEW_ATTENDANCEViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.VIEW_ATTENDANCEViewModel(); }
+        private object Activate_94_VIEW_CLASSESPage() { return new global::DB_FINAL_PROJECT.Views.VIEW_CLASSESPage(); }
+        private object Activate_95_VIEW_CLASSESViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.VIEW_CLASSESViewModel(); }
+        private object Activate_96_VIEW_CLASSPage() { return new global::DB_FINAL_PROJECT.Views.VIEW_CLASSPage(); }
+        private object Activate_97_VIEW_CLASSViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.VIEW_CLASSViewModel(); }
+        private object Activate_98_VIEW_STUDENTS_IN_CLASSPage() { return new global::DB_FINAL_PROJECT.Views.VIEW_STUDENTS_IN_CLASSPage(); }
+        private object Activate_99_VIEW_STUDENTS_IN_CLASSViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.VIEW_STUDENTS_IN_CLASSViewModel(); }
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -515,13 +520,13 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newKey, newItem);
         }
-        private void VectorAdd_57_IList(object instance, object item)
+        private void VectorAdd_59_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
             var newItem = (global::System.Object)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_72_BehaviorCollection(object instance, object item)
+        private void VectorAdd_74_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Microsoft.UI.Xaml.DependencyObject)item;
@@ -758,181 +763,195 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 31:   //  DB_FINAL_PROJECT.Views.ADD_STUDENTPage
+            case 31:   //  Microsoft.UI.Xaml.Controls.DropDownButton
+                userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Button"));
+                userType.Activator = Activate_31_DropDownButton;
+                xamlType = userType;
+                break;
+
+            case 32:   //  Microsoft.UI.Xaml.Controls.Button
+                xamlType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 33:   //  Microsoft.UI.Xaml.Controls.ContentControl
+                xamlType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 34:   //  DB_FINAL_PROJECT.Views.ADD_STUDENTPage
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_31_ADD_STUDENTPage;
+                userType.Activator = Activate_34_ADD_STUDENTPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 32:   //  DB_FINAL_PROJECT.ViewModels.ADD_STUDENTViewModel
+            case 35:   //  DB_FINAL_PROJECT.ViewModels.ADD_STUDENTViewModel
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 33:   //  DB_FINAL_PROJECT.Views.ADD_STUDENT_TO_CLASSPage
+            case 36:   //  DB_FINAL_PROJECT.Views.ADD_STUDENT_TO_CLASSPage
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_33_ADD_STUDENT_TO_CLASSPage;
+                userType.Activator = Activate_36_ADD_STUDENT_TO_CLASSPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 34:   //  DB_FINAL_PROJECT.ViewModels.ADD_STUDENT_TO_CLASSViewModel
+            case 37:   //  DB_FINAL_PROJECT.ViewModels.ADD_STUDENT_TO_CLASSViewModel
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 35:   //  DB_FINAL_PROJECT.Views.ADD_TEACHERPage
+            case 38:   //  DB_FINAL_PROJECT.Views.ADD_TEACHERPage
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_35_ADD_TEACHERPage;
+                userType.Activator = Activate_38_ADD_TEACHERPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 36:   //  DB_FINAL_PROJECT.ViewModels.ADD_TEACHERViewModel
+            case 39:   //  DB_FINAL_PROJECT.ViewModels.ADD_TEACHERViewModel
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 37:   //  DB_FINAL_PROJECT.Views.ADMINISTRATORPage
+            case 40:   //  DB_FINAL_PROJECT.Views.ADMINISTRATORPage
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_37_ADMINISTRATORPage;
+                userType.Activator = Activate_40_ADMINISTRATORPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 38:   //  DB_FINAL_PROJECT.ViewModels.ADMINISTRATORViewModel
+            case 41:   //  DB_FINAL_PROJECT.ViewModels.ADMINISTRATORViewModel
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 39:   //  DB_FINAL_PROJECT.Views.CLASS_MODULEPage
+            case 42:   //  DB_FINAL_PROJECT.Views.CLASS_MODULEPage
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_39_CLASS_MODULEPage;
+                userType.Activator = Activate_42_CLASS_MODULEPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 40:   //  DB_FINAL_PROJECT.ViewModels.CLASS_MODULEViewModel
+            case 43:   //  DB_FINAL_PROJECT.ViewModels.CLASS_MODULEViewModel
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 41:   //  DB_FINAL_PROJECT.Views.EDIT_STUDENTPage
+            case 44:   //  DB_FINAL_PROJECT.Views.EDIT_STUDENTPage
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_41_EDIT_STUDENTPage;
+                userType.Activator = Activate_44_EDIT_STUDENTPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 42:   //  DB_FINAL_PROJECT.ViewModels.EDIT_STUDENTViewModel
+            case 45:   //  DB_FINAL_PROJECT.ViewModels.EDIT_STUDENTViewModel
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 43:   //  DB_FINAL_PROJECT.Views.EDIT_TEACHERPage
+            case 46:   //  DB_FINAL_PROJECT.Views.EDIT_TEACHERPage
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_43_EDIT_TEACHERPage;
+                userType.Activator = Activate_46_EDIT_TEACHERPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 44:   //  DB_FINAL_PROJECT.ViewModels.EDIT_TEACHERViewModel
+            case 47:   //  DB_FINAL_PROJECT.ViewModels.EDIT_TEACHERViewModel
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 45:   //  DB_FINAL_PROJECT.Views.LOGINPage
+            case 48:   //  DB_FINAL_PROJECT.Views.LOGINPage
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_45_LOGINPage;
+                userType.Activator = Activate_48_LOGINPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 46:   //  DB_FINAL_PROJECT.ViewModels.LOGINViewModel
+            case 49:   //  DB_FINAL_PROJECT.ViewModels.LOGINViewModel
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 47:   //  DB_FINAL_PROJECT.Views.MY_ATTENDANCEPage
+            case 50:   //  DB_FINAL_PROJECT.Views.MY_ATTENDANCEPage
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_47_MY_ATTENDANCEPage;
+                userType.Activator = Activate_50_MY_ATTENDANCEPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 48:   //  DB_FINAL_PROJECT.ViewModels.MY_ATTENDANCEViewModel
+            case 51:   //  DB_FINAL_PROJECT.ViewModels.MY_ATTENDANCEViewModel
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 49:   //  DB_FINAL_PROJECT.Views.MY_SCHEDULEPage
+            case 52:   //  DB_FINAL_PROJECT.Views.MY_SCHEDULEPage
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_49_MY_SCHEDULEPage;
+                userType.Activator = Activate_52_MY_SCHEDULEPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 50:   //  DB_FINAL_PROJECT.ViewModels.MY_SCHEDULEViewModel
+            case 53:   //  DB_FINAL_PROJECT.ViewModels.MY_SCHEDULEViewModel
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 51:   //  DB_FINAL_PROJECT.Helpers.EnumToBooleanConverter
+            case 54:   //  DB_FINAL_PROJECT.Helpers.EnumToBooleanConverter
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_51_EnumToBooleanConverter;
+                userType.Activator = Activate_54_EnumToBooleanConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 52:   //  DB_FINAL_PROJECT.Views.SettingsPage
+            case 55:   //  DB_FINAL_PROJECT.Views.SettingsPage
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_52_SettingsPage;
+                userType.Activator = Activate_55_SettingsPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 53:   //  DB_FINAL_PROJECT.ViewModels.SettingsViewModel
+            case 56:   //  DB_FINAL_PROJECT.ViewModels.SettingsViewModel
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 54:   //  Microsoft.UI.Xaml.Controls.NavigationView
+            case 57:   //  Microsoft.UI.Xaml.Controls.NavigationView
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
-                userType.Activator = Activate_54_NavigationView;
+                userType.Activator = Activate_57_NavigationView;
                 userType.AddMemberName("IsBackButtonVisible");
                 userType.AddMemberName("IsBackEnabled");
                 userType.AddMemberName("SelectedItem");
@@ -973,11 +992,7 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 55:   //  Microsoft.UI.Xaml.Controls.ContentControl
-                xamlType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 56:   //  Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible
+            case 58:   //  Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Collapsed", global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible.Collapsed);
                 userType.AddEnumValue("Visible", global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible.Visible);
@@ -985,26 +1000,26 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 57:   //  System.Collections.Generic.IList`1<Object>
+            case 59:   //  System.Collections.Generic.IList`1<Object>
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.CollectionAdd = VectorAdd_57_IList;
+                userType.CollectionAdd = VectorAdd_59_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 58:   //  Microsoft.UI.Xaml.DataTemplate
+            case 60:   //  Microsoft.UI.Xaml.DataTemplate
                 xamlType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 59:   //  Microsoft.UI.Xaml.Controls.AutoSuggestBox
+            case 61:   //  Microsoft.UI.Xaml.Controls.AutoSuggestBox
                 xamlType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 60:   //  Microsoft.UI.Xaml.UIElement
+            case 62:   //  Microsoft.UI.Xaml.UIElement
                 xamlType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 61:   //  Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode
+            case 63:   //  Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Minimal", global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode.Minimal);
                 userType.AddEnumValue("Compact", global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode.Compact);
@@ -1012,26 +1027,26 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 62:   //  Microsoft.UI.Xaml.Style
+            case 64:   //  Microsoft.UI.Xaml.Style
                 xamlType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 63:   //  Microsoft.UI.Xaml.Controls.StyleSelector
+            case 65:   //  Microsoft.UI.Xaml.Controls.StyleSelector
                 xamlType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 64:   //  Microsoft.UI.Xaml.Controls.DataTemplateSelector
+            case 66:   //  Microsoft.UI.Xaml.Controls.DataTemplateSelector
                 xamlType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 65:   //  Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode
+            case 67:   //  Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("MoreLabel", global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode.MoreLabel);
                 userType.AddEnumValue("NoLabel", global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode.NoLabel);
                 xamlType = userType;
                 break;
 
-            case 66:   //  Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode
+            case 68:   //  Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode.Auto);
                 userType.AddEnumValue("Left", global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode.Left);
@@ -1041,14 +1056,14 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 67:   //  Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus
+            case 69:   //  Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus.Disabled);
                 userType.AddEnumValue("Enabled", global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus.Enabled);
                 xamlType = userType;
                 break;
 
-            case 68:   //  Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled
+            case 70:   //  Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("WhenSelectionFollowsFocus", global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled.WhenSelectionFollowsFocus);
                 userType.AddEnumValue("Always", global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled.Always);
@@ -1056,36 +1071,36 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 69:   //  Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings
+            case 71:   //  Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 70:   //  Microsoft.UI.Xaml.DependencyObject
+            case 72:   //  Microsoft.UI.Xaml.DependencyObject
                 xamlType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 71:   //  Microsoft.Xaml.Interactivity.Interaction
+            case 73:   //  Microsoft.Xaml.Interactivity.Interaction
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Behaviors");
                 xamlType = userType;
                 break;
 
-            case 72:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
+            case 74:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_72_BehaviorCollection;
+                userType.CollectionAdd = VectorAdd_74_BehaviorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 73:   //  Microsoft.UI.Xaml.DependencyObjectCollection
+            case 75:   //  Microsoft.UI.Xaml.DependencyObjectCollection
                 xamlType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 74:   //  Microsoft.UI.Xaml.Controls.NavigationViewItem
+            case 76:   //  Microsoft.UI.Xaml.Controls.NavigationViewItem
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItemBase"));
-                userType.Activator = Activate_74_NavigationViewItem;
+                userType.Activator = Activate_76_NavigationViewItem;
                 userType.AddMemberName("Icon");
                 userType.AddMemberName("MenuItems");
                 userType.AddMemberName("CompactPaneLength");
@@ -1098,37 +1113,37 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 75:   //  Microsoft.UI.Xaml.Controls.NavigationViewItemBase
+            case 77:   //  Microsoft.UI.Xaml.Controls.NavigationViewItemBase
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
                 userType.AddMemberName("IsSelected");
                 xamlType = userType;
                 break;
 
-            case 76:   //  Microsoft.UI.Xaml.Controls.IconElement
+            case 78:   //  Microsoft.UI.Xaml.Controls.IconElement
                 xamlType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 77:   //  Microsoft.UI.Xaml.Controls.InfoBadge
+            case 79:   //  Microsoft.UI.Xaml.Controls.InfoBadge
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 78:   //  Microsoft.UI.Xaml.Controls.Control
+            case 80:   //  Microsoft.UI.Xaml.Controls.Control
                 xamlType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 79:   //  DB_FINAL_PROJECT.Helpers.NavigationHelper
+            case 81:   //  DB_FINAL_PROJECT.Helpers.NavigationHelper
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_79_NavigationHelper;
+                userType.Activator = Activate_81_NavigationHelper;
                 userType.AddMemberName("NavigateTo");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 80:   //  DB_FINAL_PROJECT.Behaviors.NavigationViewHeaderBehavior
+            case 82:   //  DB_FINAL_PROJECT.Behaviors.NavigationViewHeaderBehavior
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior`1<Microsoft.UI.Xaml.Controls.NavigationView>"));
-                userType.Activator = Activate_80_NavigationViewHeaderBehavior;
+                userType.Activator = Activate_82_NavigationViewHeaderBehavior;
                 userType.AddMemberName("DefaultHeader");
                 userType.AddMemberName("DefaultHeaderTemplate");
                 userType.AddMemberName("HeaderMode");
@@ -1138,18 +1153,18 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 81:   //  Microsoft.Xaml.Interactivity.Behavior`1<Microsoft.UI.Xaml.Controls.NavigationView>
+            case 83:   //  Microsoft.Xaml.Interactivity.Behavior`1<Microsoft.UI.Xaml.Controls.NavigationView>
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior"));
                 userType.AddMemberName("AssociatedObject");
                 xamlType = userType;
                 break;
 
-            case 82:   //  Microsoft.Xaml.Interactivity.Behavior
+            case 84:   //  Microsoft.Xaml.Interactivity.Behavior
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
                 xamlType = userType;
                 break;
 
-            case 83:   //  DB_FINAL_PROJECT.Behaviors.NavigationViewHeaderMode
+            case 85:   //  DB_FINAL_PROJECT.Behaviors.NavigationViewHeaderMode
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Always", global::DB_FINAL_PROJECT.Behaviors.NavigationViewHeaderMode.Always);
                 userType.AddEnumValue("Never", global::DB_FINAL_PROJECT.Behaviors.NavigationViewHeaderMode.Never);
@@ -1158,104 +1173,104 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 84:   //  DB_FINAL_PROJECT.Views.ShellPage
+            case 86:   //  DB_FINAL_PROJECT.Views.ShellPage
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 85:   //  DB_FINAL_PROJECT.ViewModels.ShellViewModel
+            case 87:   //  DB_FINAL_PROJECT.ViewModels.ShellViewModel
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 86:   //  DB_FINAL_PROJECT.Views.STUDENTPage
+            case 88:   //  DB_FINAL_PROJECT.Views.STUDENTPage
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_86_STUDENTPage;
+                userType.Activator = Activate_88_STUDENTPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 87:   //  DB_FINAL_PROJECT.ViewModels.STUDENTViewModel
+            case 89:   //  DB_FINAL_PROJECT.ViewModels.STUDENTViewModel
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 88:   //  DB_FINAL_PROJECT.Views.TEACHERPage
+            case 90:   //  DB_FINAL_PROJECT.Views.TEACHERPage
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_88_TEACHERPage;
+                userType.Activator = Activate_90_TEACHERPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 89:   //  DB_FINAL_PROJECT.ViewModels.TEACHERViewModel
+            case 91:   //  DB_FINAL_PROJECT.ViewModels.TEACHERViewModel
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 90:   //  DB_FINAL_PROJECT.Views.VIEW_ATTENDANCEPage
+            case 92:   //  DB_FINAL_PROJECT.Views.VIEW_ATTENDANCEPage
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_90_VIEW_ATTENDANCEPage;
+                userType.Activator = Activate_92_VIEW_ATTENDANCEPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 91:   //  DB_FINAL_PROJECT.ViewModels.VIEW_ATTENDANCEViewModel
+            case 93:   //  DB_FINAL_PROJECT.ViewModels.VIEW_ATTENDANCEViewModel
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 92:   //  DB_FINAL_PROJECT.Views.VIEW_CLASSESPage
+            case 94:   //  DB_FINAL_PROJECT.Views.VIEW_CLASSESPage
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_92_VIEW_CLASSESPage;
+                userType.Activator = Activate_94_VIEW_CLASSESPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 93:   //  DB_FINAL_PROJECT.ViewModels.VIEW_CLASSESViewModel
+            case 95:   //  DB_FINAL_PROJECT.ViewModels.VIEW_CLASSESViewModel
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 94:   //  DB_FINAL_PROJECT.Views.VIEW_CLASSPage
+            case 96:   //  DB_FINAL_PROJECT.Views.VIEW_CLASSPage
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_94_VIEW_CLASSPage;
+                userType.Activator = Activate_96_VIEW_CLASSPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 95:   //  DB_FINAL_PROJECT.ViewModels.VIEW_CLASSViewModel
+            case 97:   //  DB_FINAL_PROJECT.ViewModels.VIEW_CLASSViewModel
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 96:   //  DB_FINAL_PROJECT.Views.VIEW_STUDENTS_IN_CLASSPage
+            case 98:   //  DB_FINAL_PROJECT.Views.VIEW_STUDENTS_IN_CLASSPage
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_96_VIEW_STUDENTS_IN_CLASSPage;
+                userType.Activator = Activate_98_VIEW_STUDENTS_IN_CLASSPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 97:   //  DB_FINAL_PROJECT.ViewModels.VIEW_STUDENTS_IN_CLASSViewModel
+            case 99:   //  DB_FINAL_PROJECT.ViewModels.VIEW_STUDENTS_IN_CLASSViewModel
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
@@ -3217,25 +3232,25 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
             }
             else if (_enumValues != null)
             {
-                int value = 0;
+                long value = 0;
 
                 string[] valueParts = input.Split(',');
 
                 foreach (string valuePart in valueParts) 
                 {
                     object partValue;
-                    int enumFieldValue = 0;
+                    long enumFieldValue = 0;
                     try
                     {
                         if (_enumValues.TryGetValue(valuePart.Trim(), out partValue))
                         {
-                            enumFieldValue = global::System.Convert.ToInt32(partValue);
+                            enumFieldValue = global::System.Convert.ToInt64(partValue);
                         }
                         else
                         {
                             try
                             {
-                                enumFieldValue = global::System.Convert.ToInt32(valuePart.Trim());
+                                enumFieldValue = global::System.Convert.ToInt64(valuePart.Trim());
                             }
                             catch( global::System.FormatException )
                             {
@@ -3245,7 +3260,7 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
                                     {
                                         if( _enumValues.TryGetValue(key.Trim(), out partValue) )
                                         {
-                                            enumFieldValue = global::System.Convert.ToInt32(partValue);
+                                            enumFieldValue = global::System.Convert.ToInt64(partValue);
                                             break;
                                         }
                                     }
@@ -3260,7 +3275,7 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
                     }
                 }
 
-                return value; 
+                return System.Convert.ChangeType(value, System.Enum.GetUnderlyingType(this.UnderlyingType));
             }
             throw new global::System.ArgumentException(input, FullName);
         }

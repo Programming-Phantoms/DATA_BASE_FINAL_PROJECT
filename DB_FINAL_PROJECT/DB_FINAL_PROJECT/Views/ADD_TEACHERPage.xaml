@@ -7,6 +7,52 @@
     mc:Ignorable="d">
 
     <Grid x:Name="ContentArea">
-        
+        <StackPanel HorizontalAlignment="Left">
+            <TextBox x:Name="idText" Width="300" Header="Teacher id" PlaceholderText="Enter teacher id" FontSize="15" Margin="0 20 0 20"/>
+            <TextBox x:Name="fnameText" Width="300" Header="First name" PlaceholderText="Enter first name" FontSize="15" Margin="0 0 0 20"/>
+            <TextBox x:Name="lnameText" Width="300" Header="Last name" PlaceholderText="Enter last name" FontSize="15" Margin="0 0 0 20"/>
+            <TextBox x:Name="userText" Width="300" Header="Username" PlaceholderText="Enter username" FontSize="15" Margin="0 0 0 20"/>
+            <TextBox x:Name="emailText" Width="300" Header="Email" PlaceholderText="Enter email" FontSize="15" Margin="0 0 0 20"/>
+            <TextBox x:Name="contactText" Width="300" Header="Contact No" PlaceholderText="Enter contact no." FontSize="15" Margin="0 0 0 20"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center">
+            <TextBox x:Name="addText" Width="300" Header="Address" PlaceholderText="Enter address" FontSize="15" Margin="40 20 0 20"/>
+            <PasswordBox x:Name="passText" Width="300" Header="Password" PlaceholderText="Enter password" FontSize="15" Margin="40 0 0 20"/>
+            <DatePicker x:Name="regText" Header="Registration date" Margin="40 0 0 20"/>
+            <DropDownButton x:Name="bgText" Content="Blood Group" Width="300" Margin="40 0 0 20">
+                <DropDownButton.Flyout>
+                    <MenuFlyout Placement="Bottom">
+                        <MenuFlyoutItem Text="A+" Width="300" Click="BGAPositive_Click"/>
+                        <MenuFlyoutItem Text="A-" Width="300" Click="BGANegative_Click"/>
+                        <MenuFlyoutItem Text="B+" Width="300" Click="BGBPositive_Click"/>
+                        <MenuFlyoutItem Text="B-" Width="300" Click="BGBNegative_Click"/>
+                        <MenuFlyoutItem Text="AB+" Width="300" Click="BGABPositive_Click"/>
+                        <MenuFlyoutItem Text="AB-" Width="300" Click="BGABNegative_Click"/>
+                        <MenuFlyoutItem Text="O+" Width="300" Click="BGOBPositive_Click"/>
+                        <MenuFlyoutItem Text="O-" Width="300" Click="BGOBNegative_Click"/>
+                    </MenuFlyout>
+                </DropDownButton.Flyout>
+            </DropDownButton>
+            <DropDownButton x:Name="genText" Content="Gender" Width="300" Margin="40 0 0 20">
+                <DropDownButton.Flyout>
+                    <MenuFlyout Placement="Bottom">
+                        <MenuFlyoutItem Text="Male" Width="300" Click="GenderMale_Click"/>
+                        <MenuFlyoutItem Text="Female" Width="300" Click="GenderFemale_Click"/>
+                        <MenuFlyoutItem Text="Other" Width="300" Click="GenderOther_Click"/>
+                    </MenuFlyout>
+                </DropDownButton.Flyout>
+            </DropDownButton>
+            <DropDownButton x:Name="feeText" Content="Fee status" Width="300" Margin="40 0 0 20">
+                <DropDownButton.Flyout>
+                    <MenuFlyout Placement="Bottom">
+                        <MenuFlyoutItem Text="Paid" Width="300" Click="FeePaid_Click"/>
+                        <MenuFlyoutItem Text="Unpaid" Width="300" Click="FeeUnpaid_Click"/>
+                    </MenuFlyout>
+                </DropDownButton.Flyout>
+            </DropDownButton>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <Button Width="150" Content="Insert" HorizontalAlignment="Center" VerticalAlignment="Bottom" Style="{StaticResource AccentButtonStyle}"  Margin="0 0 0 50" Click="InsertButton_Click"/>
+        </StackPanel>
     </Grid>
 </Page>

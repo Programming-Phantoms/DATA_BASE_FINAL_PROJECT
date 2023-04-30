@@ -34,5 +34,6 @@ public sealed partial class ADMINISTRATORPage : Page
     {
         LoginPortal.LoginAdd = false;
         LoginMsgText.Text = "Login to your account!";
+        LogoutButton.Visibility = Visibility.Collapsed;
     }
 }

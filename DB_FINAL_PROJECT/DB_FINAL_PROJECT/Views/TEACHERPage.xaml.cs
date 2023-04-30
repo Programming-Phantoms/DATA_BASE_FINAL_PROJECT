@@ -32,5 +32,6 @@ public sealed partial class TEACHERPage : Page
     {
         LoginPortal.LoginTea = false;
         LoginMsgText.Text = "Login to your account!";
+        LogoutButton.Visibility = Visibility.Collapsed;
     }
 }
