@@ -7,12 +7,15 @@
     mc:Ignorable="d">
 
     <Grid x:ConnectionId='2' x:Name="ContentArea">
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock x:ConnectionId='3' x:Name="mainText" Text="Login to your account!" FontSize="40" FontWeight= "Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="12 12 12 40" />
-            <TextBox x:ConnectionId='4' x:Name="userText" Width="300" Header="🙂 Username" PlaceholderText="Enter your username" FontSize="15" HorizontalAlignment="Center" Margin="5 5 5 20"/>
-            <PasswordBox x:ConnectionId='5' x:Name="passText" Width="300" Header="🔑 Password" PlaceholderText="Enter your password" FontSize="15" HorizontalAlignment="Center" Margin="5 5 5 40" />
-            <Button x:ConnectionId='6' Width="150" Content="Login" HorizontalAlignment="Center" Style="{StaticResource AccentButtonStyle}"  Margin="0 0 0 50"                          />
+        <ScrollViewer>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Image x:ConnectionId='3' x:Name="Login_Pic" Source="/Assets/Login_Pic.png" Height="200" Width="200" Margin="0 0 0 20"/>
+                <Image x:ConnectionId='4' x:Name="Tick" Source="/Assets/Tick.png" Height="170" Width="170" Visibility="Collapsed" Margin="0 0 0 20"/>
+                <TextBox x:ConnectionId='5' x:Name="userText" Width="300" Header="Username" PlaceholderText="Enter your username" FontSize="15" HorizontalAlignment="Center" Margin="5 5 5 20"/>
+            <PasswordBox x:ConnectionId='6' x:Name="passText" Width="300" Header="Password" PlaceholderText="Enter your password" FontSize="15" HorizontalAlignment="Center" Margin="5 5 5 40" />
+            <Button x:ConnectionId='7' Width="300" Height="35" FontWeight="Bold" Content="Login" HorizontalAlignment="Center" Background="#505AC9" Foreground="#FFFFFF" Margin="0 0 0 50"                          />
         </StackPanel>
+        </ScrollViewer>
 
     </Grid>
      

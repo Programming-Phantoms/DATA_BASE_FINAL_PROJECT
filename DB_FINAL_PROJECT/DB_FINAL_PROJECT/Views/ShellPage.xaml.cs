@@ -24,6 +24,8 @@ public sealed partial class ShellPage : Page
         ViewModel = viewModel;
         InitializeComponent();
 
+        this.RequestedTheme = ElementTheme.Light;
+
         ViewModel.NavigationService.Frame = NavigationFrame;
         ViewModel.NavigationViewService.Initialize(NavigationViewControl);
 

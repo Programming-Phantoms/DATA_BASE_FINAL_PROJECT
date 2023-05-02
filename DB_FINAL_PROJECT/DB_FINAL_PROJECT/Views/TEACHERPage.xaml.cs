@@ -23,8 +23,9 @@ public sealed partial class TEACHERPage : Page
     {
         if (LoginPortal.LoginTea)
         {
-            LoginMsgText.Text = """Welcome to teacher portal 🎉""";
+            LoginMsgText.Text = """to teacher's portal 🎉""";
             LogoutButton.Visibility = Visibility.Visible;
+            Welcome_Pic.Visibility = Visibility.Visible;
         }
     }
 

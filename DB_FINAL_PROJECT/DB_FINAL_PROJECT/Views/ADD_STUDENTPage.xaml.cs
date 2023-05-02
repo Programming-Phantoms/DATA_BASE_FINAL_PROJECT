@@ -30,7 +30,7 @@ public sealed partial class ADD_STUDENTPage : Page
     {
         if (LoginPortal.LoginAdd)
         {
-            Visible1.Visibility = Visible2.Visibility = Visible3.Visibility = Visibility.Visible;
+            Visible1.Visibility = Visibility.Visible;
         }
     }
 

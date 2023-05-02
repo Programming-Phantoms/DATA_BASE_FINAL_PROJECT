@@ -31,7 +31,7 @@
             IsBackButtonVisible="Visible"
                                                                          
                                                                    
-            IsSettingsVisible="True"
+            IsSettingsVisible="False"
             ExpandedModeThresholdWidth="1080"
                                                                          
                                                                                        >
@@ -45,61 +45,61 @@
                 -->
                 <NavigationViewItem x:Uid="Shell_LOGIN" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.LOGINViewModel">
                     <NavigationViewItem.Icon>
-                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE72E;"/>
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE72E;" Foreground="#464EB8"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
                 <NavigationViewItem x:Uid="Shell_ADMINISTRATOR" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.ADMINISTRATORViewModel">
                     <NavigationViewItem.Icon>
-                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xEF58;"/>
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xEF58;" Foreground="#464EB8"/>
                     </NavigationViewItem.Icon>
                     <NavigationViewItem.MenuItems>
 
                         <NavigationViewItem x:Uid="Shell_ADD_TEACHER" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.ADD_TEACHERViewModel">
                             <NavigationViewItem.Icon>
-                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8FA;"/>
+                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8FA;" Foreground="#464EB8"/>
                             </NavigationViewItem.Icon>
                         </NavigationViewItem>
 
                         <NavigationViewItem x:Uid="Shell_ADD_STUDENT" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.ADD_STUDENTViewModel">
                             <NavigationViewItem.Icon>
-                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8FA;"/>
+                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8FA;" Foreground="#464EB8"/>
                             </NavigationViewItem.Icon>
                         </NavigationViewItem>
 
                         <NavigationViewItem x:Uid="Shell_CLASS_MODULE" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.CLASS_MODULEViewModel">
                             <NavigationViewItem.Icon>
-                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE773;"/>
+                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE773;" Foreground="#464EB8"/>
                             </NavigationViewItem.Icon>
 
                             <NavigationViewItem.MenuItems>
 
                                 <NavigationViewItem x:Uid="Shell_ADD_CLASS" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.ADD_CLASSViewModel">
                                     <NavigationViewItem.Icon>
-                                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8FA;"/>
+                                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8FA;" Foreground="#464EB8"/>
                                     </NavigationViewItem.Icon>
                                 </NavigationViewItem>
 
                                 <NavigationViewItem x:Uid="Shell_ADD_CLASS_SCHEDULE" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.ADD_CLASS_SCHEDULEViewModel">
                                     <NavigationViewItem.Icon>
-                                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8FA;"/>
+                                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8FA;" Foreground="#464EB8"/>
                                     </NavigationViewItem.Icon>
                                 </NavigationViewItem>
 
                                 <NavigationViewItem x:Uid="Shell_ADD_STUDENT_TO_CLASS" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.ADD_STUDENT_TO_CLASSViewModel">
                                     <NavigationViewItem.Icon>
-                                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8FA;"/>
+                                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8FA;" Foreground="#464EB8"/>
                                     </NavigationViewItem.Icon>
                                 </NavigationViewItem>
 
                                 <NavigationViewItem x:Uid="Shell_VIEW_CLASSES" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.VIEW_CLASSESViewModel">
                                     <NavigationViewItem.Icon>
-                                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE71D;"/>
+                                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE71D;" Foreground="#464EB8"/>
                                     </NavigationViewItem.Icon>
                                 </NavigationViewItem>
                                 
                                 <NavigationViewItem x:Uid="Shell_VIEW_STUDENTS_IN_CLASS" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.VIEW_STUDENTS_IN_CLASSViewModel">
                                     <NavigationViewItem.Icon>
-                                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE71D;"/>
+                                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE71D;" Foreground="#464EB8"/>
                                     </NavigationViewItem.Icon>
                                 </NavigationViewItem>
 
@@ -109,13 +109,13 @@
 
                         <NavigationViewItem x:Uid="Shell_EDIT_TEACHER" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.EDIT_TEACHERViewModel">
                             <NavigationViewItem.Icon>
-                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE70F;"/>
+                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE70F;" Foreground="#464EB8"/>
                             </NavigationViewItem.Icon>
                         </NavigationViewItem>
 
                         <NavigationViewItem x:Uid="Shell_EDIT_STUDENT" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.EDIT_STUDENTViewModel">
                             <NavigationViewItem.Icon>
-                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE70F;"/>
+                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE70F;" Foreground="#464EB8"/>
                             </NavigationViewItem.Icon>
                         </NavigationViewItem>
 
@@ -123,26 +123,26 @@
                 </NavigationViewItem>
                 <NavigationViewItem x:Uid="Shell_TEACHER" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.TEACHERViewModel">
                     <NavigationViewItem.Icon>
-                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE7EE;"/>
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE7EE;" Foreground="#464EB8"/>
                     </NavigationViewItem.Icon>
 
                     <NavigationViewItem.MenuItems>
                         
                         <NavigationViewItem x:Uid="Shell_ADD_ATTENDANCE" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.ADD_ATTENDANCEViewModel">
                             <NavigationViewItem.Icon>
-                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xED0E;"/>
+                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xED0E;" Foreground="#464EB8"/>
                             </NavigationViewItem.Icon>
                         </NavigationViewItem>
 
                         <NavigationViewItem x:Uid="Shell_VIEW_ATTENDANCE" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.VIEW_ATTENDANCEViewModel">
                             <NavigationViewItem.Icon>
-                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE71D;"/>
+                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE71D;" Foreground="#464EB8"/>
                             </NavigationViewItem.Icon>
                         </NavigationViewItem>
 
                         <NavigationViewItem x:Uid="Shell_VIEW_CLASS" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.VIEW_CLASSViewModel">
                             <NavigationViewItem.Icon>
-                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE71D;"/>
+                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE71D;" Foreground="#464EB8"/>
                             </NavigationViewItem.Icon>
                         </NavigationViewItem>
 
@@ -151,19 +151,19 @@
                 </NavigationViewItem>
                 <NavigationViewItem x:Uid="Shell_STUDENT" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.STUDENTViewModel">
                     <NavigationViewItem.Icon>
-                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE7BE;"/>
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE7BE;" Foreground="#464EB8"/>
                     </NavigationViewItem.Icon>
 
                     <NavigationViewItem.MenuItems>
                         <NavigationViewItem x:Uid="Shell_MY_ATTENDANCE" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.MY_ATTENDANCEViewModel">
                             <NavigationViewItem.Icon>
-                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE71D;"/>
+                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE71D;" Foreground="#464EB8"/>
                             </NavigationViewItem.Icon>
                         </NavigationViewItem>
 
                         <NavigationViewItem x:Uid="Shell_MY_SCHEDULE" helpers:NavigationHelper.NavigateTo="DB_FINAL_PROJECT.ViewModels.MY_SCHEDULEViewModel">
                             <NavigationViewItem.Icon>
-                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE71D;"/>
+                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE71D;" Foreground="#464EB8"/>
                             </NavigationViewItem.Icon>
                         </NavigationViewItem>
                     </NavigationViewItem.MenuItems>

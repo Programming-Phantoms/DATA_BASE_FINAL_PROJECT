@@ -23,8 +23,9 @@ public sealed partial class STUDENTPage : Page
     {
         if (LoginPortal.LoginStd)
         {
-            LoginMsgText.Text = """Welcome to student portal 🎉""";
+            LoginMsgText.Text = """to student's portal 🎉""";
             LogoutButton.Visibility = Visibility.Visible;
+            Welcome_Pic.Visibility = Visibility.Visible;
         }
     }
 

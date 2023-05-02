@@ -7,53 +7,51 @@
     mc:Ignorable="d">
 
     <Grid x:ConnectionId='2' x:Name="ContentArea">
-        <StackPanel x:ConnectionId='3' x:Name="Visible1" HorizontalAlignment="Left" Visibility="Collapsed">
-            <TextBox x:ConnectionId='26' x:Name="idText" Width="300" Header="Teacher id" PlaceholderText="Enter teacher id" FontSize="15" Margin="0 20 0 20"/>
-            <TextBox x:ConnectionId='27' x:Name="fnameText" Width="300" Header="First name" PlaceholderText="Enter first name" FontSize="15" Margin="0 0 0 20"/>
-            <TextBox x:ConnectionId='28' x:Name="lnameText" Width="300" Header="Last name" PlaceholderText="Enter last name" FontSize="15" Margin="0 0 0 20"/>
-            <TextBox x:ConnectionId='29' x:Name="userText" Width="300" Header="Username" PlaceholderText="Enter username" FontSize="15" Margin="0 0 0 20"/>
-            <TextBox x:ConnectionId='30' x:Name="emailText" Width="300" Header="Email" PlaceholderText="Enter email" FontSize="15" Margin="0 0 0 20"/>
-            <TextBox x:ConnectionId='31' x:Name="contactText" Width="300" Header="Contact No" PlaceholderText="Enter contact no." FontSize="15" Margin="0 0 0 20"/>
-        </StackPanel>
-        <StackPanel x:ConnectionId='4' x:Name="Visible2" HorizontalAlignment="Center" Visibility="Collapsed">
-            <TextBox x:ConnectionId='7' x:Name="addText" Width="300" Header="Address" PlaceholderText="Enter address" FontSize="15" Margin="40 20 0 20"/>
-            <PasswordBox x:ConnectionId='8' x:Name="passText" Width="300" Header="Password" PlaceholderText="Enter password" FontSize="15" Margin="40 0 0 20"/>
-            <DatePicker x:ConnectionId='9' x:Name="regText" Header="Registration date" Margin="40 0 0 20"/>
-            <DropDownButton x:ConnectionId='10' x:Name="bgText" Content="Blood Group" Width="300" Margin="40 0 0 20">
+        <ScrollViewer>
+        <StackPanel x:ConnectionId='3' x:Name="Visible1" HorizontalAlignment="Center" Visibility="Collapsed">
+            <TextBox x:ConnectionId='4' x:Name="idText" Width="300" Header="Teacher id" PlaceholderText="Enter teacher id" FontSize="15" Margin="0 30 0 30"/>
+            <TextBox x:ConnectionId='5' x:Name="fnameText" Width="300" Header="First name" PlaceholderText="Enter first name" FontSize="15" Margin="0 0 0 30"/>
+            <TextBox x:ConnectionId='6' x:Name="lnameText" Width="300" Header="Last name" PlaceholderText="Enter last name" FontSize="15" Margin="0 0 0 30"/>
+            <TextBox x:ConnectionId='7' x:Name="userText" Width="300" Header="Username" PlaceholderText="Enter username" FontSize="15" Margin="0 0 0 30"/>
+            <TextBox x:ConnectionId='8' x:Name="emailText" Width="300" Header="Email" PlaceholderText="Enter email" FontSize="15" Margin="0 0 0 30"/>
+            <TextBox x:ConnectionId='9' x:Name="contactText" Width="300" Header="Contact No" PlaceholderText="Enter contact no." FontSize="15" Margin="0 0 0 30"/>
+            <TextBox x:ConnectionId='10' x:Name="addText" Width="300" Header="Address" PlaceholderText="Enter address" FontSize="15" Margin="0 0 0 30"/>
+            <PasswordBox x:ConnectionId='11' x:Name="passText" Width="300" Header="Password" PlaceholderText="Enter password" FontSize="15" Margin="00 0 0 30"/>
+            <DatePicker x:ConnectionId='12' x:Name="regText" Header="Registration date" Margin="00 0 0 30"/>
+                <DropDownButton x:ConnectionId='13' x:Name="bgText" Content="Blood Group" Width="300" Margin="0 0 0 30">
                 <DropDownButton.Flyout>
                     <MenuFlyout Placement="Bottom">
-                        <MenuFlyoutItem x:ConnectionId='18' Text="A+" Width="300"                          />
-                        <MenuFlyoutItem x:ConnectionId='19' Text="A-" Width="300"                          />
-                        <MenuFlyoutItem x:ConnectionId='20' Text="B+" Width="300"                          />
-                        <MenuFlyoutItem x:ConnectionId='21' Text="B-" Width="300"                          />
-                        <MenuFlyoutItem x:ConnectionId='22' Text="AB+" Width="300"                           />
-                        <MenuFlyoutItem x:ConnectionId='23' Text="AB-" Width="300"                           />
-                        <MenuFlyoutItem x:ConnectionId='24' Text="O+" Width="300"                           />
-                        <MenuFlyoutItem x:ConnectionId='25' Text="O-" Width="300"                           />
+                        <MenuFlyoutItem x:ConnectionId='22' Text="A+" Width="300"                          />
+                        <MenuFlyoutItem x:ConnectionId='23' Text="A-" Width="300"                          />
+                        <MenuFlyoutItem x:ConnectionId='24' Text="B+" Width="300"                          />
+                        <MenuFlyoutItem x:ConnectionId='25' Text="B-" Width="300"                          />
+                        <MenuFlyoutItem x:ConnectionId='26' Text="AB+" Width="300"                           />
+                        <MenuFlyoutItem x:ConnectionId='27' Text="AB-" Width="300"                           />
+                        <MenuFlyoutItem x:ConnectionId='28' Text="O+" Width="300"                           />
+                        <MenuFlyoutItem x:ConnectionId='29' Text="O-" Width="300"                           />
                     </MenuFlyout>
                 </DropDownButton.Flyout>
             </DropDownButton>
-            <DropDownButton x:ConnectionId='11' x:Name="genText" Content="Gender" Width="300" Margin="40 0 0 20">
+                <DropDownButton x:ConnectionId='14' x:Name="genText" Content="Gender" Width="300" Margin="0 0 0 30">
                 <DropDownButton.Flyout>
                     <MenuFlyout Placement="Bottom">
-                        <MenuFlyoutItem x:ConnectionId='15' Text="Male" Width="300"                         />
-                        <MenuFlyoutItem x:ConnectionId='16' Text="Female" Width="300"                           />
-                        <MenuFlyoutItem x:ConnectionId='17' Text="Other" Width="300"                          />
+                            <MenuFlyoutItem x:ConnectionId='19' Text="Male" Width="300"                         />
+                            <MenuFlyoutItem x:ConnectionId='20' Text="Female" Width="300"                           />
+                            <MenuFlyoutItem x:ConnectionId='21' Text="Other" Width="300"                          />
                     </MenuFlyout>
                 </DropDownButton.Flyout>
             </DropDownButton>
-            <DropDownButton x:ConnectionId='12' x:Name="feeText" Content="Fee status" Width="300" Margin="40 0 0 20">
+                <DropDownButton x:ConnectionId='15' x:Name="feeText" Content="Fee status" Width="300" Margin="0 0 0 30">
                 <DropDownButton.Flyout>
                     <MenuFlyout Placement="Bottom">
-                        <MenuFlyoutItem x:ConnectionId='13' Text="Paid" Width="300"                      />
-                        <MenuFlyoutItem x:ConnectionId='14' Text="Unpaid" Width="300"                        />
+                            <MenuFlyoutItem x:ConnectionId='17' Text="Paid" Width="300"                      />
+                            <MenuFlyoutItem x:ConnectionId='18' Text="Unpaid" Width="300"                        />
                     </MenuFlyout>
                 </DropDownButton.Flyout>
             </DropDownButton>
+            <Button x:ConnectionId='16' Width="300" Height="35" FontWeight="Bold" Content="Insert" HorizontalAlignment="Center" Background="#505AC9" Foreground="#FFFFFF" Margin="0 0 0 50"                           />
         </StackPanel>
-        <StackPanel x:ConnectionId='5' x:Name="Visible3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Visibility="Collapsed">
-            <Button x:ConnectionId='6' Width="150" Content="Insert" HorizontalAlignment="Center" VerticalAlignment="Bottom" Style="{StaticResource AccentButtonStyle}"  Margin="0 0 0 50"                           />
-        </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Page>
 

@@ -7,26 +7,25 @@
     mc:Ignorable="d">
 
     <Grid x:Name="ContentArea">
-        <StackPanel x:Name="Visible1" HorizontalAlignment="Left" Visibility="Collapsed">
-            <TextBox x:Name="rollText" Width="300" Header="Roll No" PlaceholderText="Enter roll no" FontSize="15" Margin="0 20 0 20"/>
-            <TextBox x:Name="fnameText" Width="300" Header="First name" PlaceholderText="Enter first name" FontSize="15" Margin="0 0 0 20"/>
-            <TextBox x:Name="lnameText" Width="300" Header="Last name" PlaceholderText="Enter last name" FontSize="15" Margin="0 0 0 20"/>
-            <TextBox x:Name="contactText" Width="300" Header="Contact No" PlaceholderText="Enter contact no." FontSize="15" Margin="0 0 0 20"/>
-            <TextBox x:Name="addText" Width="300" Header="Address" PlaceholderText="Enter address" FontSize="15" Margin="0 0 0 20"/>
-            <PasswordBox x:Name="passText" Width="300" Header="Password" PlaceholderText="Enter password" FontSize="15" Margin="0 0 0 20"/>
-        </StackPanel>
-        <StackPanel x:Name="Visible2" HorizontalAlignment="Center" Visibility="Collapsed">
-            <DatePicker x:Name="regText" Header="Registration date" Margin="40 20 0 20"/>
-            <DropDownButton x:Name="genText" Content="Gender" Width="300" Margin="40 0 0 20">
+        <ScrollViewer>
+        <StackPanel x:Name="Visible1" HorizontalAlignment="Center" Visibility="Collapsed">
+            <TextBox x:Name="rollText" Width="300" Header="Roll No" PlaceholderText="Enter roll no" FontSize="15" Margin="0 30 0 30"/>
+            <TextBox x:Name="fnameText" Width="300" Header="First name" PlaceholderText="Enter first name" FontSize="15" Margin="0 0 0 30"/>
+            <TextBox x:Name="lnameText" Width="300" Header="Last name" PlaceholderText="Enter last name" FontSize="15" Margin="0 0 0 30"/>
+            <TextBox x:Name="contactText" Width="300" Header="Contact No" PlaceholderText="Enter contact no." FontSize="15" Margin="0 0 0 30"/>
+            <TextBox x:Name="addText" Width="300" Header="Address" PlaceholderText="Enter address" FontSize="15" Margin="0 0 0 30"/>
+            <PasswordBox x:Name="passText" Width="300" Header="Password" PlaceholderText="Enter password" FontSize="15" Margin="0 0 0 30"/>
+            <DatePicker x:Name="regText" Header="Registration date" Margin="0 0 0 30"/>
+                <DropDownButton x:Name="genText" Content="Gender" Width="300" Margin="0 0 0 30">
                 <DropDownButton.Flyout>
                     <MenuFlyout Placement="Bottom">
-                        <MenuFlyoutItem Text="Male" Width="300" Click="GenderMale_Click"/>
-                        <MenuFlyoutItem Text="Female" Width="300" Click="GenderFemale_Click"/>
-                        <MenuFlyoutItem Text="Other" Width="300" Click="GenderOther_Click"/>
+                            <MenuFlyoutItem Text="Male" Width="300" Click="GenderMale_Click"/>
+                            <MenuFlyoutItem Text="Female" Width="300" Click="GenderFemale_Click"/>
+                            <MenuFlyoutItem Text="Other" Width="300" Click="GenderOther_Click"/>
                     </MenuFlyout>
                 </DropDownButton.Flyout>
             </DropDownButton>
-            <DropDownButton x:Name="feeText" Content="Fee status" Width="300" Margin="40 0 0 20">
+                <DropDownButton x:Name="feeText" Content="Fee status" Width="300" Margin="0 0 0 30">
                 <DropDownButton.Flyout>
                     <MenuFlyout Placement="Bottom">
                         <MenuFlyoutItem Text="Paid" Width="300" Click="FeePaid_Click"/>
@@ -34,23 +33,22 @@
                     </MenuFlyout>
                 </DropDownButton.Flyout>
             </DropDownButton>
-            <DropDownButton x:Name="bgText" Content="Blood Group" Width="300" Margin="40 0 0 20">
+                <DropDownButton x:Name="bgText" Content="Blood Group" Width="300" Margin="0 0 0 30">
                 <DropDownButton.Flyout>
                     <MenuFlyout Placement="Bottom">
-                        <MenuFlyoutItem Text="A+" Width="300" Click="BGAPositive_Click"/>
-                        <MenuFlyoutItem Text="A-" Width="300" Click="BGANegative_Click"/>
-                        <MenuFlyoutItem Text="B+" Width="300" Click="BGBPositive_Click"/>
-                        <MenuFlyoutItem Text="B-" Width="300" Click="BGBNegative_Click"/>
-                        <MenuFlyoutItem Text="AB+" Width="300" Click="BGABPositive_Click"/>
-                        <MenuFlyoutItem Text="AB-" Width="300" Click="BGABNegative_Click"/>
-                        <MenuFlyoutItem Text="O+" Width="300" Click="BGOBPositive_Click"/>
-                        <MenuFlyoutItem Text="O-" Width="300" Click="BGOBNegative_Click"/>
+                            <MenuFlyoutItem Text="A+" Width="300" Click="BGAPositive_Click"/>
+                            <MenuFlyoutItem Text="A-" Width="300" Click="BGANegative_Click"/>
+                            <MenuFlyoutItem Text="B+" Width="300" Click="BGBPositive_Click"/>
+                            <MenuFlyoutItem Text="B-" Width="300" Click="BGBNegative_Click"/>
+                            <MenuFlyoutItem Text="AB+" Width="300" Click="BGABPositive_Click"/>
+                            <MenuFlyoutItem Text="AB-" Width="300" Click="BGABNegative_Click"/>
+                            <MenuFlyoutItem Text="O+" Width="300" Click="BGOBPositive_Click"/>
+                            <MenuFlyoutItem Text="O-" Width="300" Click="BGOBNegative_Click"/>
                     </MenuFlyout>
                 </DropDownButton.Flyout>
             </DropDownButton>
+            <Button Width="300" Height="35" FontWeight="Bold" Content="Insert" HorizontalAlignment="Center" Background="#505AC9" Foreground="#FFFFFF" Margin="0 0 0 50" Click="InsertButton_Click"/>
         </StackPanel>
-        <StackPanel x:Name="Visible3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Visibility="Collapsed">
-            <Button Width="150" Content="Insert" HorizontalAlignment="Center" VerticalAlignment="Bottom" Style="{StaticResource AccentButtonStyle}"  Margin="0 0 0 50" Click="InsertButton_Click"/>
-        </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Page>
