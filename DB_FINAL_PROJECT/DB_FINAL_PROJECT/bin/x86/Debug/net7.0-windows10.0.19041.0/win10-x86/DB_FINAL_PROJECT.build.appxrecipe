@@ -805,6 +805,15 @@
     <AppxPackagedFile Include="C:\Users\hafiz\OneDrive\Desktop\DATA_BASE_FINAL_PROJECT\DB_FINAL_PROJECT\DB_FINAL_PROJECT\Assets\Login_Pic.png">
       <PackagePath>Assets\Login_Pic.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hafiz\OneDrive\Desktop\DATA_BASE_FINAL_PROJECT\DB_FINAL_PROJECT\DB_FINAL_PROJECT\Assets\Logo.ai">
+      <PackagePath>Assets\Logo.ai</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hafiz\OneDrive\Desktop\DATA_BASE_FINAL_PROJECT\DB_FINAL_PROJECT\DB_FINAL_PROJECT\Assets\Logo_Mark.png">
+      <PackagePath>Assets\Logo_Mark.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hafiz\OneDrive\Desktop\DATA_BASE_FINAL_PROJECT\DB_FINAL_PROJECT\DB_FINAL_PROJECT\Assets\Logo_Pic.png">
+      <PackagePath>Assets\Logo_Pic.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hafiz\OneDrive\Desktop\DATA_BASE_FINAL_PROJECT\DB_FINAL_PROJECT\DB_FINAL_PROJECT\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
     </AppxPackagedFile>

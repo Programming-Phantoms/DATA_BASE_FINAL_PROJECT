@@ -7,7 +7,16 @@
     mc:Ignorable="d">
 
     <Grid x:ConnectionId='2' x:Name="ContentArea">
-        
+        <ScrollViewer>
+            <StackPanel x:ConnectionId='3' x:Name="Visible1" HorizontalAlignment="Center" Visibility="Collapsed">
+                <TextBox x:ConnectionId='4' x:Name="cidText" Width="300" Header="Class id" PlaceholderText="Enter class id" FontSize="15" Margin="0 30 0 30"/>
+                <TextBox x:ConnectionId='5' x:Name="tidText" Width="300" Header="Teacher id" PlaceholderText="Enter class teacher's id" FontSize="15" Margin="0 0 0 30"/>
+                <TextBox x:ConnectionId='6' x:Name="semText" Width="300" Header="Semester" PlaceholderText="Enter semester" FontSize="15" Margin="0 0 0 30"/>
+                <TextBox x:ConnectionId='7' x:Name="secText" Width="300" Header="Section" PlaceholderText="Enter section" FontSize="15" Margin="0 0 0 30"/>
+                <TextBox x:ConnectionId='8' x:Name="capText" Width="300" Header="Capacity" PlaceholderText="Enter total capacity" FontSize="15" Margin="0 0 0 30"/>
+                <Button x:ConnectionId='9' Width="300" Height="35" FontWeight="Bold" Content="Insert" HorizontalAlignment="Center" Background="#505AC9" Foreground="#FFFFFF" Margin="0 0 0 50"                           />
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Page>
 

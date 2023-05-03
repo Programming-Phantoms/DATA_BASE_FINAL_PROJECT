@@ -1,7 +1,10 @@
 ﻿using DB_FINAL_PROJECT.ViewModels;
+using Microsoft.UI;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Media;
 using Windows.Devices.Enumeration;
+using Windows.UI;
 using static DB_FINAL_PROJECT.App;
 
 namespace DB_FINAL_PROJECT.Views;
@@ -11,6 +14,13 @@ public sealed partial class LOGINPage : Page
     public LOGINViewModel ViewModel
     {
         get;
+    }
+
+    internal class ContentDialogContent
+    {
+        public ContentDialogContent()
+        {
+        }
     }
 
     public LOGINPage()
@@ -36,7 +46,6 @@ public sealed partial class LOGINPage : Page
             LoginPortal.LoginAdd = true;
             LoginPortal.LoginStd = LoginPortal.LoginTea = false;
             Login_Pic.Visibility = Visibility.Collapsed;
-            Tick.Visibility = Visibility.Visible;
             Frame.Navigate(typeof(ADMINISTRATORPage));
         }
         else if (userText.Text == "S" && passText.Password == "1234")
@@ -44,7 +53,6 @@ public sealed partial class LOGINPage : Page
             LoginPortal.LoginStd = true;
             LoginPortal.LoginAdd = LoginPortal.LoginTea = false;
             Login_Pic.Visibility = Visibility.Collapsed;
-            Tick.Visibility = Visibility.Visible;
             Frame.Navigate(typeof(STUDENTPage));
         }
         else if (userText.Text == "T" && passText.Password == "1234")
@@ -52,8 +60,12 @@ public sealed partial class LOGINPage : Page
             LoginPortal.LoginTea = true;
             LoginPortal.LoginStd = LoginPortal.LoginAdd = false;
             Login_Pic.Visibility = Visibility.Collapsed;
-            Tick.Visibility = Visibility.Visible;
             Frame.Navigate(typeof(TEACHERPage));
+        }
+        else
+        {
+            Error.IsOpen = true;
+            Error.RequestedTheme = ElementTheme.Light;
         }
     }
 }
