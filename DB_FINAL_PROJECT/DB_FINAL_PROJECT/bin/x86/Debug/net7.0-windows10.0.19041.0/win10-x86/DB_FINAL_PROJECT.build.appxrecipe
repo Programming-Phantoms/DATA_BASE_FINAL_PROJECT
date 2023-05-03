@@ -799,6 +799,9 @@
     <AppxPackagedFile Include="C:\Users\hafiz\.nuget\packages\winuiex\2.1.0\lib\net6.0-windows10.0.18362\WinUIEx.pri">
       <PackagePath>WinUIEx.pri</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hafiz\OneDrive\Desktop\DATA_BASE_FINAL_PROJECT\DB_FINAL_PROJECT\DB_FINAL_PROJECT\Assets\Add_Student_To_Class.png">
+      <PackagePath>Assets\Add_Student_To_Class.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hafiz\OneDrive\Desktop\DATA_BASE_FINAL_PROJECT\DB_FINAL_PROJECT\DB_FINAL_PROJECT\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>

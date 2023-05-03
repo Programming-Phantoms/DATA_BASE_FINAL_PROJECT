@@ -7,7 +7,14 @@
     mc:Ignorable="d">
 
     <Grid x:ConnectionId='2' x:Name="ContentArea">
-        
+        <ScrollViewer>
+            <StackPanel x:ConnectionId='3' x:Name="Visible1" HorizontalAlignment="Center" Visibility="Collapsed">
+                <Image x:ConnectionId='4' x:Name="Login_Pic" Source="/Assets/Add_Student_To_Class.png" Height="250" Width="250" Margin="0 0 0 20"/>
+                <TextBox x:ConnectionId='5' x:Name="sidText" Width="300" Header="Student id" PlaceholderText="Enter student id" FontSize="15" Margin="0 30 0 30"/>
+                <TextBox x:ConnectionId='6' x:Name="cidText" Width="300" Header="Class id" PlaceholderText="Enter class id" FontSize="15" Margin="0 0 0 30"/>
+                <Button x:ConnectionId='7' Width="300" Height="35" FontWeight="Bold" Content="Insert" HorizontalAlignment="Center" Background="#505AC9" Foreground="#FFFFFF" Margin="0 0 0 50"                           />
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Page>
 

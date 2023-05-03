@@ -15,7 +15,7 @@
                 <TextBox x:ConnectionId='7' x:Name="locText" Width="300" Header="Location" PlaceholderText="Enter location" FontSize="15" Margin="0 0 0 30"/>
                 <TimePicker x:ConnectionId='8' x:Name="timText" Header="Start time" Width="300" Margin="0 0 0 30"/>
                 <TimePicker x:ConnectionId='9' x:Name="endText" Header="End time" Width="300" Margin="0 0 0 30"/>
-                <DropDownButton x:ConnectionId='10' x:Name="dowText" Content="Blood Group" Width="300" Margin="0 0 0 30">
+                <DropDownButton x:ConnectionId='10' x:Name="dowText" Content="Day of week" Width="300" Margin="0 0 0 30">
                     <DropDownButton.Flyout>
                         <MenuFlyout Placement="Bottom">
                             <MenuFlyoutItem x:ConnectionId='12' Text="Monday" Width="300"                     />
