@@ -36,13 +36,18 @@ public sealed partial class ADD_STUDENTPage : Page
 
     private void InsertButton_Click(object sender, RoutedEventArgs e)
     {
-        if (rollText.Text.Length != 4)
+        Error.Title = "Warning! ⚠";
+        if (rollText.Text.Length == 0)
         {
             Error.Subtitle = "Student ID cannot be NULL!";
         }
-        else if (rollText.Text.Length != 4)
+        else if (rollText.Text.Length > 4)
         {
-            Error.Subtitle = "Student ID should be of length 4!";
+            Error.Subtitle = "Student id has " + (rollText.Text.Length - 4).ToString() + " extra character(s)!";
+        }
+        else if (rollText.Text.Length < 4)
+        {
+            Error.Subtitle = "Student id requires at least " + (4 - rollText.Text.Length).ToString() + " more character(s)!";
         }
         else if (fnameText.Text.Length == 0)
         {
@@ -50,7 +55,11 @@ public sealed partial class ADD_STUDENTPage : Page
         }
         else if (fnameText.Text.Length > 15)
         {
-            Error.Subtitle = "First Name cannot be longer than 15 characters!";
+            Error.Subtitle = "First name has " + (fnameText.Text.Length - 15).ToString() + " extra character(s)!";
+        }
+        else if (fnameText.Text.Length < 3)
+        {
+            Error.Subtitle = "First name requires at least " + (3 - fnameText.Text.Length).ToString() + " more character(s)!";
         }
         else if (lnameText.Text.Length == 0)
         {
@@ -58,11 +67,23 @@ public sealed partial class ADD_STUDENTPage : Page
         }
         else if (lnameText.Text.Length > 15)
         {
-            Error.Subtitle = "Last Name cannot be longer than 15 characters!";
+            Error.Subtitle = "Last name has " + (lnameText.Text.Length - 15).ToString() + " extra character(s)!";
         }
-        else if (contactText.Text.Length != 11)
+        else if (lnameText.Text.Length < 3)
         {
-            Error.Subtitle = "Contact number should be of length of 11!";
+            Error.Subtitle = "Last name requires at least " + (3 - lnameText.Text.Length).ToString() + " more character(s)!";
+        }
+        else if (contactText.Text.Length == 0)
+        {
+            Error.Subtitle = "Contact number cannot be NULL!";
+        }
+        else if (contactText.Text.Length > 11)
+        {
+            Error.Subtitle = "Contact number has " + (contactText.Text.Length - 11).ToString() + " extra digit(s)!";
+        }
+        else if (contactText.Text.Length < 11)
+        {
+            Error.Subtitle = "Contact number requires at least " + (11 - contactText.Text.Length).ToString() + " more digit(s)!";
         }
         else if (addText.Text.Length == 0)
         {
@@ -70,15 +91,23 @@ public sealed partial class ADD_STUDENTPage : Page
         }
         else if (addText.Text.Length > 50)
         {
-            Error.Subtitle = "Address too long!";
+            Error.Subtitle = "Address has " + (addText.Text.Length - 50).ToString() + " extra characters!";
         }
-        else if (passText.Password.Length > 15)
+        else if (addText.Text.Length < 5)
         {
-            Error.Subtitle = "Password too large!";
+            Error.Subtitle = "Address requires at least " + (5 - addText.Text.Length).ToString() + " more character(s)!";
         }
         else if (passText.Password.Length == 0)
         {
             Error.Subtitle = "Password cannot be NULL!";
+        }
+        else if (passText.Password.Length > 15)
+        {
+            Error.Subtitle = "Password has " + (passText.Password.Length - 15).ToString() + " extra character(s)!";
+        }
+        else if (passText.Password.Length < 6)
+        {
+            Error.Subtitle = "Password requires at least " + (6 - passText.Password.Length).ToString() + " more character(s)!";
         }
         else if (regText.SelectedDate == null)
         {
@@ -111,8 +140,8 @@ public sealed partial class ADD_STUDENTPage : Page
             insertEmp.CommandText += genText.Content.ToString() + "\',\'" +
             contactText.Text.ToString() + "\',\'" +
             passText.Password.ToString() + "\',\'" +
-            bgText.Content.ToString() +
-            "\')";
+            bgText.Content.ToString() + "\'" +
+            ", NULL)";
             insertEmp.ExecuteNonQuery();
             con.Close();
             Error.Title = "Successfull! ✔️";
@@ -121,7 +150,6 @@ public sealed partial class ADD_STUDENTPage : Page
 
         Error.IsOpen = true;
         Error.RequestedTheme = ElementTheme.Light;
-        
     }
 
     private void GenderMale_Click(object sender, RoutedEventArgs e)
