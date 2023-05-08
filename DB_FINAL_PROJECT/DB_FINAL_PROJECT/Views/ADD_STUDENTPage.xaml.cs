@@ -44,10 +44,6 @@ public sealed partial class ADD_STUDENTPage : Page
         {
             Error.Subtitle = "Student ID should be of length 4!";
         }
-        else if (cidText.Text.Length != 4 && cidText.Text.Length != 0)
-        {
-            Error.Subtitle = "Class ID should be of length 4 or NULL!";
-        }
         else if (fnameText.Text.Length == 0)
         {
             Error.Subtitle = "First name cannot be NULL!";
@@ -115,8 +111,7 @@ public sealed partial class ADD_STUDENTPage : Page
             insertEmp.CommandText += genText.Content.ToString() + "\',\'" +
             contactText.Text.ToString() + "\',\'" +
             passText.Password.ToString() + "\',\'" +
-            bgText.Content.ToString() + "\',\'" +
-            cidText.Text.ToString() +
+            bgText.Content.ToString() +
             "\')";
             insertEmp.ExecuteNonQuery();
             con.Close();

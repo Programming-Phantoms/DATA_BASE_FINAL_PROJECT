@@ -10,7 +10,6 @@
         <ScrollViewer>
             <StackPanel x:Name="Visible1" HorizontalAlignment="Center" Visibility="Collapsed">
                 <TextBox x:Name="rollText" Width="300" Header="Roll No" PlaceholderText="Enter roll no" FontSize="15" Margin="0 30 0 30"/>
-                <TextBox x:Name="cidText" Width="300" Header="Class id" PlaceholderText="Enter Class id" FontSize="15" Margin="0 0 0 30"/>
                 <TextBox x:Name="fnameText" Width="300" Header="First name" PlaceholderText="Enter first name" FontSize="15" Margin="0 0 0 30"/>
             <TextBox x:Name="lnameText" Width="300" Header="Last name" PlaceholderText="Enter last name" FontSize="15" Margin="0 0 0 30"/>
             <TextBox x:Name="contactText" Width="300" Header="Contact No" PlaceholderText="Enter contact no." FontSize="15" Margin="0 0 0 30"/>
