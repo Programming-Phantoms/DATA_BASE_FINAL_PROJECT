@@ -33,10 +33,13 @@
                     </StackPanel>-->
 
                 <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" Margin="0 0 0 40">
-                    <controls:DataGrid x:Name="dataGrid" AutoGenerateColumns="False" GridLinesVisibility="Horizontal" CanUserSortColumns="False" CanUserReorderColumns="False" IsReadOnly="True" HeadersVisibility="Column" SelectionMode="Single">
+                    <controls:DataGrid x:Name="dataGrid" Width="680" AutoGenerateColumns="False" GridLinesVisibility="Horizontal" CanUserSortColumns="False" CanUserReorderColumns="False" IsReadOnly="True" HeadersVisibility="Column" SelectionMode="Single">
                         <controls:DataGrid.Columns>
-                            <controls:DataGridTextColumn Header="Column 1" Binding="{Binding Column1}" />
-                            <controls:DataGridTextColumn Header="Column 2" Binding="{Binding Column2}" />
+                            <controls:DataGridTextColumn Width="130" FontSize="15" Header="Class id" Binding="{Binding Classid}" />
+                            <controls:DataGridTextColumn Width="130" FontSize="15" Header="Teacher id" Binding="{Binding Teacherid}" />
+                            <controls:DataGridTextColumn Width="130" FontSize="15" Header="Section" Binding="{Binding Section}" />
+                            <controls:DataGridTextColumn Width="130" FontSize="15" Header="Semester" Binding="{Binding Semester}" />
+                            <controls:DataGridTextColumn Width="130" FontSize="15" Header="Capacity" Binding="{Binding Capacity}" />
                         </controls:DataGrid.Columns>
                     </controls:DataGrid>
                 </ScrollViewer>

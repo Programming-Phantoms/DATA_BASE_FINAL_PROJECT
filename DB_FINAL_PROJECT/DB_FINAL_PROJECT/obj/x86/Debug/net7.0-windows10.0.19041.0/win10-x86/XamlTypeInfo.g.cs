@@ -1622,8 +1622,8 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
             case 124:   //  CommunityToolkit.WinUI.UI.Controls.DataGridTextColumn
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.WinUI.UI.Controls.DataGridBoundColumn"));
                 userType.Activator = Activate_124_DataGridTextColumn;
-                userType.AddMemberName("FontFamily");
                 userType.AddMemberName("FontSize");
+                userType.AddMemberName("FontFamily");
                 userType.AddMemberName("FontStyle");
                 userType.AddMemberName("FontWeight");
                 userType.AddMemberName("Foreground");
@@ -3547,35 +3547,35 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
             var that = (global::CommunityToolkit.WinUI.UI.Controls.DataGrid)instance;
             return that.SelectedItems;
         }
-        private object get_198_DataGridBoundColumn_Binding(object instance)
-        {
-            var that = (global::CommunityToolkit.WinUI.UI.Controls.DataGridBoundColumn)instance;
-            return that.Binding;
-        }
-        private void set_198_DataGridBoundColumn_Binding(object instance, object Value)
-        {
-            var that = (global::CommunityToolkit.WinUI.UI.Controls.DataGridBoundColumn)instance;
-            that.Binding = (global::Microsoft.UI.Xaml.Data.Binding)Value;
-        }
-        private object get_199_DataGridTextColumn_FontFamily(object instance)
-        {
-            var that = (global::CommunityToolkit.WinUI.UI.Controls.DataGridTextColumn)instance;
-            return that.FontFamily;
-        }
-        private void set_199_DataGridTextColumn_FontFamily(object instance, object Value)
-        {
-            var that = (global::CommunityToolkit.WinUI.UI.Controls.DataGridTextColumn)instance;
-            that.FontFamily = (global::Microsoft.UI.Xaml.Media.FontFamily)Value;
-        }
-        private object get_200_DataGridTextColumn_FontSize(object instance)
+        private object get_198_DataGridTextColumn_FontSize(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.UI.Controls.DataGridTextColumn)instance;
             return that.FontSize;
         }
-        private void set_200_DataGridTextColumn_FontSize(object instance, object Value)
+        private void set_198_DataGridTextColumn_FontSize(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.UI.Controls.DataGridTextColumn)instance;
             that.FontSize = (global::System.Double)Value;
+        }
+        private object get_199_DataGridBoundColumn_Binding(object instance)
+        {
+            var that = (global::CommunityToolkit.WinUI.UI.Controls.DataGridBoundColumn)instance;
+            return that.Binding;
+        }
+        private void set_199_DataGridBoundColumn_Binding(object instance, object Value)
+        {
+            var that = (global::CommunityToolkit.WinUI.UI.Controls.DataGridBoundColumn)instance;
+            that.Binding = (global::Microsoft.UI.Xaml.Data.Binding)Value;
+        }
+        private object get_200_DataGridTextColumn_FontFamily(object instance)
+        {
+            var that = (global::CommunityToolkit.WinUI.UI.Controls.DataGridTextColumn)instance;
+            return that.FontFamily;
+        }
+        private void set_200_DataGridTextColumn_FontFamily(object instance, object Value)
+        {
+            var that = (global::CommunityToolkit.WinUI.UI.Controls.DataGridTextColumn)instance;
+            that.FontFamily = (global::Microsoft.UI.Xaml.Media.FontFamily)Value;
         }
         private object get_201_DataGridTextColumn_FontStyle(object instance)
         {
@@ -4972,24 +4972,24 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
                 xamlMember.Getter = get_197_DataGrid_SelectedItems;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "CommunityToolkit.WinUI.UI.Controls.DataGridTextColumn.FontSize":
+                userType = (global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.UI.Controls.DataGridTextColumn");
+                xamlMember = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlMember(this, "FontSize", "Double");
+                xamlMember.Getter = get_198_DataGridTextColumn_FontSize;
+                xamlMember.Setter = set_198_DataGridTextColumn_FontSize;
+                break;
             case "CommunityToolkit.WinUI.UI.Controls.DataGridBoundColumn.Binding":
                 userType = (global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.UI.Controls.DataGridBoundColumn");
                 xamlMember = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlMember(this, "Binding", "Microsoft.UI.Xaml.Data.Binding");
-                xamlMember.Getter = get_198_DataGridBoundColumn_Binding;
-                xamlMember.Setter = set_198_DataGridBoundColumn_Binding;
+                xamlMember.Getter = get_199_DataGridBoundColumn_Binding;
+                xamlMember.Setter = set_199_DataGridBoundColumn_Binding;
                 break;
             case "CommunityToolkit.WinUI.UI.Controls.DataGridTextColumn.FontFamily":
                 userType = (global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.UI.Controls.DataGridTextColumn");
                 xamlMember = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlMember(this, "FontFamily", "Microsoft.UI.Xaml.Media.FontFamily");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_199_DataGridTextColumn_FontFamily;
-                xamlMember.Setter = set_199_DataGridTextColumn_FontFamily;
-                break;
-            case "CommunityToolkit.WinUI.UI.Controls.DataGridTextColumn.FontSize":
-                userType = (global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.UI.Controls.DataGridTextColumn");
-                xamlMember = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlMember(this, "FontSize", "Double");
-                xamlMember.Getter = get_200_DataGridTextColumn_FontSize;
-                xamlMember.Setter = set_200_DataGridTextColumn_FontSize;
+                xamlMember.Getter = get_200_DataGridTextColumn_FontFamily;
+                xamlMember.Setter = set_200_DataGridTextColumn_FontFamily;
                 break;
             case "CommunityToolkit.WinUI.UI.Controls.DataGridTextColumn.FontStyle":
                 userType = (global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.UI.Controls.DataGridTextColumn");

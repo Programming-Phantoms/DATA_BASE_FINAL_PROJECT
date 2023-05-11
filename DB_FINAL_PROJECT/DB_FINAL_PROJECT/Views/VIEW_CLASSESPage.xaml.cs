@@ -29,33 +29,42 @@ public sealed partial class VIEW_CLASSESPage : Page
     private void AddDataToGrid()
     {
 
-        List<Data> dataList = new List<Data>();
+        List<Data> classData = new List<Data>();
 
         con.Open();
-        OracleCommand getEmps = con.CreateCommand();
-        getEmps.CommandText = "SELECT * FROM STD";
-        getEmps.CommandType = CommandType.Text;
-        OracleDataReader empDR = getEmps.ExecuteReader();
+        OracleCommand getClasses = con.CreateCommand();
+        getClasses.CommandText = "SELECT * FROM CLASS";
+        getClasses.CommandType = CommandType.Text;
+        OracleDataReader classesDR = getClasses.ExecuteReader();
 
-        while (empDR.Read())
+        while (classesDR.Read())
         {
-            if (empDR.FieldCount >= 2)
-            {
-                dataList.Add(new Data { Column1 = empDR.GetString(0), Column2 = empDR.GetString(1) });
-            }
+            classData.Add(new Data { Classid = classesDR.GetString(0), Teacherid = classesDR.GetString(1), Section = classesDR.GetString(2), Semester = classesDR.GetString(3), Capacity = classesDR.GetString(4)});
         }
-        dataGrid.ItemsSource = dataList;
-        empDR.Close();
+        dataGrid.ItemsSource = classData;
+        classesDR.Close();
         con.Close();
     }
 
     public class Data
     {
-        public string? Column1
+        public string? Classid
         {
             get; set;
         }
-        public string? Column2
+        public string? Teacherid
+        {
+            get; set;
+        }
+        public string? Section
+        {
+            get; set;
+        }
+        public string? Semester
+        {
+            get; set;
+        }
+        public string? Capacity
         {
             get; set;
         }

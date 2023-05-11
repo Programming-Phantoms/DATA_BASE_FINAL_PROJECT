@@ -69,6 +69,8 @@ public sealed partial class ADD_STUDENT_TO_CLASSPage : Page
         var classFound = classes.Contains(cidText.Text.ToString());
         var teacherFound = teachers.Contains(sidText.Text.ToString());
 
+        Error.Title = "Warning! ⚠";
+
         if (cidText.Text.ToString() == "")
         {
             Error.Subtitle = "Class id cannot be NULL!";
