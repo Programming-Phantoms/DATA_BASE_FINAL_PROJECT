@@ -252,22 +252,22 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
             _typeNameTable[24] = "DB_FINAL_PROJECT.ViewModels.ADD_ATTENDANCEViewModel";
             _typeNameTable[25] = "CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient";
             _typeNameTable[26] = "CommunityToolkit.Mvvm.ComponentModel.ObservableObject";
-            _typeNameTable[27] = "Microsoft.UI.Xaml.Controls.TeachingTip";
-            _typeNameTable[28] = "Microsoft.UI.Xaml.Controls.ContentControl";
-            _typeNameTable[29] = "Microsoft.UI.Xaml.FrameworkElement";
-            _typeNameTable[30] = "System.Windows.Input.ICommand";
-            _typeNameTable[31] = "Microsoft.UI.Xaml.Style";
-            _typeNameTable[32] = "Microsoft.UI.Xaml.UIElement";
-            _typeNameTable[33] = "Microsoft.UI.Xaml.Controls.TeachingTipHeroContentPlacementMode";
-            _typeNameTable[34] = "Microsoft.UI.Xaml.Controls.IconSource";
-            _typeNameTable[35] = "Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode";
-            _typeNameTable[36] = "Microsoft.UI.Xaml.Controls.TeachingTipTailVisibility";
-            _typeNameTable[37] = "Microsoft.UI.Xaml.Controls.TeachingTipTemplateSettings";
-            _typeNameTable[38] = "Microsoft.UI.Xaml.DependencyObject";
-            _typeNameTable[39] = "DB_FINAL_PROJECT.Views.ADD_CLASSPage";
-            _typeNameTable[40] = "DB_FINAL_PROJECT.ViewModels.ADD_CLASSViewModel";
-            _typeNameTable[41] = "Microsoft.UI.Xaml.Controls.DropDownButton";
-            _typeNameTable[42] = "Microsoft.UI.Xaml.Controls.Button";
+            _typeNameTable[27] = "Microsoft.UI.Xaml.Controls.DropDownButton";
+            _typeNameTable[28] = "Microsoft.UI.Xaml.Controls.Button";
+            _typeNameTable[29] = "Microsoft.UI.Xaml.Controls.ContentControl";
+            _typeNameTable[30] = "Microsoft.UI.Xaml.Controls.TeachingTip";
+            _typeNameTable[31] = "Microsoft.UI.Xaml.FrameworkElement";
+            _typeNameTable[32] = "System.Windows.Input.ICommand";
+            _typeNameTable[33] = "Microsoft.UI.Xaml.Style";
+            _typeNameTable[34] = "Microsoft.UI.Xaml.UIElement";
+            _typeNameTable[35] = "Microsoft.UI.Xaml.Controls.TeachingTipHeroContentPlacementMode";
+            _typeNameTable[36] = "Microsoft.UI.Xaml.Controls.IconSource";
+            _typeNameTable[37] = "Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode";
+            _typeNameTable[38] = "Microsoft.UI.Xaml.Controls.TeachingTipTailVisibility";
+            _typeNameTable[39] = "Microsoft.UI.Xaml.Controls.TeachingTipTemplateSettings";
+            _typeNameTable[40] = "Microsoft.UI.Xaml.DependencyObject";
+            _typeNameTable[41] = "DB_FINAL_PROJECT.Views.ADD_CLASSPage";
+            _typeNameTable[42] = "DB_FINAL_PROJECT.ViewModels.ADD_CLASSViewModel";
             _typeNameTable[43] = "DB_FINAL_PROJECT.Views.ADD_CLASS_SCHEDULEPage";
             _typeNameTable[44] = "DB_FINAL_PROJECT.ViewModels.ADD_CLASS_SCHEDULEViewModel";
             _typeNameTable[45] = "DB_FINAL_PROJECT.Views.ADD_STUDENTPage";
@@ -389,22 +389,22 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
             _typeTable[24] = typeof(global::DB_FINAL_PROJECT.ViewModels.ADD_ATTENDANCEViewModel);
             _typeTable[25] = typeof(global::CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient);
             _typeTable[26] = typeof(global::CommunityToolkit.Mvvm.ComponentModel.ObservableObject);
-            _typeTable[27] = typeof(global::Microsoft.UI.Xaml.Controls.TeachingTip);
-            _typeTable[28] = typeof(global::Microsoft.UI.Xaml.Controls.ContentControl);
-            _typeTable[29] = typeof(global::Microsoft.UI.Xaml.FrameworkElement);
-            _typeTable[30] = typeof(global::System.Windows.Input.ICommand);
-            _typeTable[31] = typeof(global::Microsoft.UI.Xaml.Style);
-            _typeTable[32] = typeof(global::Microsoft.UI.Xaml.UIElement);
-            _typeTable[33] = typeof(global::Microsoft.UI.Xaml.Controls.TeachingTipHeroContentPlacementMode);
-            _typeTable[34] = typeof(global::Microsoft.UI.Xaml.Controls.IconSource);
-            _typeTable[35] = typeof(global::Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode);
-            _typeTable[36] = typeof(global::Microsoft.UI.Xaml.Controls.TeachingTipTailVisibility);
-            _typeTable[37] = typeof(global::Microsoft.UI.Xaml.Controls.TeachingTipTemplateSettings);
-            _typeTable[38] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
-            _typeTable[39] = typeof(global::DB_FINAL_PROJECT.Views.ADD_CLASSPage);
-            _typeTable[40] = typeof(global::DB_FINAL_PROJECT.ViewModels.ADD_CLASSViewModel);
-            _typeTable[41] = typeof(global::Microsoft.UI.Xaml.Controls.DropDownButton);
-            _typeTable[42] = typeof(global::Microsoft.UI.Xaml.Controls.Button);
+            _typeTable[27] = typeof(global::Microsoft.UI.Xaml.Controls.DropDownButton);
+            _typeTable[28] = typeof(global::Microsoft.UI.Xaml.Controls.Button);
+            _typeTable[29] = typeof(global::Microsoft.UI.Xaml.Controls.ContentControl);
+            _typeTable[30] = typeof(global::Microsoft.UI.Xaml.Controls.TeachingTip);
+            _typeTable[31] = typeof(global::Microsoft.UI.Xaml.FrameworkElement);
+            _typeTable[32] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[33] = typeof(global::Microsoft.UI.Xaml.Style);
+            _typeTable[34] = typeof(global::Microsoft.UI.Xaml.UIElement);
+            _typeTable[35] = typeof(global::Microsoft.UI.Xaml.Controls.TeachingTipHeroContentPlacementMode);
+            _typeTable[36] = typeof(global::Microsoft.UI.Xaml.Controls.IconSource);
+            _typeTable[37] = typeof(global::Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode);
+            _typeTable[38] = typeof(global::Microsoft.UI.Xaml.Controls.TeachingTipTailVisibility);
+            _typeTable[39] = typeof(global::Microsoft.UI.Xaml.Controls.TeachingTipTemplateSettings);
+            _typeTable[40] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
+            _typeTable[41] = typeof(global::DB_FINAL_PROJECT.Views.ADD_CLASSPage);
+            _typeTable[42] = typeof(global::DB_FINAL_PROJECT.ViewModels.ADD_CLASSViewModel);
             _typeTable[43] = typeof(global::DB_FINAL_PROJECT.Views.ADD_CLASS_SCHEDULEPage);
             _typeTable[44] = typeof(global::DB_FINAL_PROJECT.ViewModels.ADD_CLASS_SCHEDULEViewModel);
             _typeTable[45] = typeof(global::DB_FINAL_PROJECT.Views.ADD_STUDENTPage);
@@ -537,11 +537,11 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
         private object Activate_18_MainWindow() { return new global::DB_FINAL_PROJECT.MainWindow(); }
         private object Activate_21_ADD_ATTENDANCEPage() { return new global::DB_FINAL_PROJECT.Views.ADD_ATTENDANCEPage(); }
         private object Activate_24_ADD_ATTENDANCEViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.ADD_ATTENDANCEViewModel(); }
-        private object Activate_27_TeachingTip() { return new global::Microsoft.UI.Xaml.Controls.TeachingTip(); }
-        private object Activate_37_TeachingTipTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.TeachingTipTemplateSettings(); }
-        private object Activate_39_ADD_CLASSPage() { return new global::DB_FINAL_PROJECT.Views.ADD_CLASSPage(); }
-        private object Activate_40_ADD_CLASSViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.ADD_CLASSViewModel(); }
-        private object Activate_41_DropDownButton() { return new global::Microsoft.UI.Xaml.Controls.DropDownButton(); }
+        private object Activate_27_DropDownButton() { return new global::Microsoft.UI.Xaml.Controls.DropDownButton(); }
+        private object Activate_30_TeachingTip() { return new global::Microsoft.UI.Xaml.Controls.TeachingTip(); }
+        private object Activate_39_TeachingTipTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.TeachingTipTemplateSettings(); }
+        private object Activate_41_ADD_CLASSPage() { return new global::DB_FINAL_PROJECT.Views.ADD_CLASSPage(); }
+        private object Activate_42_ADD_CLASSViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.ADD_CLASSViewModel(); }
         private object Activate_43_ADD_CLASS_SCHEDULEPage() { return new global::DB_FINAL_PROJECT.Views.ADD_CLASS_SCHEDULEPage(); }
         private object Activate_44_ADD_CLASS_SCHEDULEViewModel() { return new global::DB_FINAL_PROJECT.ViewModels.ADD_CLASS_SCHEDULEViewModel(); }
         private object Activate_45_ADD_STUDENTPage() { return new global::DB_FINAL_PROJECT.Views.ADD_STUDENTPage(); }
@@ -835,9 +835,23 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 27:   //  Microsoft.UI.Xaml.Controls.TeachingTip
+            case 27:   //  Microsoft.UI.Xaml.Controls.DropDownButton
+                userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Button"));
+                userType.Activator = Activate_27_DropDownButton;
+                xamlType = userType;
+                break;
+
+            case 28:   //  Microsoft.UI.Xaml.Controls.Button
+                xamlType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 29:   //  Microsoft.UI.Xaml.Controls.ContentControl
+                xamlType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 30:   //  Microsoft.UI.Xaml.Controls.TeachingTip
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
-                userType.Activator = Activate_27_TeachingTip;
+                userType.Activator = Activate_30_TeachingTip;
                 userType.AddMemberName("Title");
                 userType.AddMemberName("Target");
                 userType.AddMemberName("ActionButtonCommand");
@@ -862,29 +876,25 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 28:   //  Microsoft.UI.Xaml.Controls.ContentControl
+            case 31:   //  Microsoft.UI.Xaml.FrameworkElement
                 xamlType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 29:   //  Microsoft.UI.Xaml.FrameworkElement
-                xamlType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 30:   //  System.Windows.Input.ICommand
+            case 32:   //  System.Windows.Input.ICommand
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 31:   //  Microsoft.UI.Xaml.Style
+            case 33:   //  Microsoft.UI.Xaml.Style
                 xamlType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 32:   //  Microsoft.UI.Xaml.UIElement
+            case 34:   //  Microsoft.UI.Xaml.UIElement
                 xamlType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 33:   //  Microsoft.UI.Xaml.Controls.TeachingTipHeroContentPlacementMode
+            case 35:   //  Microsoft.UI.Xaml.Controls.TeachingTipHeroContentPlacementMode
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.TeachingTipHeroContentPlacementMode.Auto);
                 userType.AddEnumValue("Top", global::Microsoft.UI.Xaml.Controls.TeachingTipHeroContentPlacementMode.Top);
@@ -892,11 +902,11 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 34:   //  Microsoft.UI.Xaml.Controls.IconSource
+            case 36:   //  Microsoft.UI.Xaml.Controls.IconSource
                 xamlType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 35:   //  Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode
+            case 37:   //  Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode.Auto);
                 userType.AddEnumValue("Top", global::Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode.Top);
@@ -915,7 +925,7 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 36:   //  Microsoft.UI.Xaml.Controls.TeachingTipTailVisibility
+            case 38:   //  Microsoft.UI.Xaml.Controls.TeachingTipTailVisibility
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.TeachingTipTailVisibility.Auto);
                 userType.AddEnumValue("Visible", global::Microsoft.UI.Xaml.Controls.TeachingTipTailVisibility.Visible);
@@ -923,39 +933,29 @@ namespace DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 37:   //  Microsoft.UI.Xaml.Controls.TeachingTipTemplateSettings
+            case 39:   //  Microsoft.UI.Xaml.Controls.TeachingTipTemplateSettings
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 38:   //  Microsoft.UI.Xaml.DependencyObject
+            case 40:   //  Microsoft.UI.Xaml.DependencyObject
                 xamlType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 39:   //  DB_FINAL_PROJECT.Views.ADD_CLASSPage
+            case 41:   //  DB_FINAL_PROJECT.Views.ADD_CLASSPage
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_39_ADD_CLASSPage;
+                userType.Activator = Activate_41_ADD_CLASSPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 40:   //  DB_FINAL_PROJECT.ViewModels.ADD_CLASSViewModel
+            case 42:   //  DB_FINAL_PROJECT.ViewModels.ADD_CLASSViewModel
                 userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
-                break;
-
-            case 41:   //  Microsoft.UI.Xaml.Controls.DropDownButton
-                userType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Button"));
-                userType.Activator = Activate_41_DropDownButton;
-                xamlType = userType;
-                break;
-
-            case 42:   //  Microsoft.UI.Xaml.Controls.Button
-                xamlType = new global::DB_FINAL_PROJECT.DB_FINAL_PROJECT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 43:   //  DB_FINAL_PROJECT.Views.ADD_CLASS_SCHEDULEPage

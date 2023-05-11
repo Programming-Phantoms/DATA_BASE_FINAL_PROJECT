@@ -1,15 +1,18 @@
 ﻿using System.Data;
+using CommunityToolkit.WinUI.UI.Controls;
 using DB_FINAL_PROJECT.ViewModels;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Oracle.ManagedDataAccess.Client;
 using static DB_FINAL_PROJECT.App;
+using static DB_FINAL_PROJECT.Views.VIEW_CLASSESPage;
 
 namespace DB_FINAL_PROJECT.Views;
 
 public sealed partial class ADD_CLASSPage : Page
 {
     OracleConnection con;
+
     public ADD_CLASSViewModel ViewModel
     {
         get;
@@ -23,6 +26,25 @@ public sealed partial class ADD_CLASSPage : Page
 
         string conStr = @"DATA SOURCE = localhost:1521/XE; USER ID = F21_9243; PASSWORD = 1234";
         con = new OracleConnection(conStr);
+
+        if (LoginPortal.LoginAdd)
+        {
+            con.Open();
+            OracleCommand getTeachers = con.CreateCommand();
+            getTeachers.CommandText = "SELECT * FROM TEACHER";
+            getTeachers.CommandType = CommandType.Text;
+            OracleDataReader teacherDR = getTeachers.ExecuteReader();
+            while (teacherDR.Read())
+            {
+                MenuFlyoutItem menuFlyoutItem = new MenuFlyoutItem();
+                menuFlyoutItem.Text = teacherDR.GetString(0).ToString();
+                menuFlyoutItem.Width = 300;
+                menuFlyoutItem.Click += Selected_Item;
+                tidFlyout.Items.Add(menuFlyoutItem);
+            }
+            teacherDR.Close();
+            con.Close();
+        }
     }
 
     private void LoadOnPage()
@@ -50,18 +72,6 @@ public sealed partial class ADD_CLASSPage : Page
         else if (cidText.Text.Length < 4)
         {
             Error.Subtitle = "Class id requires at least " + (4 - cidText.Text.Length).ToString() + " more character(s)!";
-        }
-        if (tidText.Text.Length == 0)
-        {
-            Error.Subtitle = "Teacher ID cannot be NULL!";
-        }
-        else if (tidText.Text.Length > 4)
-        {
-            Error.Subtitle = "Teacher id has " + (tidText.Text.Length - 4).ToString() + " extra character(s)!";
-        }
-        else if (tidText.Text.Length < 4)
-        {
-            Error.Subtitle = "Teacher id requires at least " + (4 - tidText.Text.Length).ToString() + " more character(s)!";
         }
         else if (semText.Text.Length == 0)
         {
@@ -99,6 +109,10 @@ public sealed partial class ADD_CLASSPage : Page
         {
             Error.Subtitle = "Enter numeric value in capacity!";
         }
+        else if (tidText.Content.ToString() == "Teacher id")
+        {
+            Error.Subtitle = "Teacher id is not selected!";
+        }
         else
         {
             con.Open();
@@ -106,7 +120,7 @@ public sealed partial class ADD_CLASSPage : Page
             insertEmp.CommandType = CommandType.Text;
             insertEmp.CommandText = "INSERT INTO CLASS VALUES('" +
             cidText.Text.ToString() + "\',\'" +
-            tidText.Text.ToString() + "\',\'" +
+            tidText.Content.ToString() + "\',\'" +
             secText.Text.ToString() + "\'," +
             semText.Text.ToString() + "," +
             capText.Text.ToString() +
@@ -119,5 +133,11 @@ public sealed partial class ADD_CLASSPage : Page
 
         Error.IsOpen = true;
         Error.RequestedTheme = ElementTheme.Light;
+    }
+
+    private void Selected_Item(object sender, RoutedEventArgs e)
+    {
+        MenuFlyoutItem menuFlyoutItem = (MenuFlyoutItem)sender;
+        tidText.Content = menuFlyoutItem.Text;
     }
 }
