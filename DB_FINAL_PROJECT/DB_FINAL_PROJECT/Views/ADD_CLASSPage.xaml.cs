@@ -22,13 +22,19 @@ public sealed partial class ADD_CLASSPage : Page
     {
         ViewModel = App.GetService<ADD_CLASSViewModel>();
         InitializeComponent();
-        LoadOnPage();
 
         string conStr = @"DATA SOURCE = localhost:1521/XE; USER ID = F21_9243; PASSWORD = 1234";
         con = new OracleConnection(conStr);
 
+        LoadOnPage();
+    }
+
+    private void LoadOnPage()
+    {
         if (LoginPortal.LoginAdd)
         {
+            Visible1.Visibility = Visibility.Visible;
+
             con.Open();
             OracleCommand getTeachers = con.CreateCommand();
             getTeachers.CommandText = "SELECT * FROM TEACHER";
@@ -44,14 +50,6 @@ public sealed partial class ADD_CLASSPage : Page
             }
             teacherDR.Close();
             con.Close();
-        }
-    }
-
-    private void LoadOnPage()
-    {
-        if (LoginPortal.LoginAdd)
-        {
-            Visible1.Visibility = Visibility.Visible;
         }
     }
 
