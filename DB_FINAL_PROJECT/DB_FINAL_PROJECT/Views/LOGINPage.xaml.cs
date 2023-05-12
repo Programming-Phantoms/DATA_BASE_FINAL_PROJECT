@@ -45,15 +45,6 @@ public sealed partial class LOGINPage : Page
 
     private void OnLoad()
     {
-        if(LoginPortal.LoginAdd || LoginPortal.LoginStd || LoginPortal.LoginTea)
-        {
-            Login_Pic.Visibility = Visibility.Collapsed;
-            Tick.Visibility = Visibility.Visible;
-        }
-    }
-
-    private void LoginButton_Click(object sender, RoutedEventArgs e)
-    {
         //Administrator
         con.Open();
         OracleCommand admId = con.CreateCommand();
@@ -70,7 +61,7 @@ public sealed partial class LOGINPage : Page
 
         con.Open();
         OracleCommand admPass = con.CreateCommand();
-        admPass.CommandText = "SELECT password FROM ADMINISTRATOR";
+        admPass.CommandText = "SELECT a_password FROM ADMINISTRATOR";
         admPass.CommandType = CommandType.Text;
         OracleDataReader AdmPassDR = admPass.ExecuteReader();
 
@@ -135,6 +126,15 @@ public sealed partial class LOGINPage : Page
         StdPassDR.Close();
         con.Close();
 
+        if (LoginPortal.LoginAdd || LoginPortal.LoginStd || LoginPortal.LoginTea)
+        {
+            Login_Pic.Visibility = Visibility.Collapsed;
+            Tick.Visibility = Visibility.Visible;
+        }
+    }
+
+    private void LoginButton_Click(object sender, RoutedEventArgs e)
+    {
         if (adm.Contains(userText.Text.ToString()) && adm.Contains(passText.Password.ToString()))
         {
             LoginPortal.LoginAdd = true;
