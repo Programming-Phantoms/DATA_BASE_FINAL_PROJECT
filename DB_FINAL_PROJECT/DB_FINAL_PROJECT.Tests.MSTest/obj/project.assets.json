@@ -19438,23 +19438,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hafiz\\.nuget\\packages\\": {},
+    "C:\\Users\\bumar\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hafiz\\OneDrive\\Desktop\\DATA_BASE_FINAL_PROJECT\\DB_FINAL_PROJECT\\DB_FINAL_PROJECT.Tests.MSTest\\DB_FINAL_PROJECT.Tests.MSTest.csproj",
+      "projectUniqueName": "C:\\Users\\bumar\\Desktop\\DATA_BASE_FINAL_PROJECT\\DB_FINAL_PROJECT\\DB_FINAL_PROJECT.Tests.MSTest\\DB_FINAL_PROJECT.Tests.MSTest.csproj",
       "projectName": "DB_FINAL_PROJECT.Tests.MSTest",
-      "projectPath": "C:\\Users\\hafiz\\OneDrive\\Desktop\\DATA_BASE_FINAL_PROJECT\\DB_FINAL_PROJECT\\DB_FINAL_PROJECT.Tests.MSTest\\DB_FINAL_PROJECT.Tests.MSTest.csproj",
-      "packagesPath": "C:\\Users\\hafiz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hafiz\\OneDrive\\Desktop\\DATA_BASE_FINAL_PROJECT\\DB_FINAL_PROJECT\\DB_FINAL_PROJECT.Tests.MSTest\\obj\\",
+      "projectPath": "C:\\Users\\bumar\\Desktop\\DATA_BASE_FINAL_PROJECT\\DB_FINAL_PROJECT\\DB_FINAL_PROJECT.Tests.MSTest\\DB_FINAL_PROJECT.Tests.MSTest.csproj",
+      "packagesPath": "C:\\Users\\bumar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bumar\\Desktop\\DATA_BASE_FINAL_PROJECT\\DB_FINAL_PROJECT\\DB_FINAL_PROJECT.Tests.MSTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\hafiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -19469,8 +19469,8 @@
         "net7.0-windows10.0.19041": {
           "targetAlias": "net7.0-windows10.0.19041.0",
           "projectReferences": {
-            "C:\\Users\\hafiz\\OneDrive\\Desktop\\DATA_BASE_FINAL_PROJECT\\DB_FINAL_PROJECT\\DB_FINAL_PROJECT\\DB_FINAL_PROJECT.csproj": {
-              "projectPath": "C:\\Users\\hafiz\\OneDrive\\Desktop\\DATA_BASE_FINAL_PROJECT\\DB_FINAL_PROJECT\\DB_FINAL_PROJECT\\DB_FINAL_PROJECT.csproj"
+            "C:\\Users\\bumar\\Desktop\\DATA_BASE_FINAL_PROJECT\\DB_FINAL_PROJECT\\DB_FINAL_PROJECT\\DB_FINAL_PROJECT.csproj": {
+              "projectPath": "C:\\Users\\bumar\\Desktop\\DATA_BASE_FINAL_PROJECT\\DB_FINAL_PROJECT\\DB_FINAL_PROJECT\\DB_FINAL_PROJECT.csproj"
             }
           }
         }
@@ -19516,35 +19516,35 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-arm",
-            "version": "[7.0.4, 7.0.4]"
+            "version": "[7.0.5, 7.0.5]"
           },
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-arm64",
-            "version": "[7.0.4, 7.0.4]"
+            "version": "[7.0.5, 7.0.5]"
           },
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-            "version": "[7.0.4, 7.0.4]"
+            "version": "[7.0.5, 7.0.5]"
           },
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x86",
-            "version": "[7.0.4, 7.0.4]"
+            "version": "[7.0.5, 7.0.5]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-arm",
-            "version": "[7.0.4, 7.0.4]"
+            "version": "[7.0.5, 7.0.5]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-arm64",
-            "version": "[7.0.4, 7.0.4]"
+            "version": "[7.0.5, 7.0.5]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-x64",
-            "version": "[7.0.4, 7.0.4]"
+            "version": "[7.0.5, 7.0.5]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-x86",
-            "version": "[7.0.4, 7.0.4]"
+            "version": "[7.0.5, 7.0.5]"
           },
           {
             "name": "Microsoft.Windows.SDK.NET.Ref",
@@ -19552,15 +19552,15 @@
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-arm64",
-            "version": "[7.0.4, 7.0.4]"
+            "version": "[7.0.5, 7.0.5]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-            "version": "[7.0.4, 7.0.4]"
+            "version": "[7.0.5, 7.0.5]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-x86",
-            "version": "[7.0.4, 7.0.4]"
+            "version": "[7.0.5, 7.0.5]"
           }
         ],
         "frameworkReferences": {
@@ -19571,7 +19571,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

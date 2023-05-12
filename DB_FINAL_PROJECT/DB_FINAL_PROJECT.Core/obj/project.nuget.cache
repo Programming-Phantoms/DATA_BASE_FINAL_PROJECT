@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "tTBCwBAqZa7PbPXqcrkBVheVPkyaMDBOS9ueMJb3olCft5iOqzATFTOQAEc7e0JjKT4iCQp9LQcphAsQynLtdA==",
+  "dgSpecHash": "g7d8PA3cNnr0reFnnkgK/xZXjCOhpH40deRCMSyXTfZpqdhPeG7Bk8IKeenJS/w1cKDwG/U9PKlZCTjNguSo6w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hafiz\\OneDrive\\Desktop\\DATA_BASE_FINAL_PROJECT\\DB_FINAL_PROJECT\\DB_FINAL_PROJECT.Core\\DB_FINAL_PROJECT.Core.csproj",
+  "projectFilePath": "C:\\Users\\bumar\\Desktop\\DATA_BASE_FINAL_PROJECT\\DB_FINAL_PROJECT\\DB_FINAL_PROJECT.Core\\DB_FINAL_PROJECT.Core.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\hafiz\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+    "C:\\Users\\bumar\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
   ],
   "logs": []
 }

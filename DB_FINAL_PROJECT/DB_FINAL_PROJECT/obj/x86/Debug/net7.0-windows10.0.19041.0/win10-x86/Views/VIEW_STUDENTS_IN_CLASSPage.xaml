@@ -4,10 +4,21 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
     mc:Ignorable="d">
 
     <Grid x:ConnectionId='2' x:Name="ContentArea">
-        
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" Margin="0 0 0 40">
+            <controls:DataGrid x:ConnectionId='3' x:Name="dataGrid" Width="680" AutoGenerateColumns="False" GridLinesVisibility="Horizontal" CanUserSortColumns="False" CanUserReorderColumns="False" IsReadOnly="True" HeadersVisibility="Column" SelectionMode="Single">
+                <controls:DataGrid.Columns>
+                    <controls:DataGridTextColumn Width="130" FontSize="15" Header="Class id" Binding="{Binding Classid}" />
+                    <controls:DataGridTextColumn Width="130" FontSize="15" Header="Teacher id" Binding="{Binding Teacherid}" />
+                    <controls:DataGridTextColumn Width="130" FontSize="15" Header="Section" Binding="{Binding Section}" />
+                    <controls:DataGridTextColumn Width="130" FontSize="15" Header="Semester" Binding="{Binding Semester}" />
+                    <controls:DataGridTextColumn Width="130" FontSize="15" Header="Capacity" Binding="{Binding Capacity}" />
+                </controls:DataGrid.Columns>
+            </controls:DataGrid>
+        </ScrollViewer>
     </Grid>
 </Page>
 
