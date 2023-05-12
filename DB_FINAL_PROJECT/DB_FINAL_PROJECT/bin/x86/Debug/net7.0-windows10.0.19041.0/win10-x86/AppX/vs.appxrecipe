@@ -1079,7 +1079,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bumar\Desktop\DATA_BASE_FINAL_PROJECT\DB_FINAL_PROJECT\DB_FINAL_PROJECT\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2023-05-11T17:39:22.910</Modified>
+      <Modified>2023-05-12T07:43:51.946</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bumar\Desktop\DATA_BASE_FINAL_PROJECT\DB_FINAL_PROJECT\DB_FINAL_PROJECT\Assets\Login_Pic.png">
       <PackagePath>Assets\Login_Pic.png</PackagePath>
@@ -1099,23 +1099,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bumar\Desktop\DATA_BASE_FINAL_PROJECT\DB_FINAL_PROJECT\DB_FINAL_PROJECT\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
-      <Modified>2023-05-11T17:39:22.916</Modified>
+      <Modified>2023-05-12T07:48:54.499</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bumar\Desktop\DATA_BASE_FINAL_PROJECT\DB_FINAL_PROJECT\DB_FINAL_PROJECT\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
-      <Modified>2023-05-11T17:39:22.917</Modified>
+      <Modified>2023-05-12T07:55:16.367</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bumar\Desktop\DATA_BASE_FINAL_PROJECT\DB_FINAL_PROJECT\DB_FINAL_PROJECT\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
-      <Modified>2023-05-11T17:39:22.917</Modified>
+      <Modified>2023-05-12T07:50:17.773</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bumar\Desktop\DATA_BASE_FINAL_PROJECT\DB_FINAL_PROJECT\DB_FINAL_PROJECT\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-      <Modified>2023-05-11T17:39:22.918</Modified>
+      <Modified>2023-05-12T07:52:21.619</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bumar\Desktop\DATA_BASE_FINAL_PROJECT\DB_FINAL_PROJECT\DB_FINAL_PROJECT\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <Modified>2023-05-11T17:39:22.918</Modified>
+      <Modified>2023-05-12T07:58:52.707</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bumar\Desktop\DATA_BASE_FINAL_PROJECT\DB_FINAL_PROJECT\DB_FINAL_PROJECT\Assets\Tick.png">
       <PackagePath>Assets\Tick.png</PackagePath>
@@ -1127,11 +1127,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bumar\Desktop\DATA_BASE_FINAL_PROJECT\DB_FINAL_PROJECT\DB_FINAL_PROJECT\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
-      <Modified>2023-05-11T17:39:22.920</Modified>
+      <Modified>2023-05-12T07:46:09.493</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bumar\Desktop\DATA_BASE_FINAL_PROJECT\DB_FINAL_PROJECT\DB_FINAL_PROJECT\Assets\WindowIcon.ico">
       <PackagePath>Assets\WindowIcon.ico</PackagePath>
-      <Modified>2023-05-11T17:39:22.921</Modified>
+      <Modified>2023-05-12T08:03:35.727</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
