@@ -26,7 +26,9 @@ public sealed partial class ADMINISTRATORPage : Page
     {
         if (LoginPortal.LoginAdd)
         {
-            LoginMsgText.Text = """to administrator's portal 🎉""";
+            LoginMsgText.Text = LoginPortal.LoginInfo.ToString();
+            LoginMsgText.Visibility = Visibility.Visible;
+            LoginMsgText.Text += """ 🎉""";
             LogoutButton.Visibility = Visibility.Visible;
             Welcome_Pic.Visibility = Visibility.Visible;
         }

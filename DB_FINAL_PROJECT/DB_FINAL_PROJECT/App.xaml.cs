@@ -145,5 +145,6 @@ public partial class App : Application
         public static bool LoginAdd = false;
         public static bool LoginStd = false;
         public static bool LoginTea = false;
+        public static string LoginInfo;
     }
 }

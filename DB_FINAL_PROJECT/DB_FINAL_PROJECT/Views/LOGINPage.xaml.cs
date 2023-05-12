@@ -139,6 +139,7 @@ public sealed partial class LOGINPage : Page
         {
             LoginPortal.LoginAdd = true;
             LoginPortal.LoginStd = LoginPortal.LoginTea = false;
+            LoginPortal.LoginInfo = userText.Text.ToString();
             Login_Pic.Visibility = Visibility.Collapsed;
             Frame.Navigate(typeof(ADMINISTRATORPage));
         }
@@ -146,6 +147,7 @@ public sealed partial class LOGINPage : Page
         {
             LoginPortal.LoginStd = true;
             LoginPortal.LoginAdd = LoginPortal.LoginTea = false;
+            LoginPortal.LoginInfo = userText.Text.ToString();
             Login_Pic.Visibility = Visibility.Collapsed;
             Frame.Navigate(typeof(STUDENTPage));
         }
@@ -153,6 +155,7 @@ public sealed partial class LOGINPage : Page
         {
             LoginPortal.LoginTea = true;
             LoginPortal.LoginStd = LoginPortal.LoginAdd = false;
+            LoginPortal.LoginInfo = userText.Text.ToString();
             Login_Pic.Visibility = Visibility.Collapsed;
             Frame.Navigate(typeof(TEACHERPage));
         }

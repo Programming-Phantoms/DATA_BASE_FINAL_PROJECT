@@ -9,7 +9,7 @@
     <Grid x:ConnectionId='2' x:Name="ContentArea">
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <Image x:ConnectionId='3' x:Name="Welcome_Pic" Source="/Assets/Welcome_Pic.png" Height="300" Width="300" Visibility="Collapsed" Margin="0 0 0 0"/>
-            <TextBlock x:ConnectionId='4' x:Name="LoginMsgText" Text="Login to student account!" FontSize="40" FontWeight= "Bold" Margin="0 0 0 50"/>
+            <TextBlock x:ConnectionId='4' x:Name="LoginMsgText" Text="Login to student account!" TextAlignment="Center" FontSize="40" FontWeight= "Bold" Margin="0 0 0 50"/>
             <Button x:ConnectionId='5' x:Name="LogoutButton" Width="300" Height="35" FontWeight="Bold" Content="Logout" HorizontalAlignment="Center" Background="#505AC9" Foreground="#FFFFFF" Margin="0 0 0 50"                            Visibility="Collapsed"/>
         </StackPanel>
     </Grid>
