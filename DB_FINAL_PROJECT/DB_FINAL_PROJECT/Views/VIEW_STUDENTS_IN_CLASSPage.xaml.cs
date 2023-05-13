@@ -70,7 +70,7 @@ public sealed partial class VIEW_STUDENTS_IN_CLASSPage : Page
             }
             if (suitableItems.Count == 0)
             {
-                suitableItems.Add("No results found");
+                suitableItems.Add("No results found ❌");
             }
             sender.ItemsSource = suitableItems;
         }

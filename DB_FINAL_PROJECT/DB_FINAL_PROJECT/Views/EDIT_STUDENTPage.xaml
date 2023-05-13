@@ -9,9 +9,7 @@
     <Grid x:Name="ContentArea">
         <ScrollViewer>
             <StackPanel x:Name="Visible1" HorizontalAlignment="Center" Visibility="Collapsed">
-                <TextBox x:Name="idText" Width="300" Header="Student id" PlaceholderText="Search by student's id" FontSize="15" Margin="0 30 0 30"/>
-                <Button Width="300" Height="35" FontWeight="Bold" Content="Search" HorizontalAlignment="Center" Background="#505AC9" Foreground="#FFFFFF" Margin="0 0 0 50" Click="SearchButton_Click"/>
-                <TextBox x:Name="rollText" Width="300" Header="Roll No" PlaceholderText="Enter roll no" FontSize="15" Margin="0 30 0 30"/>
+                <AutoSuggestBox x:Name="sidText" Width="300" Text="S001" Header="Student id" PlaceholderText="Enter student id" TextChanged="Sid_TextChanged" QueryIcon="Find" Margin="0 0 0 30"/>
                 <TextBox x:Name="fnameText" Width="300" Header="First name" PlaceholderText="Enter first name" FontSize="15" Margin="0 0 0 30"/>
                 <TextBox x:Name="lnameText" Width="300" Header="Last name" PlaceholderText="Enter last name" FontSize="15" Margin="0 0 0 30"/>
                 <TextBox x:Name="contactText" Width="300" Header="Contact No" PlaceholderText="Enter contact no." FontSize="15" Margin="0 0 0 30"/>

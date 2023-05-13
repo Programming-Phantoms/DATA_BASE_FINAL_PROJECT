@@ -168,7 +168,7 @@ public sealed partial class ADD_CLASS_SCHEDULEPage : Page
             }
             if (suitableItems.Count == 0)
             {
-                suitableItems.Add("No results found");
+                suitableItems.Add("No results found ❌");
             }
             sender.ItemsSource = suitableItems;
         }
@@ -193,7 +193,7 @@ public sealed partial class ADD_CLASS_SCHEDULEPage : Page
             }
             if (suitableItems.Count == 0)
             {
-                suitableItems.Add("No results found");
+                suitableItems.Add("No results found ❌");
             }
             sender.ItemsSource = suitableItems;
         }

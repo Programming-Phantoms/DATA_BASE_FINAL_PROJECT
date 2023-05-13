@@ -1,12 +1,19 @@
-﻿using DB_FINAL_PROJECT.ViewModels;
+﻿using CommunityToolkit.WinUI.UI.Controls;
+using System.Data;
+using DB_FINAL_PROJECT.ViewModels;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+using Oracle.ManagedDataAccess.Client;
 using static DB_FINAL_PROJECT.App;
 
 namespace DB_FINAL_PROJECT.Views;
 
 public sealed partial class EDIT_STUDENTPage : Page
 {
+    OracleConnection con;
+
+    List<string> students = new List<string>();
+
     public EDIT_STUDENTViewModel ViewModel
     {
         get;
@@ -16,6 +23,10 @@ public sealed partial class EDIT_STUDENTPage : Page
     {
         ViewModel = App.GetService<EDIT_STUDENTViewModel>();
         InitializeComponent();
+
+        string conStr = @"DATA SOURCE = localhost:1521/XE; USER ID = F21_9243; PASSWORD = 1234";
+        con = new OracleConnection(conStr);
+
         LoadOnPage();
     }
 
@@ -24,13 +35,66 @@ public sealed partial class EDIT_STUDENTPage : Page
         if (LoginPortal.LoginAdd)
         {
             Visible1.Visibility = Visibility.Visible;
+            con.Open();
+            OracleCommand getStd = con.CreateCommand();
+            getStd.CommandText = "SELECT s_id FROM STUDENT";
+            getStd.CommandType = CommandType.Text;
+            OracleDataReader StdDR = getStd.ExecuteReader();
+
+            while (StdDR.Read())
+            {
+                students.Add(StdDR.GetString(0).ToString());
+            }
+            StdDR.Close();
+            con.Close();
         }
     }
 
-    private void SearchButton_Click(object sender, RoutedEventArgs e)
+    private void Sid_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
     {
-    }
+        if (args.Reason == AutoSuggestionBoxTextChangeReason.UserInput)
+        {
+            var suitableItems = new List<string>();
+            var splitText = sender.Text.ToLower().Split(" ");
+            foreach (var cat in students)
+            {
+                var found = splitText.All((key) =>
+                {
+                    return cat.ToLower().Contains(key);
+                });
+                if (found)
+                {
+                    suitableItems.Add(cat);
+                }
+            }
+            if (suitableItems.Count == 0)
+            {
+                suitableItems.Add("No results found ❌");
+            }
+            sender.ItemsSource = suitableItems;
+        }
 
+        con.Open();
+        OracleCommand getStudents = con.CreateCommand();
+        getStudents.CommandText = "SELECT address, first_name, last_name, fees_paid, gender, contact_no, s_password, reg_date, blood_group FROM STUDENT WHERE s_id = \'" + sidText.Text.ToString() + "\'";
+        getStudents.CommandType = CommandType.Text;
+        OracleDataReader studentDR = getStudents.ExecuteReader();
+        if (studentDR.Read())
+        {
+            addText.Text = studentDR.GetString(0);
+            fnameText.Text = studentDR.GetString(1);
+            lnameText.Text = studentDR.GetString(2);
+            feeText.Content = studentDR.GetString(3);
+            genText.Content = studentDR.GetString(4);
+            contactText.Text = studentDR.GetString(5);
+            passText.Password = studentDR.GetString(6);
+            DateTime.TryParse(studentDR.GetString(7), out DateTime regDate);
+            regText.Date = regDate;
+            bgText.Content = studentDR.GetString(8);
+        }
+        studentDR.Close();
+        con.Close();
+    }
     private void UpdateButton_Click(object sender, RoutedEventArgs e)
     {
     }
