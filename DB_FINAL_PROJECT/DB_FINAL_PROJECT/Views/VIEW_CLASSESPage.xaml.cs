@@ -37,7 +37,7 @@ public sealed partial class VIEW_CLASSESPage : Page
         }
     }
 
-            private void AddDataToGrid()
+    private void AddDataToGrid()
     {
         List<Data> classData = new List<Data>();
 
@@ -49,7 +49,7 @@ public sealed partial class VIEW_CLASSESPage : Page
 
         while (classesDR.Read())
         {
-            classData.Add(new Data { Classid = classesDR.GetString(0), Teacherid = classesDR.GetString(1), Section = classesDR.GetString(2), Semester = classesDR.GetString(3), Capacity = classesDR.GetString(4)});
+            classData.Add(new Data { Classid = classesDR.GetString(0), Teacherid = classesDR.GetString(1), Section = classesDR.GetString(2), Semester = classesDR.GetString(3), Capacity = classesDR.GetString(4) });
         }
         dataGrid.ItemsSource = classData;
         classesDR.Close();
