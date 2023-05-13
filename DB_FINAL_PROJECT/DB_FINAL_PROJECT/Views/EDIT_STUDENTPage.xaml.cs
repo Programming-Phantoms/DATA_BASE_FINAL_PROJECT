@@ -97,6 +97,25 @@ public sealed partial class EDIT_STUDENTPage : Page
     }
     private void UpdateButton_Click(object sender, RoutedEventArgs e)
     {
+        con.Open();
+        OracleCommand updateStudent = con.CreateCommand();
+        updateStudent.CommandText = "UPDATE STUDENT SET first_name = :fname, last_name = :lname, contact_no = :contact, s_password = :password, address = :address, reg_date = TO_DATE(:regDate, 'MM/DD/YYYY'), gender = :gender, fees_paid = :feesPaid, blood_group = :bloodGroup WHERE s_id = :sid";
+
+        updateStudent.Parameters.Add(new OracleParameter(":fname", fnameText.Text));
+        updateStudent.Parameters.Add(new OracleParameter(":lname", lnameText.Text));
+        updateStudent.Parameters.Add(new OracleParameter(":contact", contactText.Text));
+        updateStudent.Parameters.Add(new OracleParameter(":password", passText.Password));
+        updateStudent.Parameters.Add(new OracleParameter(":address", addText.Text));
+        updateStudent.Parameters.Add(new OracleParameter(":regDate", regText.SelectedDate.Value.ToString("MM/dd/yyyy")));
+        updateStudent.Parameters.Add(new OracleParameter(":gender", genText.Content.ToString()));
+        updateStudent.Parameters.Add(new OracleParameter(":feesPaid", feeText.Content.ToString()));
+        updateStudent.Parameters.Add(new OracleParameter(":bloodGroup", bgText.Content.ToString()));
+        updateStudent.Parameters.Add(new OracleParameter(":sid", sidText.Text));
+
+        updateStudent.CommandType = CommandType.Text;
+        updateStudent.ExecuteNonQuery();
+        con.Close();
+
     }
 
     private void GenderMale_Click(object sender, RoutedEventArgs e)

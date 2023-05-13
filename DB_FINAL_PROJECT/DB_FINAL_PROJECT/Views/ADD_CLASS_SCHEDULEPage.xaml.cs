@@ -128,21 +128,24 @@ public sealed partial class ADD_CLASS_SCHEDULEPage : Page
         }
         else
         {
-            //con.Open();
-            //OracleCommand insertClassSchedule = con.CreateCommand();
-            //insertClassSchedule.CommandType = CommandType.Text;
-            //insertClassSchedule.CommandText = "INSERT INTO CLASS_SCHEDULE VALUES('" +
-            //schText.Text.ToString() + "\',\'" +
-            //cidText.Text.ToString() + "\',\'" +
-            //tidText.Text.ToString() + "\',\'";
-            //insertClassSchedule.CommandText += strText.SelectedTime.Value.ToString("HH:mm:ss") + "\',\'";
-            //insertClassSchedule.CommandText += endText.SelectedTime.Value.ToString("HH:mm:ss") + "\',\'";
-            //insertClassSchedule.CommandText += locText.Text.ToString() + "\',\'" +
-            //dowText.Content.ToString() + "\'" + ")";
-            //insertClassSchedule.ExecuteNonQuery();
-            //con.Close();
+            con.Open();
+            OracleCommand insertClassSchedule = con.CreateCommand();
+            insertClassSchedule.CommandType = CommandType.Text;
+            insertClassSchedule.CommandText = "INSERT INTO CLASS_SCHEDULE VALUES (:sch, :cid, :tid, TO_TIMESTAMP(:startTime, 'HH24:MI:SS'), TO_TIMESTAMP(:endTime, 'HH24:MI:SS'), :location, :dayOfWeek)";
+
+            insertClassSchedule.Parameters.Add(new OracleParameter(":sch", schText.Text));
+            insertClassSchedule.Parameters.Add(new OracleParameter(":cid", cidText.Text));
+            insertClassSchedule.Parameters.Add(new OracleParameter(":tid", tidText.Text));
+            insertClassSchedule.Parameters.Add(new OracleParameter(":startTime", strText.SelectedTime.Value.ToString()));
+            insertClassSchedule.Parameters.Add(new OracleParameter(":endTime", endText.SelectedTime.Value.ToString()));
+            insertClassSchedule.Parameters.Add(new OracleParameter(":location", locText.Text));
+            insertClassSchedule.Parameters.Add(new OracleParameter(":dayOfWeek", dowText.Content.ToString()));
+
+            insertClassSchedule.ExecuteNonQuery();
+            con.Close();
+
             Error.Title = "Successfull! ✔️";
-            Error.Subtitle = "New student added successfully!";
+            Error.Subtitle = "New schedule added successfully!";
         }
 
         Error.IsOpen = true;
