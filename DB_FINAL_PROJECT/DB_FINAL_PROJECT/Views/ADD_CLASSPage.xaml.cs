@@ -13,6 +13,8 @@ public sealed partial class ADD_CLASSPage : Page
 {
     OracleConnection con;
 
+    List<string> teachers = new List<string>();
+
     public ADD_CLASSViewModel ViewModel
     {
         get;
@@ -37,19 +39,40 @@ public sealed partial class ADD_CLASSPage : Page
 
             con.Open();
             OracleCommand getTeachers = con.CreateCommand();
-            getTeachers.CommandText = "SELECT * FROM TEACHER";
+            getTeachers.CommandText = "SELECT t_id FROM TEACHER";
             getTeachers.CommandType = CommandType.Text;
             OracleDataReader teacherDR = getTeachers.ExecuteReader();
             while (teacherDR.Read())
             {
-                MenuFlyoutItem menuFlyoutItem = new MenuFlyoutItem();
-                menuFlyoutItem.Text = teacherDR.GetString(0).ToString();
-                menuFlyoutItem.Width = 300;
-                menuFlyoutItem.Click += Selected_Item;
-                tidFlyout.Items.Add(menuFlyoutItem);
+                teachers.Add(teacherDR.GetString(0));
             }
             teacherDR.Close();
             con.Close();
+        }
+    }
+
+    private void Tid_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
+    {
+        if (args.Reason == AutoSuggestionBoxTextChangeReason.UserInput)
+        {
+            var suitableItems = new List<string>();
+            var splitText = sender.Text.ToLower().Split(" ");
+            foreach (var cat in teachers)
+            {
+                var found = splitText.All((key) =>
+                {
+                    return cat.ToLower().Contains(key);
+                });
+                if (found)
+                {
+                    suitableItems.Add(cat);
+                }
+            }
+            if (suitableItems.Count == 0)
+            {
+                suitableItems.Add("No results found ❌");
+            }
+            sender.ItemsSource = suitableItems;
         }
     }
 
@@ -58,7 +81,7 @@ public sealed partial class ADD_CLASSPage : Page
         bool intSem = int.TryParse(semText.Text, out int semester);
         bool intCap = int.TryParse(capText.Text, out int capacity);
 
-        Error.Title = "Warning! ⚠";
+        Error.Title = "Warning! ❌";
         if (cidText.Text.Length == 0)
         {
             Error.Subtitle = "Class ID cannot be NULL!";
@@ -107,9 +130,9 @@ public sealed partial class ADD_CLASSPage : Page
         {
             Error.Subtitle = "Enter numeric value in capacity!";
         }
-        else if (tidText.Content.ToString() == "Teacher id")
+        else if (!teachers.Contains(tidText.Text.ToString()))
         {
-            Error.Subtitle = "Teacher id is not selected!";
+            Error.Subtitle = "Teacher id not found!";
         }
         else
         {
@@ -118,7 +141,7 @@ public sealed partial class ADD_CLASSPage : Page
             insertEmp.CommandType = CommandType.Text;
             insertEmp.CommandText = "INSERT INTO CLASS VALUES('" +
             cidText.Text.ToString() + "\',\'" +
-            tidText.Content.ToString() + "\',\'" +
+            tidText.Text.ToString() + "\',\'" +
             secText.Text.ToString() + "\'," +
             semText.Text.ToString() + "," +
             capText.Text.ToString() +
@@ -131,11 +154,5 @@ public sealed partial class ADD_CLASSPage : Page
 
         Error.IsOpen = true;
         Error.RequestedTheme = ElementTheme.Light;
-    }
-
-    private void Selected_Item(object sender, RoutedEventArgs e)
-    {
-        MenuFlyoutItem menuFlyoutItem = (MenuFlyoutItem)sender;
-        tidText.Content = menuFlyoutItem.Text;
     }
 }

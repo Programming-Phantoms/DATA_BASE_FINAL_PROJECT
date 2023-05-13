@@ -36,7 +36,7 @@ public sealed partial class ADD_STUDENTPage : Page
 
     private void InsertButton_Click(object sender, RoutedEventArgs e)
     {
-        Error.Title = "Warning! ⚠";
+        Error.Title = "Warning! ❌";
         if (rollText.Text.Length == 0)
         {
             Error.Subtitle = "Student ID cannot be NULL!";

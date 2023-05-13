@@ -14,7 +14,7 @@
                 <TextBox x:Name="lnameText" Width="300" Header="Last name" PlaceholderText="Enter last name" FontSize="15" Margin="0 0 0 30"/>
                 <TextBox x:Name="contactText" Width="300" Header="Contact No" PlaceholderText="Enter contact no." FontSize="15" Margin="0 0 0 30"/>
                 <TextBox x:Name="addText" Width="300" Header="Address" PlaceholderText="Enter address" FontSize="15" Margin="0 0 0 30"/>
-                <PasswordBox x:Name="passText" Width="300" Header="Password" PlaceholderText="Enter password" FontSize="15" Margin="0 0 0 30"/>
+                <TextBox x:Name="passText" Width="300" Header="Password" PlaceholderText="Enter password" FontSize="15" Margin="0 0 0 30"/>
                 <DatePicker x:Name="regText" Header="Registration date" Margin="0 0 0 30"/>
                 <DropDownButton x:Name="genText" Content="Gender" Width="300" Margin="0 0 0 30">
                     <DropDownButton.Flyout>
@@ -47,7 +47,8 @@
                         </MenuFlyout>
                     </DropDownButton.Flyout>
                 </DropDownButton>
-                <Button Width="300" Height="35" FontWeight="Bold" Content="Update" HorizontalAlignment="Center" Background="#505AC9" Foreground="#FFFFFF" Margin="0 0 0 50" Click="UpdateButton_Click"/>
+                <Button x:Name="Insert_Button" Width="300" Height="35" FontWeight="Bold" Content="Update" HorizontalAlignment="Center" Background="#505AC9" Foreground="#FFFFFF" Margin="0 0 0 50" Click="UpdateButton_Click"/>
+                <TeachingTip x:Name="Error" Title="Warning! ❌" Target="{x:Bind Insert_Button}"/>
             </StackPanel>
         </ScrollViewer>
     </Grid>

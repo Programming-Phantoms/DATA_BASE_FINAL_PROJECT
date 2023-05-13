@@ -5,6 +5,7 @@ using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Oracle.ManagedDataAccess.Client;
 using static DB_FINAL_PROJECT.App;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace DB_FINAL_PROJECT.Views;
 
@@ -87,7 +88,7 @@ public sealed partial class EDIT_STUDENTPage : Page
             feeText.Content = studentDR.GetString(3);
             genText.Content = studentDR.GetString(4);
             contactText.Text = studentDR.GetString(5);
-            passText.Password = studentDR.GetString(6);
+            passText.Text = studentDR.GetString(6);
             DateTime.TryParse(studentDR.GetString(7), out DateTime regDate);
             regText.Date = regDate;
             bgText.Content = studentDR.GetString(8);
@@ -97,25 +98,101 @@ public sealed partial class EDIT_STUDENTPage : Page
     }
     private void UpdateButton_Click(object sender, RoutedEventArgs e)
     {
-        con.Open();
-        OracleCommand updateStudent = con.CreateCommand();
-        updateStudent.CommandText = "UPDATE STUDENT SET first_name = :fname, last_name = :lname, contact_no = :contact, s_password = :password, address = :address, reg_date = TO_DATE(:regDate, 'MM/DD/YYYY'), gender = :gender, fees_paid = :feesPaid, blood_group = :bloodGroup WHERE s_id = :sid";
+        Error.Title = "Warning! ❌";
+        if (fnameText.Text.Length == 0)
+        {
+            Error.Subtitle = "First name cannot be NULL!";
+        }
+        else if (fnameText.Text.Length > 15)
+        {
+            Error.Subtitle = "First name has " + (fnameText.Text.Length - 15).ToString() + " extra character(s)!";
+        }
+        else if (fnameText.Text.Length < 3)
+        {
+            Error.Subtitle = "First name requires at least " + (3 - fnameText.Text.Length).ToString() + " more character(s)!";
+        }
+        else if (lnameText.Text.Length == 0)
+        {
+            Error.Subtitle = "Last Name cannot be NULL!";
+        }
+        else if (lnameText.Text.Length > 15)
+        {
+            Error.Subtitle = "Last name has " + (lnameText.Text.Length - 15).ToString() + " extra character(s)!";
+        }
+        else if (lnameText.Text.Length < 3)
+        {
+            Error.Subtitle = "Last name requires at least " + (3 - lnameText.Text.Length).ToString() + " more character(s)!";
+        }
+        else if (contactText.Text.Length == 0)
+        {
+            Error.Subtitle = "Contact number cannot be NULL!";
+        }
+        else if (contactText.Text.Length > 11)
+        {
+            Error.Subtitle = "Contact number has " + (contactText.Text.Length - 11).ToString() + " extra digit(s)!";
+        }
+        else if (contactText.Text.Length < 11)
+        {
+            Error.Subtitle = "Contact number requires at least " + (11 - contactText.Text.Length).ToString() + " more digit(s)!";
+        }
+        else if (addText.Text.Length == 0)
+        {
+            Error.Subtitle = "Address cannot be NULL!";
+        }
+        else if (addText.Text.Length > 50)
+        {
+            Error.Subtitle = "Address has " + (addText.Text.Length - 50).ToString() + " extra characters!";
+        }
+        else if (addText.Text.Length < 5)
+        {
+            Error.Subtitle = "Address requires at least " + (5 - addText.Text.Length).ToString() + " more character(s)!";
+        }
+        else if (passText.Text.Length == 0)
+        {
+            Error.Subtitle = "Password cannot be NULL!";
+        }
+        else if (passText.Text.Length > 15)
+        {
+            Error.Subtitle = "Password has " + (passText.Text.Length - 15).ToString() + " extra character(s)!";
+        }
+        else if (passText.Text.Length < 6)
+        {
+            Error.Subtitle = "Password requires at least " + (6 - passText.Text.Length).ToString() + " more character(s)!";
+        }
+        else
+        {
+            con.Open();
+            OracleCommand updateStudent = con.CreateCommand();
+            updateStudent.CommandText = "UPDATE STUDENT SET first_name = :fname, last_name = :lname, contact_no = :contact, s_password = :password, address = :address, reg_date = TO_DATE(:regDate, 'MM/DD/YYYY'), gender = :gender, fees_paid = :feesPaid, blood_group = :bloodGroup WHERE s_id = :sid";
 
-        updateStudent.Parameters.Add(new OracleParameter(":fname", fnameText.Text));
-        updateStudent.Parameters.Add(new OracleParameter(":lname", lnameText.Text));
-        updateStudent.Parameters.Add(new OracleParameter(":contact", contactText.Text));
-        updateStudent.Parameters.Add(new OracleParameter(":password", passText.Password));
-        updateStudent.Parameters.Add(new OracleParameter(":address", addText.Text));
-        updateStudent.Parameters.Add(new OracleParameter(":regDate", regText.SelectedDate.Value.ToString("MM/dd/yyyy")));
-        updateStudent.Parameters.Add(new OracleParameter(":gender", genText.Content.ToString()));
-        updateStudent.Parameters.Add(new OracleParameter(":feesPaid", feeText.Content.ToString()));
-        updateStudent.Parameters.Add(new OracleParameter(":bloodGroup", bgText.Content.ToString()));
-        updateStudent.Parameters.Add(new OracleParameter(":sid", sidText.Text));
+            updateStudent.Parameters.Add(new OracleParameter(":fname", fnameText.Text));
+            updateStudent.Parameters.Add(new OracleParameter(":lname", lnameText.Text));
+            updateStudent.Parameters.Add(new OracleParameter(":contact", contactText.Text));
+            updateStudent.Parameters.Add(new OracleParameter(":password", passText.Text));
+            updateStudent.Parameters.Add(new OracleParameter(":address", addText.Text));
+            updateStudent.Parameters.Add(new OracleParameter(":regDate", regText.SelectedDate.Value.ToString("MM/dd/yyyy")));
+            updateStudent.Parameters.Add(new OracleParameter(":gender", genText.Content.ToString()));
+            updateStudent.Parameters.Add(new OracleParameter(":feesPaid", feeText.Content.ToString()));
+            updateStudent.Parameters.Add(new OracleParameter(":bloodGroup", bgText.Content.ToString()));
+            updateStudent.Parameters.Add(new OracleParameter(":sid", sidText.Text));
 
-        updateStudent.CommandType = CommandType.Text;
-        updateStudent.ExecuteNonQuery();
-        con.Close();
+            updateStudent.CommandType = CommandType.Text;
+            updateStudent.ExecuteNonQuery();
+            con.Close();
 
+            if (students.Contains(sidText.Text.ToString()))
+            {
+                Error.Title = "Successfull! ✔️";
+                Error.Subtitle = "Student record updated successfully!";
+            }
+            else
+            {
+                Error.Subtitle = "Student id not found!";
+            }
+        }
+
+        Error.IsOpen = true;
+        Error.RequestedTheme = ElementTheme.Light;
     }
 
     private void GenderMale_Click(object sender, RoutedEventArgs e)

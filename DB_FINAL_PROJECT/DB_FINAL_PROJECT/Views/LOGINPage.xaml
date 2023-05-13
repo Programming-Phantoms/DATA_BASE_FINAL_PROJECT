@@ -15,7 +15,7 @@
             <PasswordBox x:Name="passText" Width="300" Header="Password" PlaceholderText="Enter your password" FontSize="15" HorizontalAlignment="Center" Margin="5 5 5 10" />
                 <TextBlock Text="Forgotten password?" Foreground="#505AC9" Margin="0 0 0 20" />
                 <Button x:Name="Login_Button" Width="300" Height="35" FontWeight="Bold" Content="Login" HorizontalAlignment="Center" Background="#505AC9" Foreground="#FFFFFF" Margin="0 0 0 50" Click="LoginButton_Click"/>
-                <TeachingTip x:Name="Error" Title="Warning! ⚠️" Subtitle="Sorry, the username or password you entered is incorrect. Please check your credentials and try again." Target="{x:Bind Login_Button}"/>
+                <TeachingTip x:Name="Error" Title="Warning! ❌️" Subtitle="Sorry, the username or password you entered is incorrect. Please check your credentials and try again." Target="{x:Bind Login_Button}"/>
             </StackPanel>
         </ScrollViewer>
 

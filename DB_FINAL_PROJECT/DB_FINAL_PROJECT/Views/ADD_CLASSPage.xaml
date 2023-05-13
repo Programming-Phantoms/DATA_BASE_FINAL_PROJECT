@@ -13,14 +13,9 @@
                 <TextBox x:Name="semText" Width="300" Header="Semester" PlaceholderText="Enter semester" FontSize="15" Margin="0 0 0 30"/>
                 <TextBox x:Name="secText" Width="300" Header="Section" PlaceholderText="Enter section" FontSize="15" Margin="0 0 0 30"/>
                 <TextBox x:Name="capText" Width="300" Header="Capacity" PlaceholderText="Enter total capacity" FontSize="15" Margin="0 0 0 30"/>
-                <DropDownButton x:Name="tidText" Content="Teacher id" Width="300" Margin="0 0 0 30">
-                    <DropDownButton.Flyout>
-                        <MenuFlyout x:Name="tidFlyout" Placement="Bottom">
-                        </MenuFlyout>
-                    </DropDownButton.Flyout>
-                </DropDownButton>
+                <AutoSuggestBox x:Name="tidText" Width="300" Text="" Header="Teacher id" PlaceholderText="Enter teacher id" TextChanged="Tid_TextChanged" QueryIcon="Find" Margin="0 0 0 30"/>
                 <Button x:Name="Insert_Button" Width="300" Height="35" FontWeight="Bold" Content="Insert" HorizontalAlignment="Center" Background="#505AC9" Foreground="#FFFFFF" Margin="0 0 0 50" Click="InsertButton_Click"/>
-                <TeachingTip x:Name="Error" Title="Warning! ⚠" Target="{x:Bind Insert_Button}"/>
+                <TeachingTip x:Name="Error" Title="Warning! ❌" Target="{x:Bind Insert_Button}"/>
             </StackPanel>
         </ScrollViewer>
     </Grid>

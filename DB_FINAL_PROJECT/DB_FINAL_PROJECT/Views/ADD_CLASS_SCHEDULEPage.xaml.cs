@@ -73,7 +73,7 @@ public sealed partial class ADD_CLASS_SCHEDULEPage : Page
         var classFound = classes.Contains(cidText.Text.ToString());
         var teacherFound = teachers.Contains(tidText.Text.ToString());
 
-        Error.Title = "Warning! ⚠";
+        Error.Title = "Warning! ❌";
         if (schText.Text.Length == 0)
         {
             Error.Subtitle = "Schedule id cannot be NULL!";

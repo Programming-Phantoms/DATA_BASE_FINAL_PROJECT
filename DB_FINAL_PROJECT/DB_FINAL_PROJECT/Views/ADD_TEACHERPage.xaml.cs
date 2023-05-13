@@ -35,7 +35,7 @@ public sealed partial class ADD_TEACHERPage : Page
 
     private void InsertButton_Click(object sender, RoutedEventArgs e)
     {
-        Error.Title = "Warning! ⚠";
+        Error.Title = "Warning! ❌";
         if (idText.Text.Length == 0)
         {
             Error.Subtitle = "Teacher ID cannot be NULL!";

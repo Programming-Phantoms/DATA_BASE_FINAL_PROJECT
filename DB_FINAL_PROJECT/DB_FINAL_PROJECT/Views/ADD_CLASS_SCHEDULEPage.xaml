@@ -29,7 +29,7 @@
                     </DropDownButton.Flyout>
                 </DropDownButton>
                 <Button x:Name="Insert_Button" Width="300" Height="35" FontWeight="Bold" Content="Insert" HorizontalAlignment="Center" Background="#505AC9" Foreground="#FFFFFF" Margin="0 0 0 50" Click="InsertButton_Click"/>
-                <TeachingTip x:Name="Error" Title="Warning! ⚠" Target="{x:Bind Insert_Button}"/>
+                <TeachingTip x:Name="Error" Title="Warning! ❌" Target="{x:Bind Insert_Button}"/>
             </StackPanel>
         </ScrollViewer>
     </Grid>
