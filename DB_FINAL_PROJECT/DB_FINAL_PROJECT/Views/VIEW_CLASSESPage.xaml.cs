@@ -28,7 +28,6 @@ public sealed partial class VIEW_CLASSESPage : Page
 
     private void AddDataToGrid()
     {
-
         List<Data> classData = new List<Data>();
 
         con.Open();
