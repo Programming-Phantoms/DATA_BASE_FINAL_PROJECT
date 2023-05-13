@@ -1,8 +1,10 @@
 ﻿using System.Data;
 using DB_FINAL_PROJECT.ViewModels;
 
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Oracle.ManagedDataAccess.Client;
+using static DB_FINAL_PROJECT.App;
 
 namespace DB_FINAL_PROJECT.Views;
 
@@ -23,10 +25,19 @@ public sealed partial class VIEW_CLASSESPage : Page
         string conStr = @"DATA SOURCE = localhost:1521/XE; USER ID = F21_9243; PASSWORD = 1234";
         con = new OracleConnection(conStr);
 
-        AddDataToGrid();
+        LoadOnPage();
     }
 
-    private void AddDataToGrid()
+    private void LoadOnPage()
+    {
+        if (LoginPortal.LoginAdd)
+        {
+            Visible1.Visibility = Visibility.Visible;
+            AddDataToGrid();
+        }
+    }
+
+            private void AddDataToGrid()
     {
         List<Data> classData = new List<Data>();
 

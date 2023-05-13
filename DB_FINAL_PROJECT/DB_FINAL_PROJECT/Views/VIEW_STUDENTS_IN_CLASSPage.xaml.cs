@@ -51,44 +51,6 @@ public sealed partial class VIEW_STUDENTS_IN_CLASSPage : Page
         }
     }
 
-    private void SearchButton_Click(object sender, RoutedEventArgs e)
-    {
-        var classFound = classes.Contains(cidText.Text.ToString());
-
-        Error.Title = "Warning! ⚠";
-
-        if (cidText.Text.ToString() == "")
-        {
-            Error.Subtitle = "Class id cannot be NULL!";
-        }
-        else if (!classFound)
-        {
-            Error.Subtitle = "Class not found!";
-        }
-        else
-        {
-            List<Data> classData = new List<Data>();
-
-            con.Open();
-            OracleCommand getClasses = con.CreateCommand();
-            getClasses.CommandText = "SELECT s_id, first_name, last_name, gender, reg_date, fees_paid, contact_no, blood_group, address FROM STUDENT WHERE c_id = \'" + cidText.Text.ToString() + "\' ORDER BY s_id ASC";
-            getClasses.CommandType = CommandType.Text;
-            OracleDataReader classesDR = getClasses.ExecuteReader();
-
-            while (classesDR.Read())
-            {
-                classData.Add(new Data { Studentid = classesDR.GetString(0), Studentname = classesDR.GetString(1) + " " + classesDR.GetString(2), Gender = classesDR.GetString(3), Registrationdate = classesDR.GetString(4), Feestatus = classesDR.GetString(5), Contact = classesDR.GetString(6), Bloodgroup = classesDR.GetString(7), Address = classesDR.GetString(8) });
-            }
-            dataGrid.ItemsSource = classData;
-            classesDR.Close();
-            con.Close();
-            Error.Title = "Successfull! ✔️";
-            Error.Subtitle = "Students data retrieved successfully!";
-        }
-        Error.IsOpen = true;
-        Error.RequestedTheme = ElementTheme.Light;
-    }
-
     private void Cid_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
     {
         if (args.Reason == AutoSuggestionBoxTextChangeReason.UserInput)
@@ -112,6 +74,22 @@ public sealed partial class VIEW_STUDENTS_IN_CLASSPage : Page
             }
             sender.ItemsSource = suitableItems;
         }
+
+        List<Data> classData = new List<Data>();
+
+        con.Open();
+        OracleCommand getClasses = con.CreateCommand();
+        getClasses.CommandText = "SELECT s_id, first_name, last_name, gender, reg_date, fees_paid, contact_no, blood_group, address FROM STUDENT WHERE c_id = \'" + cidText.Text.ToString() + "\' ORDER BY s_id ASC";
+        getClasses.CommandType = CommandType.Text;
+        OracleDataReader classesDR = getClasses.ExecuteReader();
+
+        while (classesDR.Read())
+        {
+            classData.Add(new Data { Studentid = classesDR.GetString(0), Studentname = classesDR.GetString(1) + " " + classesDR.GetString(2), Gender = classesDR.GetString(3), Registrationdate = classesDR.GetString(4), Feestatus = classesDR.GetString(5), Contact = classesDR.GetString(6), Bloodgroup = classesDR.GetString(7), Address = classesDR.GetString(8) });
+        }
+        dataGrid.ItemsSource = classData;
+        classesDR.Close();
+        con.Close();
     }
 
     public class Data

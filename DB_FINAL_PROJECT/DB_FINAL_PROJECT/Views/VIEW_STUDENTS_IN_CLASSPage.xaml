@@ -10,12 +10,10 @@
     <Grid x:Name="ContentArea">
         <StackPanel  x:Name="Visible1" HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Collapsed">
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <AutoSuggestBox x:Name="cidText" Width="300" Text="" Header="Class id" PlaceholderText="Enter class id" TextChanged="Cid_TextChanged" QueryIcon="Find" Margin="0 0 0 30"/>
-                <Button x:Name="Insert_Button" Width="300" Height="35" FontWeight="Bold" Content="Search" HorizontalAlignment="Center" Background="#505AC9" Foreground="#FFFFFF" Margin="0 0 0 50" Click="SearchButton_Click"/>
-                <TeachingTip x:Name="Error" Title="Warning! ⚠" Target="{x:Bind Insert_Button}"/>
+                <AutoSuggestBox x:Name="cidText" Width="300" Text="C001" Header="Class id" PlaceholderText="Enter class id" TextChanged="Cid_TextChanged" QueryIcon="Find" Margin="0 0 0 30"/>
             </StackPanel>
         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" Margin="0 0 0 40">
-            <controls:DataGrid x:Name="dataGrid" Width="1000" AutoGenerateColumns="False" GridLinesVisibility="Horizontal" CanUserSortColumns="False" CanUserReorderColumns="False" IsReadOnly="True" HeadersVisibility="Column" SelectionMode="Single">
+            <controls:DataGrid x:Name="dataGrid" Width="1300" AutoGenerateColumns="False" GridLinesVisibility="Horizontal" CanUserSortColumns="False" CanUserReorderColumns="False" IsReadOnly="True" HeadersVisibility="Column" SelectionMode="Single">
                 <controls:DataGrid.Columns>
                     <controls:DataGridTextColumn Width="130" FontSize="15" Header="Student id" Binding="{Binding Studentid}" />
                         <controls:DataGridTextColumn Width="130" FontSize="15" Header="Student name" Binding="{Binding Studentname}" />
