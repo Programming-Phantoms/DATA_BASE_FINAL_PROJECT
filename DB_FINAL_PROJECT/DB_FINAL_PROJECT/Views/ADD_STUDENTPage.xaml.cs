@@ -22,7 +22,7 @@ public sealed partial class ADD_STUDENTPage : Page
         InitializeComponent();
         LoadOnPage();
 
-        string conStr = @"DATA SOURCE = localhost:1521/XE; USER ID = 21F_9250; PASSWORD = 1234";
+        string conStr = @"DATA SOURCE = localhost:1521/XE; USER ID = F21_9243; PASSWORD = 1234";
         con = new OracleConnection(conStr);
     }
 

@@ -25,7 +25,7 @@ public sealed partial class ADD_STUDENT_TO_CLASSPage : Page
         ViewModel = App.GetService<ADD_STUDENT_TO_CLASSViewModel>();
         InitializeComponent();
 
-        string conStr = @"DATA SOURCE = localhost:1521/XE; USER ID = 21F_9250; PASSWORD = 1234";
+        string conStr = @"DATA SOURCE = localhost:1521/XE; USER ID = F21_9243; PASSWORD = 1234";
         con = new OracleConnection(conStr);
 
         LoadOnPage();

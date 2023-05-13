@@ -118,22 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppDisplayName" xml:space="preserve">
-    <value>DB_FINAL_PROJECT</value>
+    <value>Management System</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>DB_FINAL_PROJECT</value>
+    <value>Management System</value>
   </data>
   <data name="Shell_LOGIN.Content" xml:space="preserve">
-    <value>LOGIN</value>
+    <value>Login</value>
   </data>
   <data name="Shell_ADMINISTRATOR.Content" xml:space="preserve">
-    <value>ADMINISTRATOR</value>
+    <value>Administrator</value>
   </data>
   <data name="Shell_TEACHER.Content" xml:space="preserve">
-    <value>TEACHER</value>
+    <value>Teacher</value>
   </data>
   <data name="Shell_STUDENT.Content" xml:space="preserve">
-    <value>STUDENT</value>
+    <value>Student</value>
   </data>
   <data name="AppNotificationSamplePayload" xml:space="preserve">
     <value>&lt;toast launch="action=ToastClick"&gt;
@@ -177,48 +177,48 @@
     <value>https://YourPrivacyUrlGoesHere/</value>
   </data>
   <data name="Shell_ADD_TEACHER.Content" xml:space="preserve">
-    <value>ADD_TEACHER</value>
+    <value>Add Teacher</value>
   </data>
   <data name="Shell_ADD_STUDENT.Content" xml:space="preserve">
-    <value>ADD_STUDENT</value>
+    <value>Add Student</value>
   </data>
   <data name="Shell_ADD_CLASS.Content" xml:space="preserve">
-    <value>ADD_CLASS</value>
+    <value>Add Class</value>
   </data>
   <data name="Shell_ADD_CLASS_SCHEDULE.Content" xml:space="preserve">
-    <value>ADD_CLASS_SCHEDULE</value>
+    <value>Add Class Schedule</value>
   </data>
   <data name="Shell_EDIT_TEACHER.Content" xml:space="preserve">
-    <value>EDIT_TEACHER</value>
+    <value>Edit Teacher</value>
   </data>
   <data name="Shell_EDIT_STUDENT.Content" xml:space="preserve">
-    <value>EDIT_STUDENT</value>
+    <value>Edit Student</value>
   </data>
   <data name="Shell_ADD_ATTENDANCE.Content" xml:space="preserve">
-    <value>ADD_ATTENDANCE</value>
+    <value>Add Attendance</value>
   </data>
   <data name="Shell_VIEW_ATTENDANCE.Content" xml:space="preserve">
-    <value>VIEW_ATTENDANCE</value>
+    <value>View Attendance</value>
   </data>
   <data name="Shell_VIEW_CLASS.Content" xml:space="preserve">
-    <value>VIEW_CLASS</value>
+    <value>View Class</value>
   </data>
   <data name="Shell_MY_ATTENDANCE.Content" xml:space="preserve">
-    <value>MY_ATTENDANCE</value>
+    <value>My Attendance</value>
   </data>
   <data name="Shell_MY_SCHEDULE.Content" xml:space="preserve">
-    <value>MY_SCHEDULE</value>
+    <value>My Schedule</value>
   </data>
   <data name="Shell_CLASS_MODULE.Content" xml:space="preserve">
-    <value>CLASS_MODULE</value>
+    <value>Class Module</value>
   </data>
   <data name="Shell_ADD_STUDENT_TO_CLASS.Content" xml:space="preserve">
-    <value>ADD_STUDENT_TO_CLASS</value>
+    <value>Add Student To Class</value>
   </data>
   <data name="Shell_VIEW_CLASSES.Content" xml:space="preserve">
-    <value>VIEW_CLASSES</value>
+    <value>View Classes</value>
   </data>
   <data name="Shell_VIEW_STUDENTS_IN_CLASS.Content" xml:space="preserve">
-    <value>VIEW_STUDENTS_IN_CLASS</value>
+    <value>View Students in Class</value>
   </data>
 </root>
