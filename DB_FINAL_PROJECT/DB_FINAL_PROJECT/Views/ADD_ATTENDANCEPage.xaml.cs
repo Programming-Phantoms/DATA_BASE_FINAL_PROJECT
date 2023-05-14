@@ -16,7 +16,6 @@ public sealed partial class ADD_ATTENDANCEPage : Page
     OracleConnection con;
 
     List<string> students = new List<string>();
-    List<string> teachers = new List<string>();
 
     public ADD_ATTENDANCEViewModel ViewModel
     {
@@ -86,7 +85,24 @@ public sealed partial class ADD_ATTENDANCEPage : Page
 
         Error.Title = "Warning! ❌";
 
-        if (TCText.Text.Length == 0)
+        con.Open();
+        OracleCommand getRec = con.CreateCommand();
+        getRec.CommandText = "SELECT a.s_id FROM ATTENDENCE a WHERE a.s_id = '" + sidText.Text.ToString() + "'";
+        getRec.CommandType = CommandType.Text;
+        OracleDataReader RecDR = getRec.ExecuteReader();
+        bool found = false;
+        while (RecDR.Read())
+        {
+            found = true;
+        }
+        RecDR.Close();
+        con.Close();
+
+        if (found)
+        {
+            Error.Subtitle = "Record of this student already exist!";
+        }
+        else if (TCText.Text.Length == 0)
         {
             Error.Subtitle = "Total classes cannot be null";
         }

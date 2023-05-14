@@ -74,7 +74,25 @@ public sealed partial class ADD_CLASS_SCHEDULEPage : Page
         var teacherFound = teachers.Contains(tidText.Text.ToString());
 
         Error.Title = "Warning! ❌";
-        if (schText.Text.Length == 0)
+
+        con.Open();
+        OracleCommand getRec = con.CreateCommand();
+        getRec.CommandText = "SELECT s_no FROM SCHEDULE WHERE s_no = '" + schText.Text.ToString() + "'";
+        getRec.CommandType = CommandType.Text;
+        OracleDataReader RecDR = getRec.ExecuteReader();
+        bool found = false;
+        while (RecDR.Read())
+        {
+            found = true;
+        }
+        RecDR.Close();
+        con.Close();
+
+        if (found)
+        {
+            Error.Subtitle = "Record of this schedule already exist!";
+        }
+        else if (schText.Text.Length == 0)
         {
             Error.Subtitle = "Schedule id cannot be NULL!";
         }

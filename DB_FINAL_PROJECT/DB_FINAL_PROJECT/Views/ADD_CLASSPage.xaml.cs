@@ -82,7 +82,25 @@ public sealed partial class ADD_CLASSPage : Page
         bool intCap = int.TryParse(capText.Text, out int capacity);
 
         Error.Title = "Warning! ❌";
-        if (cidText.Text.Length == 0)
+
+        con.Open();
+        OracleCommand getRec = con.CreateCommand();
+        getRec.CommandText = "SELECT c_id FROM CLASS WHERE c_id = '" + cidText.Text.ToString() + "'";
+        getRec.CommandType = CommandType.Text;
+        OracleDataReader RecDR = getRec.ExecuteReader();
+        bool found = false;
+        while (RecDR.Read())
+        {
+            found = true;
+        }
+        RecDR.Close();
+        con.Close();
+
+        if (found)
+        {
+            Error.Subtitle = "Record of this class already exist!";
+        }
+        else if (cidText.Text.Length == 0)
         {
             Error.Subtitle = "Class ID cannot be NULL!";
         }

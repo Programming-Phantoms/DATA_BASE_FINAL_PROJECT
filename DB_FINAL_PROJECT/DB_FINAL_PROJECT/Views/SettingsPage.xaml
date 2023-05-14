@@ -51,7 +51,7 @@
                 </StackPanel>
             </StackPanel>
 
-            <TextBlock Text="About Management Mystem:" FontSize="20" FontWeight="Bold" Margin="0 50 0 0"/>
+            <TextBlock Text="About Management System:" FontSize="20" FontWeight="Bold" Margin="0 50 0 0"/>
 
             <StackPanel Margin="{StaticResource XSmallTopMargin}">
                 <TextBlock Text="Version: 1.0.0" FontSize="15" />

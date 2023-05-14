@@ -28,30 +28,30 @@
                             <xaml:ElementTheme>Light</xaml:ElementTheme>
                         </RadioButton.CommandParameter>
                     </RadioButton>
-                    <!--<RadioButton
+                    <RadioButton x:ConnectionId='4'
                         x:Uid="Settings_Theme_Dark"
-                        Command="{x:Bind ViewModel.SwitchThemeCommand}"
-                        IsChecked="{x:Bind ViewModel.ElementTheme, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Dark, Mode=OneWay}"
+                                                                       
+                                                                                                                                                            
                         FontSize="15"
                         GroupName="AppTheme">
                         <RadioButton.CommandParameter>
                             <xaml:ElementTheme>Dark</xaml:ElementTheme>
                         </RadioButton.CommandParameter>
-                    </RadioButton>-->
-                    <!--<RadioButton
+                    </RadioButton>
+                    <RadioButton x:ConnectionId='5'
                         x:Uid="Settings_Theme_Default"
-                        Command="{x:Bind ViewModel.SwitchThemeCommand}"
-                        IsChecked="{x:Bind ViewModel.ElementTheme, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Default, Mode=OneWay}"
+                                                                       
+                                                                                                                                                               
                         FontSize="15"
                         GroupName="AppTheme">
                         <RadioButton.CommandParameter>
                             <xaml:ElementTheme>Default</xaml:ElementTheme>
                         </RadioButton.CommandParameter>
-                    </RadioButton>-->
+                    </RadioButton>
                 </StackPanel>
             </StackPanel>
 
-            <TextBlock Text="About Management Mystem:" FontSize="20" FontWeight="Bold" Margin="0 50 0 0"/>
+            <TextBlock Text="About Management System:" FontSize="20" FontWeight="Bold" Margin="0 50 0 0"/>
 
             <StackPanel Margin="{StaticResource XSmallTopMargin}">
                 <TextBlock Text="Version: 1.0.0" FontSize="15" />

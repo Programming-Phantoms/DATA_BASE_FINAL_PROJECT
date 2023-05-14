@@ -37,7 +37,25 @@ public sealed partial class ADD_STUDENTPage : Page
     private void InsertButton_Click(object sender, RoutedEventArgs e)
     {
         Error.Title = "Warning! ❌";
-        if (rollText.Text.Length == 0)
+
+        con.Open();
+        OracleCommand getRec = con.CreateCommand();
+        getRec.CommandText = "SELECT s_id FROM STUDENT WHERE s_id = '" + rollText.Text.ToString() + "'";
+        getRec.CommandType = CommandType.Text;
+        OracleDataReader RecDR = getRec.ExecuteReader();
+        bool found = false;
+        while (RecDR.Read())
+        {
+            found = true;
+        }
+        RecDR.Close();
+        con.Close();
+
+        if (found)
+        {
+            Error.Subtitle = "Record of this student already exist!";
+        }
+        else if (rollText.Text.Length == 0)
         {
             Error.Subtitle = "Student ID cannot be NULL!";
         }
