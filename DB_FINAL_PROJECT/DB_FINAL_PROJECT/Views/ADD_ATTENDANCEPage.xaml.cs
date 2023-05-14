@@ -6,6 +6,8 @@ using Oracle.ManagedDataAccess.Client;
 using static DB_FINAL_PROJECT.App;
 using System.Data;
 using System.Text.RegularExpressions;
+using CommunityToolkit.WinUI.UI.Controls;
+using System.Drawing.Drawing2D;
 
 namespace DB_FINAL_PROJECT.Views;
 
@@ -14,6 +16,7 @@ public sealed partial class ADD_ATTENDANCEPage : Page
     OracleConnection con;
 
     List<string> students = new List<string>();
+    List<string> teachers = new List<string>();
 
     public ADD_ATTENDANCEViewModel ViewModel
     {
@@ -38,7 +41,7 @@ public sealed partial class ADD_ATTENDANCEPage : Page
             Visible1.Visibility = Visibility.Visible;
             con.Open();
             OracleCommand getStd = con.CreateCommand();
-            getStd.CommandText = "SELECT s_id FROM STUDENT";
+            getStd.CommandText = "SELECT s.s_id FROM STUDENT s, CLASS c, TEACHER t WHERE s.c_id = c.c_id AND t.t_id ='" + LoginPortal.LoginInfo + "'AND c.t_id = '" + LoginPortal.LoginInfo + "' ORDER BY s.s_id ASC";
             getStd.CommandType = CommandType.Text;
             OracleDataReader StdDR = getStd.ExecuteReader();
 
@@ -49,6 +52,19 @@ public sealed partial class ADD_ATTENDANCEPage : Page
             StdDR.Close();
             con.Close();
         }
+
+        //con.Open();
+        //OracleCommand getTea = con.CreateCommand();
+        //getTea.CommandText = "SELECT t.t_id FROM ATTENDENCE a, STUDENT s, CLASS c, TEACHER t WHERE a.s_id = s.s_id AND s.c_id = c.c_id AND t.t_id ='" + LoginPortal.LoginInfo + "'AND c.t_id = '" + LoginPortal.LoginInfo + "' ORDER BY t.t_id ASC";
+        //getTea.CommandType = CommandType.Text;
+        //OracleDataReader TeaDR = getTea.ExecuteReader();
+
+        //while (TeaDR.Read())
+        //{
+        //    teachers.Add(TeaDR.GetString(0));
+        //}
+        //TeaDR.Close();
+        //con.Close();
     }
 
     private void Sid_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
@@ -83,13 +99,13 @@ public sealed partial class ADD_ATTENDANCEPage : Page
 
         Error.Title = "Warning! ❌";
 
-        if (!students.Contains(sidText.Text.ToString()))
-        {
-            Error.Subtitle = "Student id not found";
-        }
-        else if (TCText.Text.Length == 0)
+        if (TCText.Text.Length == 0)
         {
             Error.Subtitle = "Total classes cannot be null";
+        }
+        else if (!students.Contains(sidText.Text.ToString()))
+        {
+            Error.Subtitle = "This student is not in your classes";
         }
         else if (!intTC)
         {

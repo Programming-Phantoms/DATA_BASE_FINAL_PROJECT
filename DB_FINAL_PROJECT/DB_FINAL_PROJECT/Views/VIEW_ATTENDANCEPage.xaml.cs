@@ -44,7 +44,7 @@ public sealed partial class VIEW_ATTENDANCEPage : Page
 
         con.Open();
         OracleCommand getAtt = con.CreateCommand();
-        getAtt.CommandText = "SELECT a.s_id, a.total_classes, TRUNC(a.PERCENTAGE_OF_ATTENDENCE, 3), a.NUMBER_OF_CLASSES_ATTEND, s.first_name, s.last_name FROM ATTENDENCE a, STUDENT s WHERE a.s_id = s.s_id ORDER BY a.s_id ASC";
+        getAtt.CommandText = "SELECT a.s_id, a.total_classes, TRUNC(a.PERCENTAGE_OF_ATTENDENCE, 3), a.NUMBER_OF_CLASSES_ATTEND, s.first_name, s.last_name FROM ATTENDENCE a, STUDENT s, CLASS c, Teacher t WHERE a.s_id = s.s_id AND s.c_id = c.c_id AND t.t_id ='" + LoginPortal.LoginInfo + "'AND c.t_id = '" + LoginPortal.LoginInfo + "' ORDER BY a.s_id ASC";
         getAtt.CommandType = CommandType.Text;
         OracleDataReader AttDR = getAtt.ExecuteReader();
 
