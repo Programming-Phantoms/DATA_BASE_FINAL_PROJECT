@@ -51,16 +51,13 @@
                 </StackPanel>
             </StackPanel>
 
-            <TextBlock x:Uid="Settings_About" Style="{ThemeResource SubtitleTextBlockStyle}" />
+            <TextBlock Text="About Management Mystem:" FontSize="20" FontWeight="Bold" Margin="0 50 0 0"/>
 
             <StackPanel Margin="{StaticResource XSmallTopMargin}">
-                <TextBlock Text="{x:Bind ViewModel.VersionDescription, Mode=OneWay}" Style="{ThemeResource BodyTextBlockStyle}" />
+                <TextBlock Text="Version: 1.0.0" FontSize="15" />
 
-                <TextBlock
-                    x:Uid="Settings_AboutDescription"
-                    Margin="{StaticResource XSmallTopMargin}"
-                    Style="{ThemeResource BodyTextBlockStyle}" />
-                <HyperlinkButton x:Uid="SettingsPage_PrivacyTermsLink" Margin="{StaticResource SettingsPageHyperlinkButtonMargin}" />
+                <TextBlock Text="Project partners: Bilal Tariq, Umar Bilal, Ahmad Rayyan" FontSize="15" Margin="0 0 0 50"/>
+                <HyperlinkButton x:Uid="SettingsPage_PrivacyTermsLink" Margin="{StaticResource SettingsPageHyperlinkButtonMargin}" Background="#505AC9" Foreground="#FFFFFF" FontWeight="Bold"/>
             </StackPanel>
         </StackPanel>
     </Grid>

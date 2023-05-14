@@ -174,7 +174,7 @@
     <value>Privacy Statement</value>
   </data>
   <data name="SettingsPage_PrivacyTermsLink.NavigateUri" xml:space="preserve">
-    <value>https://YourPrivacyUrlGoesHere/</value>
+    <value>https://flemish-clearances.000webhostapp.com/</value>
   </data>
   <data name="Shell_ADD_TEACHER.Content" xml:space="preserve">
     <value>Add Teacher</value>
