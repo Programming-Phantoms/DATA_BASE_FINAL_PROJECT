@@ -11,7 +11,7 @@
         <StackPanel x:ConnectionId='3'  x:Name="Visible1" HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Collapsed">
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
                 <AutoSuggestBox x:ConnectionId='5' x:Name="cidText" Width="300" Text="C001" Header="Class id" PlaceholderText="Enter class id"                               QueryIcon="Find" Margin="0 0 0 30"/>
-            </StackPanel>
+        </StackPanel>
         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" Margin="0 0 0 40">
             <controls:DataGrid x:ConnectionId='4' x:Name="dataGrid" Width="1300" AutoGenerateColumns="False" GridLinesVisibility="Horizontal" CanUserSortColumns="False" CanUserReorderColumns="False" IsReadOnly="True" HeadersVisibility="Column" SelectionMode="Single">
                 <controls:DataGrid.Columns>

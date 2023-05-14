@@ -52,19 +52,6 @@ public sealed partial class ADD_ATTENDANCEPage : Page
             StdDR.Close();
             con.Close();
         }
-
-        //con.Open();
-        //OracleCommand getTea = con.CreateCommand();
-        //getTea.CommandText = "SELECT t.t_id FROM ATTENDENCE a, STUDENT s, CLASS c, TEACHER t WHERE a.s_id = s.s_id AND s.c_id = c.c_id AND t.t_id ='" + LoginPortal.LoginInfo + "'AND c.t_id = '" + LoginPortal.LoginInfo + "' ORDER BY t.t_id ASC";
-        //getTea.CommandType = CommandType.Text;
-        //OracleDataReader TeaDR = getTea.ExecuteReader();
-
-        //while (TeaDR.Read())
-        //{
-        //    teachers.Add(TeaDR.GetString(0));
-        //}
-        //TeaDR.Close();
-        //con.Close();
     }
 
     private void Sid_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
